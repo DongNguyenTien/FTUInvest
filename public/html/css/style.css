@@ -7,9 +7,9 @@ body{
 header{
 
 }
-p,h1,h2,h3{
-	color : #fcfcfc;
+p,h1,h2,h3,h4{
     font-family: Arial, Helvetica, sans-serif;
+    color: #f3f3f3;
 }
 p {
 	font-size: 15px;
@@ -37,7 +37,7 @@ header img{
     font-weight: bold;
 }
 .navbar-nav>li>a {
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 .logo{
@@ -57,12 +57,12 @@ header img{
 	background-color: #009844;
 	color: #fff;
 	padding: 15px;
-	margin-top: 42px;
+	margin-top: 25px;
 }
 
 #txtBorder{
 	background-color: #009844;
-	color: #fff;
+	color: #fff
 	font-size: 20px;
 	margin-bottom: 50px;
 }
@@ -76,7 +76,7 @@ header img{
 	width: 8%;
 	height: 8%;
 	/*margin: 0px 100px 20px 0px;*/
-	margin-right: 8%;
+	margin-right: 4%;
 }
 #hour{
 	color: #009844;
