@@ -17,12 +17,12 @@ p {
 	line-height: 20px;
 }
 a{
-	color: #009844;
+	color: #198440;
 	font-size: 180%;
 }
 .icon-bar {
     width: 90px; /* Set a specific width */
-    background-color: #009844; /* Dark-grey background */
+    background-color: #198440; /* Dark-grey background */
 }
 header img{
 	width: 100%;
@@ -33,7 +33,7 @@ header img{
 }
 .nav.navbar-right > li > a:hover, .nav.navbar-right > li > a:focus{
     background-color: transparent;
-    color:  #009844;
+    color:  #198440;
     font-weight: bold;
 }
 .navbar-nav>li>a {
@@ -47,21 +47,21 @@ header img{
 
 #btn-thuthach{
 	border-radius: 0px;
-	background-color: #009844;
+	background-color: #198440;
 	color: #fff;
 	font-size: 30px;
 	padding: 15px 20px 10px 20px;
 }
 
 #timkiem{
-	background-color: #009844;
+	background-color: #198440;
 	color: #fff;
 	padding: 15px;
 	margin-top: 25px;
 }
 
 #txtBorder{
-	background-color: #009844;
+	background-color: #198440;
 	color: #fff
 	font-size: 20px;
 	margin-bottom: 50px;
@@ -79,13 +79,13 @@ header img{
 	margin-right: 4%;
 }
 #hour{
-	color: #009844;
+	color: #198440;
 	font-size: 50px;
 }
 /*Hieu ung mouse hover*/
 .cool-link {
     display: inline-block;
-    color: #009844;
+    color: #198440;
     font-size: 20px;
     text-decoration: none;
 }
@@ -95,7 +95,7 @@ header img{
     display: block;
     width: 0;
     height: 3px;
-    background: #009844;
+    background: #198440;
     transition: width .3s;
 }
 .cool-link:hover::after {
