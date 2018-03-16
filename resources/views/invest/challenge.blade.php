@@ -42,7 +42,7 @@
 
 
 
-            <div id="list-question" style="display: none">
+            <div id="list-question" hidden>
                 <!-- cau hoi 2-->
                 <div style="margin-top: 30px">
                     <h5> <b>Câu 2:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
@@ -169,11 +169,12 @@
 
 
         $('input[type=checkbox]').click(function(e){
+            var now = new Date();
 
             $(this).attr("check","check");
             $("body").css("overflow", "hidden");
             $('#overlay').css('display','block');
-            $('#ready').countdown('{{date('Y-m-d H:i:s',strtotime('+10 seconds'))}}')
+            $('#ready').countdown(new Date(+now + 10000))
                 .on('update.countdown', function(event) {
                     var format = '%-S';
                     $(this).html(event.strftime(format));
@@ -187,7 +188,7 @@
 
 
 
-                    $('.count-time').countdown('{{date('Y-m-d H:i:s',strtotime('+2709 seconds'))}}')
+                    $('.count-time').countdown(new Date(+now + 271e4))
                         .on('update.countdown', function(event) {
                             var format = '%-M phút : %-S giây';
                             $(this).html(event.strftime(format));
