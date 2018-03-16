@@ -1,0 +1,114 @@
+body{
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 800px;
+}
+header{
+
+}
+
+p,h1,h2,h3{
+	color : #fcfcfc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-size: 15px;
+	font-weight: lighter;
+	line-height: 20px;
+}
+
+a{
+	color: #009854;
+	font-size: 150%
+}
+
+.icon-bar {
+    width: 90px; /* Set a specific width */
+    background-color: #009854; /* Dark-grey background */
+}
+
+header img{
+	width: 100%;
+	margin: 1em;
+}
+
+.nav.navbar-nav.navbar-right{
+	padding-top: 15px;
+}
+
+.nav.navbar-right > li > a:hover, .nav.navbar-right > li > a:focus{
+    background-color: transparent;
+    color:  #009854;
+    font-weight: bold;
+}
+
+.navbar-nav>li>a {
+    padding-top: 3em;
+}
+
+.logo{
+	width: 100%;
+	float: left;
+}
+
+#btn-thuthach{
+	border-radius: 0px;
+	background-color: #009854;
+	color: #fff;
+	font-size: 30px;
+	padding: 15px 20px 10px 20px;
+}
+
+#timkiem{
+	background-color: #009854;
+	color: #fff;
+	padding: 15px;
+	margin-top: 42px;
+}
+
+#txtBorder{
+	background-color: #009854;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+#quoteL{
+	width: 10%;
+	height: 10%;
+	/*margin: 20px 0px 10px 40px;*/
+	margin-left: 3%;
+}
+#quoteR{
+	width: 10%;
+	height: 10%;
+	/*margin: 0px 100px 20px 0px;*/
+	margin-right: 8%;
+}
+#hour{
+	color: #009854;
+	font-size: 50px;
+}
+/*Hieu ung mouse hover*/
+.cool-link {
+    display: inline-block;
+    color: #009854;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #009854;
+    transition: width .3s;
+}
+.cool-link:hover::after {
+    width: 100%;
+}
+
+
+
