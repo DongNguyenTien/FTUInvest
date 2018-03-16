@@ -86,4 +86,8 @@ class InvestController extends Controller
     }
 
 
+    public function challenge()
+    {
+        return view('invest.challenge');
+    }
 }

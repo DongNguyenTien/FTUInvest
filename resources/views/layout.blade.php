@@ -14,19 +14,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/font-awesome/css/font-awesome.min.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{asset('/css/style.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/loading.css')}}" rel="stylesheet" type="text/css">
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ asset('admin-lte/ionicons/css/ionicons.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
 
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/dist/css/AdminLTE.min.css?v=3') }}">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect. -->
@@ -74,7 +73,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <![endif]-->
 
 <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 </head>
@@ -107,6 +105,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- jQuery 3 -->
 <script src="{{ asset('admin-lte/jquery/jquery.min.js') }}"></script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('admin-lte/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/jqueryValidation/jquery.validate.min.js') }}"></script>
@@ -116,6 +115,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <script src="{{ asset('admin-lte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+
+<!-- Jquery countdown-->
+<script src="{{asset('/js/jquery.countdown.js')}}"></script>
 
 <!-- Prism -->
 <script src="{{asset('/js/prism.js')}}"></script>

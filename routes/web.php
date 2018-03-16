@@ -21,8 +21,10 @@ Route::post('/login','UserController@loginPost')->name('loginPost');
 Route::get('/register','UserController@register')->name('register');
 Route::post('/register','UserController@requestRegister');
 
-Route::get('/forgot_password','AdminController@forgotPassword')->name('forgot_password');
-Route::get('/password/reset/{token?}', 'AdminController@resetPassword');
-Route::post('/password/email', 'AdminController@sendResetLinkEmail')->name('password.email');
-Route::post('/password/reset', 'AdminController@saveNewPassword')->name('password.request');
+Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
+Route::get('/password/reset/{token?}', 'UserController@resetPassword');
+Route::post('/password/email', 'UserController@sendResetLinkEmail')->name('password.email');
+Route::post('/password/reset', 'UserController@saveNewPassword')->name('password.request');
 
+//Challenge
+Route::get('/challenge','InvestController@challenge')->name('challenge');

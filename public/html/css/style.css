@@ -4,13 +4,12 @@ body{
 	background-repeat: no-repeat;
 	min-height: 600px;
 }
-header{
 
-}
 p,h1,h2,h3,h4{
     font-family: Arial, Helvetica, sans-serif;
-    color: #f3f3f3;
+    color: #f3f3f3 !important;
 }
+
 p {
 	font-size: 15px;
 	font-weight: lighter;
@@ -62,7 +61,7 @@ header img{
 
 #txtBorder{
 	background-color: #198440;
-	color: #fff
+	color: #fff;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
@@ -100,6 +99,11 @@ header img{
 }
 .cool-link:hover::after {
     width: 100%;
+}
+
+p,h1,h2,h3,h4{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f3f3f3 !important;
 }
 
 
