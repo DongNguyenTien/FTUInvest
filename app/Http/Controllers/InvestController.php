@@ -86,8 +86,20 @@ class InvestController extends Controller
     }
 
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
     public function challenge()
     {
-        return view('invest.challenge');
+        if (session()->has('member')) {
+            $member = \GuzzleHttp\json_decode(session('member'), true);
+            //Chưa thi
+            if ($member['status'] == 0) {
+                return view('invest.challenge');
+            }
+        }
+
+        return redirect(route('home'));
+
     }
 }

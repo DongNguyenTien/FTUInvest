@@ -2,9 +2,109 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\RegisterMember;
 use Illuminate\Http\Request;
+use App\Model\Member;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
+use Mockery\Exception;
+use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
+use DB;
 
 class UserController extends Controller
 {
-    //
+    public function requestRegister(Request $request)
+    {
+        DB::beginTransaction();
+        try {
+            //Validate data
+            $params = $request->all();
+            $validator = Validator::make($params,[
+                'name'=>'required',
+                'phone'=>'required',
+                'email'=>['required','unique:member','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
+                'dateOfBirth' => 'required',
+                'university' => 'required',
+                'speciality' => 'required',
+                'course' => 'required',
+                'MSSV' => 'required',
+                'identification' => ['required','unique:member'],
+                'facebook' => 'required',
+
+            ],[
+                'name.required'=>'Họ về tên không được để trống',
+                'phone.required'=>'Số điện thoại không được để trống',
+                'identification.required' => 'Số chứng minh nhân dân không được để trống',
+                'identification.unique' => 'Số chứng minh nhân dân này đã được sử dụng',
+                'email.required'=>'Họ về tên không được để trống',
+                'email.regex' => "Email không đúng định dạng",
+                'email.unique' => 'Email này đã được sử dụng',
+                'university.required'=>'Trường đại học không được để trống',
+                'speciality.required'=>'Ngành học không được để trống',
+                'course.required'=>'Khoá đang theo học không được để trống',
+                'MSSV.required'=>'Mã số sinh viên không được để trống',
+                'facebook.required'=>'Địa chỉ Facebook không được để trống',
+                'dateOfBirth.required'=>'Ngày sinh không được để trống',
+            ]);
+
+            if($validator->fails()){
+                return $result = [
+                    'success' => 0,
+                    'messages' => $this->getMessageErros($validator->errors())
+                ];
+            }
+            //Register
+
+            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
+
+            $CV_filename = "";
+            if(!empty($params['CV'])) {
+                $CV_filename = Member::addCV($request);
+            }
+
+            $params['CV'] = $CV_filename;
+
+            $member = Member::registerMember($params);
+
+            if ((!empty($member))&&(!empty($params['email']))) {
+                Mail::to($params['email'])->queue(new RegisterMember(array(
+                    'name'=>$params['name'],
+                    'temp_password' => $member['password']
+                )));
+            }
+
+            $member['status'] = 0;
+            \session()->put('member',\GuzzleHttp\json_encode($member));
+            DB::commit();
+            return $result = [
+                "success" => 1
+            ];
+
+        }
+        catch(Exception $ex){
+            DB::rollback();
+            Log::alert($ex);
+            return $result = [
+                "success" => 0,
+                "messages" => $ex->getMessage()
+            ];
+
+        }
+    }
+
+    /**
+     * Get message errors
+     * @param $errors
+     * @return string
+     */
+    public function getMessageErros($errors){
+        $result = array();
+        if(!empty($errors)){
+            foreach ($errors->getMessages() as $key=>$value){
+                $result[] = $value[0];
+            }
+        }
+        return implode('; ',$result);
+    }
 }

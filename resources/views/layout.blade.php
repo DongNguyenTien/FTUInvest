@@ -16,7 +16,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('admin-lte/font-awesome/css/font-awesome.min.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <!-- Custom CSS -->
     <link href="{{asset('/css/style.css')}}" rel="stylesheet" type="text/css">
@@ -118,6 +120,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- Jquery countdown-->
 <script src="{{asset('/js/jquery.countdown.js')}}"></script>
+<script src="{{asset('/admin-lte/plugins/jqueryUI/jquery-ui.js')}}"></script>
+
 
 <!-- Prism -->
 <script src="{{asset('/js/prism.js')}}"></script>
@@ -155,7 +159,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 <!-- Custom -->
-<script src="{{ asset('js/init.js?v=1') }}"></script>
+<script src="{{ asset('js/init.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/waitMe/waitMe.js') }}"></script>
 
 @yield('scripts')

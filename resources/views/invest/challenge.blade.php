@@ -17,8 +17,8 @@
 
 
             <div id="overlay" style="display: none;">
-                <div class="countdown">
-                    <p>Chuẩn bị làm bài trong</p>
+                <div class="countdown-challenge">
+                    <h1 style="color: #0c0c0c">Chuẩn bị làm bài trong</h1>
                     <div class="seconds-wrapper">
                         <span class="seconds" id="ready"></span> <br>giây
                     </div>
@@ -50,6 +50,7 @@
                         <div class="col-md-offset-1 col-md-7">
                             <lable class="radio-inline">
                                 <input type="radio" name="optradio">Đáp án 1
+                            </lable>
                         </div>
                         <div class="col-md-4">
                             <lable class="radio-inline">
@@ -76,23 +77,24 @@
                     <div style="margin-top:20px" class="row">
                         <div class="col-md-offset-1 col-md-7">
                             <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 1
+                                <input type="radio" name="optradio2">Đáp án 1
+                            </lable>
                         </div>
                         <div class="col-md-4">
                             <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 2
+                                <input type="radio" name="optradio2">Đáp án 2
                             </lable>
                         </div>
                     </div>
                     <div style="margin-top:20px" class="row">
                         <div class="col-md-offset-1 col-md-7">
                             <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 3
+                                <input type="radio" name="optradio2">Đáp án 3
                             </lable>
                         </div>
                         <div class="col-md-4">
                             <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 4
+                                <input type="radio" name="optradio2">Đáp án 4
                             </lable>
                         </div>
                     </div>
@@ -167,10 +169,11 @@
 
 
         $('input[type=checkbox]').click(function(e){
-            e.preventDefault();
+
+            $(this).attr("check","check");
             $("body").css("overflow", "hidden");
             $('#overlay').css('display','block');
-            $('#ready').countdown('{{date('Y-m-d H:i:s',strtotime('+9 seconds'))}}')
+            $('#ready').countdown('{{date('Y-m-d H:i:s',strtotime('+10 seconds'))}}')
                 .on('update.countdown', function(event) {
                     var format = '%-S';
                     $(this).html(event.strftime(format));
@@ -184,7 +187,7 @@
 
 
 
-                    $('.count-time').countdown('{{date('Y-m-d H:i:s',strtotime('+45 minutes'))}}')
+                    $('.count-time').countdown('{{date('Y-m-d H:i:s',strtotime('+2709 seconds'))}}')
                         .on('update.countdown', function(event) {
                             var format = '%-M phút : %-S giây';
                             $(this).html(event.strftime(format));

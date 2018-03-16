@@ -221,9 +221,11 @@ td.time {
 	line-height: 90px;
 	color: #fff;
 }
-.countdown {
-	top: 35%;
+.countdown-challenge {
+	top: 33%;
 	position: absolute;
-	left: 45%;
+	left: 39%;
 	text-align: center;
 }
+
+

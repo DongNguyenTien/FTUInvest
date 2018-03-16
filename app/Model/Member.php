@@ -1,0 +1,65 @@
+<?php
+
+namespace App\Model;
+
+use GuzzleHttp\Psr7\Request;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
+
+class Member extends Model
+{
+    protected $table = "member";
+    protected $guarded = [];
+
+    public function setPasswordAttribute($pass)
+    {
+        $this->attributes['password'] = Hash::make($pass);
+    }
+
+
+    /**
+     * @param $params
+     * @return array
+     */
+    public static function registerMember($params)
+    {
+
+
+        $random = mt_rand(100000, 999999);
+
+        $member = Member::create(array(
+            'name' => $params['name'],
+            'phone' => $params['phone'],
+            'email' => $params['email'],
+            'password' => $random,
+            'dateOfBirth' => $params['dateOfBirth'],
+            'university' => $params['university'],
+            'speciality' => $params['speciality'],
+            'course' => $params['course'],
+            'MSSV' => $params['MSSV'],
+            'facebook' => $params['dateOfBirth'],
+            'CV' => $params['CV'],
+            'identification' => $params['identification']
+        ));
+
+
+        $result = $member->toArray();
+        $result['password'] = $random;
+
+        return $result;
+    }
+
+    /**
+     * @param $request
+     * @return string
+     */
+    public static function addCV($request)
+    {
+        $CV = "";
+        if (is_uploaded_file($request->file('CV'))) {
+            $CV = $request->file('CV')->getClientOriginalName();
+            $request->CV->move('CV', $CV);
+        }
+        return $CV;
+    }
+}

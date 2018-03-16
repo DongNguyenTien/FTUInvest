@@ -2,7 +2,7 @@
         <div class="col-md-12">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="logo">
-                    <a href="#"><img src="{{asset('/html/images/logo.png')}}"/> </a>
+                    <a href="{{route('home')}}"><img src="{{asset('/html/images/logo.png')}}"/> </a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -21,7 +21,7 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a class="cool-link menu-border-right" href="#">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
+                                <li><a class="cool-link menu-border-right" href="{{route('home')}}">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
                                 <li><a class="cool-link menu-border-right" href="#">VỀ CHÚNG TÔI</a></li>
                                 <li><a class="cool-link menu-border-right" href="#">TỔNG QUAN</a></li>
                                 <li><a class="cool-link " href="#">ĐỐI TÁC</a></li>
