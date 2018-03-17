@@ -28,3 +28,6 @@ Route::post('/password/reset', 'UserController@saveNewPassword')->name('password
 
 //Challenge
 Route::get('/challenge','InvestController@challenge')->name('challenge');
+
+
+Route::get('/updateData','InvestController@updateData');

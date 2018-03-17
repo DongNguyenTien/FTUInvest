@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\RegisterMember;
 use Illuminate\Http\Request;
 use App\Model\Member;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Mockery\Exception;
@@ -67,15 +68,17 @@ class UserController extends Controller
 
             $member = Member::registerMember($params);
 
-            if ((!empty($member))&&(!empty($params['email']))) {
-                Mail::to($params['email'])->queue(new RegisterMember(array(
-                    'name'=>$params['name'],
-                    'temp_password' => $member['password']
-                )));
-            }
+//            if ((!empty($member))&&(!empty($params['email']))) {
+//                Mail::to($params['email'])->queue(new RegisterMember(array(
+//                    'name'=>$params['name'],
+//                    'temp_password' => $member['password']
+//                )));
+//            }
 
-            $member['status'] = 0;
-            \session()->put('member',\GuzzleHttp\json_encode($member));
+
+            Auth::login($member['member']);
+
+
             DB::commit();
             return $result = [
                 "success" => 1

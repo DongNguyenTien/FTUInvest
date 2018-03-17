@@ -47,19 +47,19 @@
                 <div style="margin-top: 30px">
                     <h5> <b>Câu 2:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
                     <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
+                        <div class="radio">
                             <lable class="radio-inline">
                                 <input type="radio" name="optradio">Đáp án 1
                             </lable>
                         </div>
-                        <div class="col-md-4">
+                        <div class="radio">
                             <lable class="radio-inline">
                                 <input type="radio" name="optradio">Đáp án 2
                             </lable>
                         </div>
                     </div>
                     <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
+                        <div class="radio">
                             <lable class="radio-inline">
                                 <input type="radio" name="optradio">Đáp án 3
                             </lable>

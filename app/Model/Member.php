@@ -5,9 +5,16 @@ namespace App\Model;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Auth\Passwords\CanResetPassword;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-class Member extends Model
+class Member extends Model implements AuthenticatableContract, CanResetPasswordContract
 {
+    use SoftDeletes, Authenticatable, CanResetPassword;
+
     protected $table = "member";
     protected $guarded = [];
 
@@ -39,11 +46,12 @@ class Member extends Model
             'MSSV' => $params['MSSV'],
             'facebook' => $params['dateOfBirth'],
             'CV' => $params['CV'],
-            'identification' => $params['identification']
+            'identification' => $params['identification'],
+            'status' => 0,
         ));
 
 
-        $result = $member->toArray();
+        $result['member'] = $member;
         $result['password'] = $random;
 
         return $result;
