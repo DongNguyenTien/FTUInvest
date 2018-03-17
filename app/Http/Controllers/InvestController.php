@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NoticeResult;
+use App\Model\Member;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
-use League\Flysystem\Config;
 use Maatwebsite\Excel\Facades\Excel;
-use PHPExcel_IOFactory;
-use PHPExcel_Worksheet_MemoryDrawing;
+use Illuminate\Support\Facades\Mail;
 
 
 class InvestController extends Controller
@@ -24,11 +23,17 @@ class InvestController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function homepage()
+    public function homepage(Request $request)
     {
-//        $data = file_get_contents('./excel/data.json');
-//        $data = json_decode($data,true);
-
+        //Request new candicate
+        if (!empty($request->flag) && Auth::check()) {
+            Auth::logout();
+            return view('invest.home');
+        }
+        if (Auth::check()) {
+            $member = Auth::user();
+            return view('invest.home',compact('member'));
+        }
         return view('invest.home');
     }
 
@@ -72,9 +77,6 @@ class InvestController extends Controller
         $count = count($sheet);
         $j = 1;
 
-        //Check null lien tiep
-
-
         for ($i = 0; $i < $count; $i++) {
             if ($i == $j*$numberSet - 1 + $j) {
                 $j++;
@@ -105,7 +107,7 @@ class InvestController extends Controller
                 $data = json_decode($data,true);
                 $data = $this->listQuestion($data);
 
-                $list_question = $data['list_question'];
+                $list_question = \GuzzleHttp\json_encode($data['list_question']);
 
                 $checking = JWT::encode( $data['answer'],$this->key);
 
@@ -116,27 +118,74 @@ class InvestController extends Controller
 
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function checkResult(Request $request)
     {
         $params = $request->all();
 
-
         $checking = JWT::decode($params['checking'],$this->key, array('HS256'));
+        $checking = \GuzzleHttp\json_decode(\GuzzleHttp\json_encode($checking),true);
 
-        unset($params['checking']);
+        $check = [];
+        for($i=0; $i<40; $i++) {
+            $check[] = $checking[$i][$i];
+        }
+
+        unset($params['checking'],$params['_token']);
         $member_answer = $params;
 
 
+
         //check answer
-        $difference = array_diff_assoc((array)$checking,$member_answer);
+        $correct = count(array_intersect_assoc($check,$member_answer));
+
 
         //Member
+        $member = Member::find(Auth::id());
+        $member->score = $correct;
+        $member->status = 1;
+        $member->save();
 
-        return view('invest.score',compact('difference'));
+        //Update auth
+        Auth::user()->score = $correct;
+        Auth::user()->status = 1;
 
+        //Mail to notice result
+        if ((!empty($member))&&(!empty($member->email))) {
+            Mail::to($member->email)->queue(new NoticeResult(array(
+                'name'=>$member->name,
+                'score' => $member->score
+            )));
+        }
 
+        return redirect()->route('show_result');
 
     }
+
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showResult()
+    {
+        //Member
+        if (Auth::check()) {
+            $member =Auth::user();
+            return view('invest.score',compact('member'));
+        }
+        return redirect(route('home'));
+    }
+
+
+
+
+    /**
+     * @param $data
+     * @return array
+     */
     public function listQuestion($data){
         $temp_list_question = [];
         $final_list_question = [];

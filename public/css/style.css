@@ -2,7 +2,7 @@
 body{
 	background-image: url('../html/images/bg.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	min-height: 800px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -17,7 +17,7 @@ body{
 	font-weight: bold;
 }
 .navbar-nav>li>a {
-	margin-top: 3em;
+	margin-top: 2em;
 	padding-top: 5px;
 	padding-bottom: 0;
 }
@@ -40,13 +40,14 @@ body{
 	font-size: 30px;
 	padding: 15px 20px 10px 20px;
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 #timkiem{
 	background-color: #009844;
 	color: #fff;
 	padding: 10px 15px 5px 15px;
-	margin-top: 2.7em;
+	margin-top: 1.7em;
 }
 
 #timkiem::after {
@@ -191,7 +192,6 @@ td.time {
 	color: #fff;
 	padding: 10px 15px;
 	margin-top:25px;
-	float:right
 }
 
 .btn-challenge:hover {
@@ -222,10 +222,36 @@ td.time {
 	color: #fff;
 }
 .countdown-challenge {
-	top: 33%;
+	top: 31%;
 	position: absolute;
-	left: 39%;
+	left: 38%;
 	text-align: center;
 }
 
 
+.img-question {
+	display:block;margin:auto;padding-top:20px;width: 400px;height: auto;
+}
+
+.answer-left {
+	margin-left: 4%;
+}
+
+.header-question {
+	margin-top: 30px;
+}
+
+.answer-between {
+	margin-top: 20px;
+}
+
+.score-screen {
+	text-align: center;
+}
+.score-screen > h3 {
+	color: #000 !important;
+}
+
+.invest-font {
+	color: #198440;font-size: 110%
+}

@@ -28,6 +28,7 @@ Route::post('/password/reset', 'UserController@saveNewPassword')->name('password
 
 //Challenge
 Route::get('/challenge','InvestController@challenge')->name('challenge');
-
+Route::post('/result','InvestController@checkResult')->name('submit_result');
+Route::get('/member/result','InvestController@showResult')->name('show_result');
 
 Route::get('/updateData','InvestController@updateData');

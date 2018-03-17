@@ -64,6 +64,7 @@
     </div>
 
 
+    @if(empty($member))
     <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -182,13 +183,38 @@
             </div>
         </div>
     </div>
+    @else
+        <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <form enctype="multipart/form-data" method="get" action="{{route('home')}}">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="score-screen">
+                                <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
+                                <h3> Bạn đã hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
+                                <h3> Số điểm của bạn là <span style="font-size:200%;color: #198440">{{$member->score."/40"}}</span></h3>
+                                <h3> Cảm ơn bạn! </h3>
+                            </div>
+                            <input type="hidden" value="1" name="flag">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                            <button type="submit" class="btn btn-primary" >Đăng ký thí sinh mới</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+    @endif
 
     @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{asset('/js/home.js')}}">
+    <script type="text/javascript" src="{{asset('/js/home.js')}}"></script>
 
-
-    </script>
     @endsection

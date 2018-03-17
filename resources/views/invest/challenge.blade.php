@@ -42,120 +42,15 @@
 
 
 
+            <form action="{{route('submit_result')}}" method="post" id="result">
+                {{csrf_field()}}
+                <input hidden value="{{$checking}}" name="checking">
             <div id="list-question" hidden>
-                <!-- cau hoi 2-->
-                <div style="margin-top: 30px">
-                    <h5> <b>Câu 2:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
-                    <div style="margin-top:20px" class="row">
-                        <div class="radio">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 1
-                            </lable>
-                        </div>
-                        <div class="radio">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 2
-                            </lable>
-                        </div>
-                    </div>
-                    <div style="margin-top:20px" class="row">
-                        <div class="radio">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 3
-                            </lable>
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 4
-                            </lable>
-                        </div>
-                    </div>
-                </div>
-                <!-- cau hoi 2-->
-                <div style="margin-top: 30px">
-                    <h5> <b>Câu 3:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio2">Đáp án 1
-                            </lable>
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio2">Đáp án 2
-                            </lable>
-                        </div>
-                    </div>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio2">Đáp án 3
-                            </lable>
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio2">Đáp án 4
-                            </lable>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- cau hoi 2-->
-                <div style="margin-top: 30px">
-                    <h5> <b>Câu 4:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 1
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 2
-                            </lable>
-                        </div>
-                    </div>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 3
-                            </lable>
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 4
-                            </lable>
-                        </div>
-                    </div>
-                </div>
+                <input type="submit" class="btn btn-challenge btn-lg center-block" style="" value="NỘP BÀI">
 
-                <!-- cau hoi 2-->
-                <div style="margin-top: 30px">
-                    <h5> <b>Câu 5:</b> Đề bài (abscmsadasirpsadpasdasd) </h5>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 1
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 2
-                            </lable>
-                        </div>
-                    </div>
-                    <div style="margin-top:20px" class="row">
-                        <div class="col-md-offset-1 col-md-7">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 3
-                            </lable>
-                        </div>
-                        <div class="col-md-4">
-                            <lable class="radio-inline">
-                                <input type="radio" name="optradio">Đáp án 4
-                            </lable>
-                        </div>
-                    </div>
             </div>
-                <input type="submit" class="btn btn-challenge btn-lg" style="" value="NỘP BÀI">
+            </form>
 
             </div>
         </div>
@@ -164,8 +59,47 @@
 
 @section('scripts')
     <script type="text/javascript">
+        var html = "";
+        var array_question = {!! $list_question !!};
 
-
+        for(var i = 0; i < array_question.length; i++) {
+            html += '<div class="header-question">' +
+                '                    <h5> <b>Câu '+ (i+1) +': </b>'+array_question[i].question+' </h5>' +
+                // '                    <img class="img-question" src="/html/images/bieudo.png">' +
+                '                    <div class="row answer-between">' +
+                '                        <div class="answer-left col-md-4">' +
+                '                            <div class="radio">' +
+                '                                <label>' +
+                '                                    <input type="radio" name="'+i+'" value="0">'+array_question[i].answer[0]+'' +
+                '                                </label>' +
+                '                            </div>' +
+                '                        </div>' +
+                '                        <div class="col-md-offset-3 col-md-4">' +
+                '                            <div class="radio">' +
+                '                                <label>' +
+                '                                    <input type="radio" name="'+i+'" value="1">'+array_question[i].answer[1]+' ' +
+                '                                </label>' +
+                '                            </div>' +
+                '                        </div>' +
+                '                    </div>' +
+                '                    <div class="row">' +
+                '                        <div class="answer-left col-md-4">' +
+                '                            <div class="radio">' +
+                '                                <label>' +
+                '                                    <input type="radio" name="'+i+'" value="2">'+array_question[i].answer[2]+'' +
+                '                                </label>' +
+                '                            </div>' +
+                '                        </div>' +
+                '                        <div class="col-md-offset-3 col-md-4">' +
+                '                            <div class="radio">' +
+                '                                <label>' +
+                '                                    <input type="radio" name="'+i+'" value="3">'+array_question[i].answer[3]+'' +
+                '                                </label>' +
+                '                            </div>' +
+                '                        </div>' +
+                '                    </div>' +
+                '                </div>'
+        }
 
 
         $('input[type=checkbox]').click(function(e){
@@ -174,6 +108,8 @@
             $(this).attr("check","check");
             $("body").css("overflow", "hidden");
             $('#overlay').css('display','block');
+
+
             $('#ready').countdown(new Date(+now + 10000))
                 .on('update.countdown', function(event) {
                     var format = '%-S';
@@ -182,9 +118,12 @@
 
                 .on('finish.countdown', function(event) {
                     $('#overlay').css('display','none');
-                    $('#list-question').css('display','block');
-                    $('#rule').css('display','none');
                     $("body").css("overflow", "auto");
+
+                    $('#list-question').prepend(html);
+                    $('#list-question').css('display','block');
+
+                    $('#rule').css('display','none');
 
 
 
@@ -195,9 +134,7 @@
                         })
 
                         .on('finish.countdown', function(event) {
-                            $(this).html('This offer has expired!')
-                                .parent().addClass('disabled');
-
+                            $('form#result').submit();
                         });
 
                 });

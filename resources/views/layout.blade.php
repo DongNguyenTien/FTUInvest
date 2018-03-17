@@ -13,6 +13,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
+
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Font Awesome -->
@@ -75,7 +78,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <![endif]-->
 
 <!-- Google Font -->
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 </head>
 

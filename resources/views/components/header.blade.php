@@ -1,5 +1,5 @@
     <div class="row">
-        <div class="col-md-12">
+
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="logo">
                     <a href="{{route('home')}}"><img src="{{asset('/html/images/logo.png')}}"/> </a>
@@ -30,7 +30,7 @@
                         </div><!-- /.navbar-collapse -->
                 </nav>
             </div>
-        </div>
+
     </div>
     <!-- <div class="row">
       <div class="navbar">
