@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Mail;
+use App\MyValueBinder;
+use PHPExcel_Style_NumberFormat;
 
 
 class InvestController extends Controller
@@ -25,6 +27,9 @@ class InvestController extends Controller
      */
     public function homepage(Request $request)
     {
+//        $data = file_get_contents('./excel/data.json');
+//        $data = json_decode($data,true);
+//        dd($data);
         //Request new candicate
         if (!empty($request->flag) && Auth::check()) {
             Auth::logout();
@@ -46,9 +51,11 @@ class InvestController extends Controller
 
         Excel::load(public_path('/excel/test.xlsx'),function($reader)use(&$result){
 
+
             $reader->each(function($sheet)use(&$result) {
                 $result[$sheet->getTitle()] = [];
                 $title = $sheet->getTitle();
+
 
                 if ($title == "Chứng khoán") {
                     $result[$title] = $this->dataSheet($sheet->toArray(),10);
@@ -58,6 +65,7 @@ class InvestController extends Controller
 
 
             });
+
         });
 
         //Save json file
@@ -83,10 +91,10 @@ class InvestController extends Controller
                 continue;
             } else {
                 $set['question'] = $sheet[$i]['cau_hoi'];
-                $set['true'] = $sheet[$i]['dung'];
-                $set['false1'] = $sheet[$i]['sai1'];
-                $set['false2'] = $sheet[$i]['sai2'];
-                $set['false3'] = $sheet[$i]['sai3'];
+                $set['true'] = $this->checkPercentage($sheet[$i]['dung']);
+                $set['false1'] = $this->checkPercentage($sheet[$i]['sai1']);
+                $set['false2'] = $this->checkPercentage($sheet[$i]['sai2']);
+                $set['false3'] = $this->checkPercentage($sheet[$i]['sai3']);
 
                 $result['set-'.$j][] = $set;
             }
@@ -95,6 +103,14 @@ class InvestController extends Controller
         return $result;
     }
 
+    public function checkPercentage($cell)
+    {
+        if (preg_match('/".+?%"/',$cell)) {
+            return str_replace('"','',$cell);
+        }
+
+        return $cell;
+    }
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
