@@ -34,3 +34,17 @@ Route::get('/member/result','InvestController@showResult')->name('show_result');
 //Another page
 Route::get('/tongquan','InvestController@tongquan')->name('tongquan');
 Route::get('/doitac','InvestController@doitac')->name('doitac');
+
+//Admin
+Route::get('/administrator','InvestController@administrator')->name('administrator.login');
+
+Route::get('/reset/password','InvestController@resetPassword')->name('administrator.reset');
+Route::post('/reset/password','InvestController@resetPasswordPost')->name('administrator.reset.post');
+
+Route::post('/administrator/action','InvestController@administratorAction')->name('administrator.action');
+Route::get('/administrator/action','InvestController@viewAdminAction')->name('administrator.action.view');
+
+Route::get('/ajax/member','InvestController@getListCandicate');
+
+Route::post('/ajax/changePassword','InvestController@changePassword');
+Route::get('/download/data','InvestController@exportExcel')->name('download_data');

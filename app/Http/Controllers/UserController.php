@@ -64,7 +64,7 @@ class UserController extends Controller
                 $CV_filename = Member::addCV($request);
             }
 
-            $params['CV'] = $CV_filename;
+            $params['CV'] = 'iinvest.test/CV/'.$CV_filename;
 
             $member = Member::registerMember($params);
 

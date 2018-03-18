@@ -75,6 +75,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 
+
     <![endif]-->
 
 <!-- Google Font -->
@@ -82,6 +83,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
+<style>
+    body{
+        background-image: url('{{asset('/html/images/bg.jpg')}}');
+        background-size: contain;
+        background-repeat: repeat-y;
+        min-height: 800px;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
 <div class="container-fluid">
     <header class="header">
         @component('components.header')@endcomponent
