@@ -1,7 +1,7 @@
 body{
 	background-image: url('../images/bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-repeat: repeat-y;
 	min-height: 600px;
 }
 header{
