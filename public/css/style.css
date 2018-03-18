@@ -1,7 +1,7 @@
 
 body{
 	background-image: url('../html/images/bg.jpg');
-	background-size: cover;
+	background-size: contain;
 	background-repeat: repeat-y;
 	min-height: 800px;
 	font-family: 'Roboto', sans-serif;
@@ -123,7 +123,7 @@ body{
 
 
 
-p,h1,h2,h3{
+p,h1,h2,h3,h4{
 	color : #fcfcfc;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -254,4 +254,30 @@ td.time {
 
 .invest-font {
 	color: #198440;font-size: 110%
+}
+
+.header-row {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.container-margin {
+	margin-bottom: 40px
+}
+
+.tongquan-title {
+	color: #198440 !important;
+	font-weight: 700
+}
+
+.img-timeline {
+	width: 100%;height: auto;padding: 1%
+}
+
+.price {
+	width:100%;display: inline;background-color: #198440;color: #fff;font-size: 22px
+}
+
+.price-money {
+	vertical-align: text-bottom;font-size: 150%;color: #fff
 }

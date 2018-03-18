@@ -67,7 +67,7 @@ header img{
 
 #txtBorder{
 	background-color: #198440;
-	color: #fff
+	color: #fff;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
@@ -106,6 +106,4 @@ header img{
 .cool-link:hover::after {
     width: 100%;
 }
-
-
 

@@ -241,5 +241,15 @@ class InvestController extends Controller
         ];
 
     }
+
+    public function doitac()
+    {
+        return view('invest.doitac');
+    }
+
+    public function tongquan()
+    {
+        return view('invest.tongquan');
+    }
 }
 
