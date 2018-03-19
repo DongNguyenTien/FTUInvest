@@ -48,3 +48,7 @@ Route::get('/ajax/member','InvestController@getListCandicate');
 
 Route::post('/ajax/changePassword','InvestController@changePassword');
 Route::get('/download/data','InvestController@exportExcel')->name('download_data');
+
+
+Route::get('/check/administrator','InvestController@testcase')->name('test');
+

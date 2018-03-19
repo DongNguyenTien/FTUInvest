@@ -31,7 +31,7 @@ class UserController extends Controller
                 'course' => 'required',
                 'MSSV' => 'required',
                 'identification' => ['required','unique:member'],
-                'facebook' => 'required',
+//                'facebook' => 'required',
 
             ],[
                 'name.required'=>'Họ về tên không được để trống',
@@ -45,7 +45,7 @@ class UserController extends Controller
                 'speciality.required'=>'Ngành học không được để trống',
                 'course.required'=>'Khoá đang theo học không được để trống',
                 'MSSV.required'=>'Mã số sinh viên không được để trống',
-                'facebook.required'=>'Địa chỉ Facebook không được để trống',
+//                'facebook.required'=>'Địa chỉ Facebook không được để trống',
                 'dateOfBirth.required'=>'Ngày sinh không được để trống',
             ]);
 

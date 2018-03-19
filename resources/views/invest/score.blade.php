@@ -9,7 +9,7 @@
         </div>
         <div class="test-content score-screen" >
             <h3> Chúc mừng bạn đã hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
-            <h3> Số điểm của bạn là <span style="font-size:200%;color: #198440">{{$member->score."/40"}}</span></h3>
+
             <h3> Kết quả của bạn sẽ được thông báo qua địa chỉ Email và sms. </h3>
             <h3> Cảm ơn bạn! </h3>
         </div>

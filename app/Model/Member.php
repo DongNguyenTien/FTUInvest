@@ -31,7 +31,7 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
     public static function registerMember($params)
     {
         //Custom link fb
-        if (!preg_match('/^(http:|https:)\/\/?.*/',$params['facebook'])) {
+        if (!empty($params['facebook']) && !preg_match('/^(http:|https:)\/\/?.*/',$params['facebook'])) {
             $params['facebook'] = 'https://'.$params['facebook'];
         }
 

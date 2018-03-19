@@ -64,8 +64,13 @@
 
         for(var i = 0; i < array_question.length; i++) {
             html += '<div class="header-question">' +
-                '                    <h5> <b>Câu '+ (i+1) +': </b>'+array_question[i].question+' </h5>' +
-                // '                    <img class="img-question" src="/html/images/bieudo.png">' +
+                '                    <h5> <b>Câu '+ (i+1) +': </b>'+array_question[i].question+' </h5>';
+
+            if (array_question[i].image !== null) {
+                html +=  '<img class="img-question" src="'+array_question[i].image+'">';
+            }
+
+            html+=
                 '                    <div class="row answer-between">' +
                 '                        <div class="answer-left col-md-4">' +
                 '                            <div class="radio">' +

@@ -15,7 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-
+    <link rel="icon" type="image/x-icon" href="{{asset('/logo-01.png')}}" />
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Font Awesome -->

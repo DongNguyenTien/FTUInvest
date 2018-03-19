@@ -17,7 +17,7 @@
     </div>
     <div class="container text-center countdown">
 
-        <div class="table-responsive " style="width: 70%;margin-left: 15%;" >
+        <div class="table-responsive table-clock" >
             <table class="table no-border">
                 <tbody>
                 <tr>
@@ -152,7 +152,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Trang facebook của bạn (*)</label>
+                                    <label for="exampleInputPassword1">Trang facebook của bạn </label>
                                     <input type="text" class="form-control" placeholder=facebook.com/example name="facebook">
                                 </div>
 

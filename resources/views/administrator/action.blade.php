@@ -6,8 +6,9 @@
     <div class="container-fluid">
         <div class="row" style="margin: 20px">
             <!-- Indicates a successful or positive action -->
-            <a href="{{route('download_data')}}" type="button" class="btn btn-success" style="margin-right: 10px">Tải xuống thông tin thí sinh</a>
+            <a href="{{route('download_data')}}" type="button" class="btn btn-success list-button" >Tải xuống thông tin thí sinh</a>
 
+            <a href="/responsive_filemanager/filemanager/dialog.php?type=1&lang=en_EN'" data-fancybox data-caption="Upload file manager" class="btn btn-warning iframe-btn list-button" type="button">Upload ảnh</a>
             <!-- Contextual button for informational alert messages -->
             <button data-toggle="modal" data-target="#modal" type="button" class="btn btn-info">Đổi mật khẩu</button>
         </div>
@@ -92,4 +93,33 @@
 
 @section('scripts')
     <script type="text/javascript" src="{{asset('js/actionAdmin.js')}}"></script>
+    <script src="{{asset('admin-lte/plugins/fancybox/dist/jquery.fancybox.min.js')}}"></script>
+    <script type="text/javascript">
+        (function () {
+            var converter1 = Markdown.getSanitizingConverter();
+
+            converter1.hooks.chain("preBlockGamut", function (text, rbg) {
+                return text.replace(/^ {0,3}""" *\n((?:.*?\n)+?) {0,3}""" *$/gm, function (whole, inner) {
+                    return "<blockquote>" + rbg(inner) + "</blockquote>\n";
+                });
+            });
+
+            var editor1 = new Markdown.Editor(converter1);
+
+            editor1.run();
+
+
+        })();
+
+
+    </script>
+    <script type="text/javascript">
+
+        $("[data-fancybox]").fancybox({
+            'width'		: 900,
+            'height'	: 600,
+            'type'		: 'iframe',
+            'autoScale'    	: true
+        });
+    </script>
     @endsection

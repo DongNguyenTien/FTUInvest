@@ -93,6 +93,7 @@ class InvestController extends Controller
                 continue;
             } else {
                 $set['question'] = $sheet[$i]['cau_hoi'];
+                $set['image'] = $sheet[$i]['anh'];
                 $set['true'] = $this->checkPercentage($sheet[$i]['dung']);
                 $set['false1'] = $this->checkPercentage($sheet[$i]['sai1']);
                 $set['false2'] = $this->checkPercentage($sheet[$i]['sai2']);
@@ -168,14 +169,12 @@ class InvestController extends Controller
         $member->save();
 
         //Update auth
-        Auth::user()->score = $correct;
         Auth::user()->status = 1;
 
         //Mail to notice result
         if ((!empty($member))&&(!empty($member->email))) {
             Mail::to($member->email)->queue(new NoticeResult(array(
                 'name'=>$member->name,
-                'score' => $member->score
             )));
         }
 
@@ -221,10 +220,11 @@ class InvestController extends Controller
         foreach ($temp_list_question as $key=>$temp_question) {
             $true = $temp_question['true'];
 
-            $array_answer = [$temp_question['true'],$temp_question['false1'],$temp_question['false2'],$temp_question['false3']];
+            $array_answer = [$temp_question['image'],$temp_question['true'],$temp_question['false1'],$temp_question['false2'],$temp_question['false3']];
 
             //Save list question
             $obj_ques['question'] = $temp_question['question'];
+            $obj_ques['image'] = $temp_question['image'];
             shuffle($array_answer);
             $obj_ques['answer'] = $array_answer;
             array_push($final_list_question,$obj_ques);
@@ -405,5 +405,18 @@ class InvestController extends Controller
         return $result;
     }
 
+
+    public function testcase(Request $request)
+    {
+        if (!empty($request->flag) && Auth::check()) {
+            Auth::logout();
+            return view('administrator.test');
+        }
+        if (Auth::check()) {
+            $member = Auth::user();
+            return view('administrator.test',compact('member'));
+        }
+        return view('administrator.test');
+    }
 }
 

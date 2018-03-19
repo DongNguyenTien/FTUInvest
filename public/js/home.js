@@ -108,7 +108,7 @@ function validateData() {
 
     $('input[type=text]').each(function(){
         $(this).css('border','1px solid black');
-        if ($(this).val() == "") {
+        if ($(this).val() == "" && $(this).attr('name')!== "facebook") {
             flag = 1;
             $(this).effect( "bounce" );
             $(this).css('border','1px solid red');

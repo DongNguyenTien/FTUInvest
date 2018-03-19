@@ -5,11 +5,320 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/actionAdmin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/logo-01.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/LICENSE.TXT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/changelog.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/UploadHandler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/ajax_calls.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/config/.htaccess" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/config/config.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/jquery.fileupload-noscript.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/jquery.fileupload-ui-noscript.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/jquery.fileupload-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/jquery.fileupload.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/rtl-style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/dialog.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/execute.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/force_download.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/clipboard_apply.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/clipboard_clear.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/copy.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/cut.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/date.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/dimension.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/down.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/download.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/duplicate.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/edit_img.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/file_edit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/glyphicons-halflings-white.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/glyphicons-halflings.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ac3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/accdb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ade.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/adp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ai.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/aiff.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/avi.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/bmp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/c4d.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/css.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/csv.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/default.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/dmg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/doc.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/docx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/dwg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/dxf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/fla.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/flv.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/folder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/folder_back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/gif.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/gz.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/html.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/iso.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/jpeg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/jpg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/log.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/m4a.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mdb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mid.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mov.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mp3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mp4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mpeg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/mpg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/odb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/odf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/odg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/odp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ods.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/odt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ogg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/otg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/otp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ots.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ott.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/pdf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/png.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/ppt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/pptx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/psd.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/rar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/rtf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/skp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/sql.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/stp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/svg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/tar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/tiff.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/txt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/vwx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/wav.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/webm.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/wma.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/xhtml.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/xls.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/xlsx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/xml.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico/zip.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ac3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/accdb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ade.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/adp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ai.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/aiff.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/avi.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/bmp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/css.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/csv.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/default.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/dmg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/doc.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/docx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/fla.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/flv.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/folder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/folder_back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/gif.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/gz.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/html.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/iso.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/jpeg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/jpg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/log.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/m4a.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mdb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mid.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mov.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mp3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mp4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mpeg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/mpg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/odb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/odf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/odg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/odp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ods.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/odt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ogg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/otg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/otp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ots.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ott.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/pdf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/png.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/ppt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/pptx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/psd.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/rar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/rtf.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/sql.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/svg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/tar.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/tiff.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/txt.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/wav.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/webm.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/wma.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/xhtml.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/xls.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/xlsx.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/xml.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/ico_dark/zip.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/info.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/key.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/label.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/preview.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/processing.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/rename.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/size.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/sort.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/storing_animation.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/trans.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/up.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/upload.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/url.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/img/zip.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/FtpClient.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/FtpException.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/FtpWrapper.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/Response.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/ftp_class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/mime_type_lib.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/php_image_magician.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/utils.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/cors/jquery.postmessage-transport.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/cors/jquery.xdr-transport.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/include.commercial.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/include.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/MIT-LICENSE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/Jplayer.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/Jplayer.fla" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/ConnectManager.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/JplayerEvent.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/JplayerMp3.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/JplayerMp4.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/JplayerRtmp.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/JplayerStatus.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/actionscript/happyworm/jPlayer/TraceOut.as" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/add-on/jplayer.playlist.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/add-on/jplayer.playlist.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/add-on/jquery.jplayer.inspector.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/add-on/jquery.jplayer.inspector.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jplayer.jquery.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jplayer/jquery.jplayer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jplayer/jquery.jplayer.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jplayer/jquery.jplayer.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jquery.jplayer/Jplayer.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/jquery.jplayer/jquery.jplayer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/popcorn/popcorn.jplayer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/popcorn/popcorn.jplayer.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/css/jplayer.blue.monday.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/css/jplayer.blue.monday.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/image/jplayer.blue.monday.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/image/jplayer.blue.monday.seeking.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/image/jplayer.blue.monday.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.seeking.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/jplayer.blue.monday.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.audio.playlist.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.audio.single.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.audio.stream.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.video.playlist.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/mustache/jplayer.blue.monday.video.single.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/blue.monday/skin.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/css/jplayer.pink.flag.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/css/jplayer.pink.flag.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/image/jplayer.pink.flag.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/image/jplayer.pink.flag.seeking.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/image/jplayer.pink.flag.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.audio.playlist.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.audio.single.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.audio.stream.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.video.playlist.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin/pink.flag/mustache/jplayer.pink.flag.video.single.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/blue.monday/jplayer.blue.monday.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/blue.monday/jplayer.blue.monday.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/blue.monday/jplayer.blue.monday.seeking.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/blue.monday/jplayer.blue.monday.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/blue.monday/skin.handlebars" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/pink.flag/jplayer.pink.flag.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/pink.flag/jplayer.pink.flag.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/pink.flag/jplayer.pink.flag.seeking.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jPlayer/skin_ol/pink.flag/jplayer.pink.flag.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-angular.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-audio.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-image.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-jquery-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-process.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-validate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload-video.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.fileupload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/jquery.iframe-transport.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/modernizr.custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/js/plugins.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/az_AZ.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/bg_BG.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/ca.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/cs.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/da.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/de.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/el_GR.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/en_EN.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/es.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/fa.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/fr_FR.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/he_IL.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/hr.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/hu_HU.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/id.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/it.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/ja.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/languages.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/lt.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/mn_MN.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/nb_NO.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/nl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/nn_NO.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/pl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/pt_BR.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/pt_PT.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/ro.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/ru.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/sk.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/sl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/sv_SE.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/th_TH.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/tr_TR.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/uk_UA.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/vi.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/lang/zh_CN.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/filemanager/upload.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/source/source.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/thumbs/thumbs.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/tinymce/plugins/responsivefilemanager/img/insertfile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/responsive_filemanager/tinymce/plugins/responsivefilemanager/plugin.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/administrator/test.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/administrator/upload.blade.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InvestController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvestController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/NoticeResult.php" afterPath="$PROJECT_DIR$/app/Mail/NoticeResult.php" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ResetPassword.php" afterPath="$PROJECT_DIR$/app/Mail/ResetPassword.php" />
       <change beforePath="$PROJECT_DIR$/app/Model/Member.php" afterPath="$PROJECT_DIR$/app/Model/Member.php" />
       <change beforePath="$PROJECT_DIR$/public/access.log" afterPath="$PROJECT_DIR$/public/access.log" />
       <change beforePath="$PROJECT_DIR$/public/admin-lte/Ionicons/css/ionicons.css" afterPath="$PROJECT_DIR$/public/admin-lte/Ionicons/css/ionicons.css" />
@@ -3334,11 +3643,37 @@
       <change beforePath="$PROJECT_DIR$/public/admin-lte/plugins/waitMe/waitMe.min.js" afterPath="$PROJECT_DIR$/public/admin-lte/plugins/waitMe/waitMe.min.js" />
       <change beforePath="$PROJECT_DIR$/public/admin-lte/tag/bootstrap-tagsinput.css" afterPath="$PROJECT_DIR$/public/admin-lte/tag/bootstrap-tagsinput.css" />
       <change beforePath="$PROJECT_DIR$/public/admin-lte/tag/bootstrap-tagsinput.js" afterPath="$PROJECT_DIR$/public/admin-lte/tag/bootstrap-tagsinput.js" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/public/error.log" afterPath="$PROJECT_DIR$/public/error.log" />
+      <change beforePath="$PROJECT_DIR$/public/excel/data.json" afterPath="$PROJECT_DIR$/public/excel/data.json" />
+      <change beforePath="$PROJECT_DIR$/public/excel/test.xlsx" afterPath="$PROJECT_DIR$/public/excel/test.xlsx" />
+      <change beforePath="$PROJECT_DIR$/public/html/css/style.css" afterPath="$PROJECT_DIR$/public/html/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/public/html/dethi.html" afterPath="$PROJECT_DIR$/public/html/dethi.html" />
+      <change beforePath="$PROJECT_DIR$/public/html/doitac.html" afterPath="$PROJECT_DIR$/public/html/doitac.html" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/bg-doitac.png" afterPath="$PROJECT_DIR$/public/html/images/bg-doitac.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/bieudo.png" afterPath="$PROJECT_DIR$/public/html/images/bieudo.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/dvbttt.png" afterPath="$PROJECT_DIR$/public/html/images/dvbttt.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/dvdh.png" afterPath="$PROJECT_DIR$/public/html/images/dvdh.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/dvttdl.png" afterPath="$PROJECT_DIR$/public/html/images/dvttdl.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/logoBTC.png" afterPath="$PROJECT_DIR$/public/html/images/logoBTC.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/nbtcm.png" afterPath="$PROJECT_DIR$/public/html/images/nbtcm.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/nttd.png" afterPath="$PROJECT_DIR$/public/html/images/nttd.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/nttkc.png" afterPath="$PROJECT_DIR$/public/html/images/nttkc.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/images/timeline.png" afterPath="$PROJECT_DIR$/public/html/images/timeline.png" />
+      <change beforePath="$PROJECT_DIR$/public/html/tongquan.html" afterPath="$PROJECT_DIR$/public/html/tongquan.html" />
+      <change beforePath="$PROJECT_DIR$/public/js/actionAdmin.js" afterPath="$PROJECT_DIR$/public/js/actionAdmin.js" />
       <change beforePath="$PROJECT_DIR$/public/js/home.js" afterPath="$PROJECT_DIR$/public/js/home.js" />
       <change beforePath="$PROJECT_DIR$/resources/views/administrator/action.blade.php" afterPath="$PROJECT_DIR$/resources/views/administrator/action.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/administrator/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/administrator/login.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/administrator/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/administrator/reset.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/invest/challenge.blade.php" afterPath="$PROJECT_DIR$/resources/views/invest/challenge.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/invest/doitac.blade.php" afterPath="$PROJECT_DIR$/resources/views/invest/doitac.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/invest/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/invest/home.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/invest/score.blade.php" afterPath="$PROJECT_DIR$/resources/views/invest/score.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/invest/tongquan.blade.php" afterPath="$PROJECT_DIR$/resources/views/invest/tongquan.blade.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/mailResult.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/mailResult.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -3362,10 +3697,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dataRows</find>
-      <find>-&gt;getActiveSheet()</find>
-      <find>drawing</find>
-      <find>image</find>
       <find>setCellValue</find>
       <find>loading</find>
       <find>hour</find>
@@ -3392,6 +3723,10 @@
       <find>ran</find>
       <find>DIR.'/../public',</find>
       <find>momen</find>
+      <find>fancy</find>
+      <find>500</find>
+      <find>thumbs_base_path</find>
+      <find>Internal Server Error</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -3400,6 +3735,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/public/responsive_filemanager/filemanager</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -3418,10 +3754,7 @@
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/public/js/init.js" />
-        <option value="$PROJECT_DIR$/resources/views/invest/score.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/user/sendEmail.blade.php" />
-        <option value="$PROJECT_DIR$/app/Mail/NoticeResult.php" />
-        <option value="$PROJECT_DIR$/resources/views/user/mailResult.blade.php" />
         <option value="$PROJECT_DIR$/config/excel.php" />
         <option value="$PROJECT_DIR$/app/MyValueBinder.php" />
         <option value="$PROJECT_DIR$/public/html/doitac.html" />
@@ -3432,18 +3765,25 @@
         <option value="$PROJECT_DIR$/app/Mail/ResetPassword.php" />
         <option value="$PROJECT_DIR$/resources/views/administrator/reset.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/administrator/login.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InvestController.php" />
         <option value="$PROJECT_DIR$/public/js/actionAdmin.js" />
+        <option value="$PROJECT_DIR$/resources/views/administrator/upload.blade.php" />
+        <option value="$PROJECT_DIR$/public/responsive_filemanager/filemanager/config/config.php" />
         <option value="$PROJECT_DIR$/resources/views/administrator/action.blade.php" />
-        <option value="$PROJECT_DIR$/app/Model/Member.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/invest/challenge.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/js/home.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Model/Member.php" />
+        <option value="$PROJECT_DIR$/resources/views/administrator/test.blade.php" />
+        <option value="$PROJECT_DIR$/app/Mail/NoticeResult.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/mailResult.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InvestController.php" />
+        <option value="$PROJECT_DIR$/resources/views/invest/score.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/invest/home.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/public/html/dethi.html" />
       </list>
     </option>
   </component>
@@ -3536,9 +3876,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="288" />
+    <option name="x" value="153" />
     <option name="y" value="23" />
-    <option name="width" value="1632" />
+    <option name="width" value="1767" />
     <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -3557,8 +3897,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3569,37 +3907,19 @@
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
@@ -3611,6 +3931,13 @@
               <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="administrator" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
@@ -3622,12 +3949,21 @@
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3636,15 +3972,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/admin-lte/plugins" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/public/js" />
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3680,28 +4016,29 @@
       <workItem from="1521274510464" duration="1031000" />
       <workItem from="1521275630397" duration="12548000" />
       <workItem from="1521355905821" duration="24132000" />
-      <workItem from="1521429832235" duration="4683000" />
+      <workItem from="1521429832235" duration="10823000" />
+      <workItem from="1521449008631" duration="3549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97102000" />
+    <option name="totallyTimeSpent" value="106791000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="23" width="1632" height="1007" extended-state="0" />
+    <frame x="153" y="23" width="1767" height="1007" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3308176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21449275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2792453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27884057" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2138158" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -3745,113 +4082,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/user/mailResult.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Facades/Excel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Classes/PHPExcel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Readers/ConfigReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="713" column="17" lean-forward="false" selection-start-line="713" selection-start-column="17" selection-end-line="713" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/AdvancedValueBinder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="102" column="31" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Excel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Maatwebsite/Excel/Readers/LaravelExcelReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14985">
-          <caret line="1010" column="28" lean-forward="false" selection-start-line="1010" selection-start-column="28" selection-end-line="1010" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyValueBinder.php" />
-    <entry file="file://$PROJECT_DIR$/public/html/doitac.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="57" column="83" lean-forward="true" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/NumberFormat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/components/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/html/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/invest/tongquan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/html/tongquan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="85" column="126" lean-forward="false" selection-start-line="85" selection-start-column="126" selection-end-line="85" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/mail/markdown/button.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/mail/markdown/subcopy.blade.php" />
     <entry file="file://$PROJECT_DIR$/public/html/images/bg.jpg">
       <provider selected="true" editor-type-id="images">
@@ -3890,6 +4120,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3902,13 +4133,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/server.php" />
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="405" column="1" lean-forward="false" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/administrator/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -3942,6 +4166,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3973,18 +4198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="70" lean-forward="false" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/css-selector/XPath/Translator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="92" column="94" lean-forward="false" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3992,7 +4209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4000,7 +4216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4008,7 +4223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
           <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4016,159 +4230,331 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#165#247#0#HTML" expanded="false" />
-            <marker date="1521358014631" expanded="true" signature="9:17" ph="..." />
-            <marker date="1521358014631" expanded="true" signature="28:45" ph="..." />
-            <marker date="1521358014631" expanded="true" signature="56:65" ph="..." />
-            <marker date="1521358014631" expanded="true" signature="294:329" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/source/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/administrator/upload.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/excel/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/config/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/ajax_calls.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="455" column="42" lean-forward="false" selection-start-line="455" selection-start-column="42" selection-end-line="455" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/administrator/action.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="296">
+          <caret line="106" column="58" lean-forward="true" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
           <folding>
-            <marker date="1521432297485" expanded="true" signature="9:17" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="28:51" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="62:71" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="242:263" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="242:264" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="3735:3744" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="3788:3814" ph="..." />
-            <marker date="1521432297485" expanded="true" signature="3818:3843" ph="..." />
+            <element signature="e#134#154#0#HTML" expanded="false" />
+            <marker date="1521441830301" expanded="true" signature="9:17" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="28:51" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="62:71" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="242:263" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="242:264" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="3934:3943" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="3987:4013" ph="..." />
+            <marker date="1521441830301" expanded="true" signature="4046:4109" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding>
-            <marker date="1521434336000" expanded="true" signature="372:379" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="600:614" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="658:710" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="777:835" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1098:1121" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1177:1202" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1298:1348" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1610:1663" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1705:1753" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1793:1836" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="1903:1949" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2030:2094" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2135:2199" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2265:2313" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2354:2421" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2468:2516" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2579:2625" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="2871:2935" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="3451:3479" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="3717:3736" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="3941:3950" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4010:4029" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4201:4242" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4297:4347" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4376:4444" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4473:4500" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4566:4630" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4659:4726" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4781:4813" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4842:4891" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="4937:4958" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5002:5051" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5102:5149" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5197:5244" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5273:5333" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5386:5449" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5478:5543" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5609:5672" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5701:5745" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5774:5828" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5857:5916" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="5964:6013" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6042:6090" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6119:6174" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6203:6255" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6284:6343" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6390:6411" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6440:6485" ph="..." />
-            <marker date="1521434336000" expanded="true" signature="6507:6516" ph="..." />
-          </folding>
+        <state relative-caret-position="271">
+          <caret line="90" column="79" lean-forward="true" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/Member.php">
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/include/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvestController.php">
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/UploadHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="385">
+          <caret line="95" column="36" lean-forward="true" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/public/responsive_filemanager/filemanager/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="68" column="39" lean-forward="true" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="-235">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/invest/challenge.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="130" column="67" lean-forward="true" selection-start-line="130" selection-start-column="67" selection-end-line="130" selection-end-column="67" />
+        <state relative-caret-position="212">
+          <caret line="62" column="52" lean-forward="true" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
           <folding>
-            <marker date="1521435487191" expanded="true" signature="9:17" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="28:47" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="58:67" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="1688:1710" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="1759:1771" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="1813:1822" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="2109:2118" ph="..." />
-            <marker date="1521435487191" expanded="true" signature="2211:2227" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="9:17" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="28:47" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="58:67" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="1688:1710" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="1759:1771" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="1813:1822" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="2109:2118" ph="..." />
+            <marker date="1521448421075" expanded="true" signature="2211:2227" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="101" column="3" lean-forward="true" selection-start-line="101" selection-start-column="3" selection-end-line="101" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/administrator/test.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1919">
+          <caret line="288" column="49" lean-forward="true" selection-start-line="288" selection-start-column="49" selection-end-line="288" selection-end-column="49" />
+          <folding>
+            <element signature="e#3942#3949#1#HTML" expanded="false" />
+            <marker date="1521451577261" expanded="true" signature="9:17" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="28:47" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="58:67" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="200:232" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="1336:1368" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="3060:3074" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="10715:10728" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="11231:11244" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="11505:11525" ph="..." />
+            <marker date="1521451577261" expanded="true" signature="12149:12158" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/user/mailResult.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <marker date="1521452018755" expanded="true" signature="17:24" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/NoticeResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1521452448986" expanded="true" signature="372:379" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="600:614" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="671:692" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="734:786" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="853:911" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1174:1197" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1253:1278" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1374:1424" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1686:1739" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1781:1829" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1869:1912" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="1979:2025" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2106:2170" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2211:2275" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2341:2389" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2430:2497" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2544:2592" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2655:2701" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="2947:3011" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="3527:3555" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="3793:3812" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4017:4026" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4086:4105" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4277:4318" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4373:4423" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4452:4520" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4549:4576" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4642:4706" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4735:4802" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4857:4889" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="4918:4967" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5013:5034" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5078:5127" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5178:5225" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5273:5320" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5349:5409" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5462:5525" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5554:5619" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5685:5748" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5777:5821" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5850:5904" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="5933:5992" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6040:6089" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6118:6166" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6195:6250" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6279:6331" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6360:6419" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6466:6487" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6516:6561" ph="..." />
+            <marker date="1521452448986" expanded="true" signature="6583:6592" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/invest/score.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1521452152139" expanded="true" signature="9:17" ph="..." />
+            <marker date="1521452152139" expanded="true" signature="28:47" ph="..." />
+            <marker date="1521452152139" expanded="true" signature="58:67" ph="..." />
+            <marker date="1521452152139" expanded="true" signature="728:737" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="438" column="16" lean-forward="false" selection-start-line="438" selection-start-column="5" selection-end-line="438" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/html/dethi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="195" column="34" lean-forward="false" selection-start-line="195" selection-start-column="34" selection-end-line="195" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/invest/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="214" column="15" lean-forward="true" selection-start-line="214" selection-start-column="15" selection-end-line="214" selection-end-column="15" />
+        <state relative-caret-position="346">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
-            <marker date="1521436293506" expanded="true" signature="9:17" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="28:47" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="58:67" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="200:232" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="1340:1372" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="3100:3114" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="9711:9724" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="10227:10240" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="10501:10521" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="11149:11158" ph="..." />
-            <marker date="1521436293506" expanded="true" signature="11202:11226" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="9:17" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="28:47" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="58:67" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="200:232" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="1340:1372" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="3074:3088" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="9682:9695" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="10198:10211" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="10472:10492" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="11120:11129" ph="..." />
+            <marker date="1521452919526" expanded="true" signature="11173:11197" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -34,7 +34,6 @@ class NoticeResult extends Mailable
             ->view('user.mailResult')
             ->with([
                 'name'=>$this->data['name'],
-                'score' => $this->data['score'],
             ]);
     }
 }

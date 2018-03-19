@@ -426,3 +426,45 @@ td.time {
 .table-layout a {
 	font-size: 15px !important;
 }
+
+.list-button {
+	margin-right: 10px;
+}
+
+.table-clock {
+	width: 70%;margin-left: 15%;
+}
+
+@media screen and (max-width: 480px) {
+	.table-clock {
+		width: 100%;
+		margin-left: 0;
+
+	}
+	.table-clock h2 {
+		display: none;
+	}
+	.clock{
+		font-size: 30px;
+	}
+	.after-clock {
+		font-size: 30px !important;
+	}
+	.text-left, .text-right {
+		display: none;
+	}
+
+}
+@media screen and (max-width: 640px) {
+
+}
+@media screen and (max-width: 768px) {
+	.table-clock {
+		width: 100%;
+		margin-left: 0;
+		border: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+
+}
