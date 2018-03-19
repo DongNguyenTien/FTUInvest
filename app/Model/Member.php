@@ -30,7 +30,10 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
      */
     public static function registerMember($params)
     {
-
+        //Custom link fb
+        if (!preg_match('/^(http:|https:)\/\/?.*/',$params['facebook'])) {
+            $params['facebook'] = 'https://'.$params['facebook'];
+        }
 
         $random = mt_rand(100000, 999999);
 
@@ -44,7 +47,7 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
             'speciality' => $params['speciality'],
             'course' => $params['course'],
             'MSSV' => $params['MSSV'],
-            'facebook' => $params['dateOfBirth'],
+            'facebook' => $params['facebook'],
             'CV' => $params['CV'],
             'identification' => $params['identification'],
             'status' => 0,

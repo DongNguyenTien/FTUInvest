@@ -85,9 +85,8 @@ class UserController extends Controller
             ];
 
         }
-        catch(Exception $ex){
+        catch(\Exception $ex){
             DB::rollback();
-            Log::alert($ex);
             return $result = [
                 "success" => 0,
                 "messages" => $ex->getMessage()

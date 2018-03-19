@@ -1770,3 +1770,260 @@
 127.0.0.1 - - [18/Mar/2018:21:08:19 +0700] "GET /doitac HTTP/1.1" 200 9184
 127.0.0.1 - - [18/Mar/2018:21:08:19 +0700] "GET /html/images/bg-doitac.png HTTP/1.1" 304 -
 127.0.0.1 - - [18/Mar/2018:21:08:21 +0700] "GET / HTTP/1.1" 200 14023
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /admin-lte/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 121200
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /admin-lte/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /admin-lte/ionicons/css/ionicons.min.css HTTP/1.1" 200 51284
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /css/style.css HTTP/1.1" 200 7228
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /css/loading.css HTTP/1.1" 200 105801
+127.0.0.1 - - [18/Mar/2018:22:23:29 +0700] "GET /admin-lte/dist/css/skins/skin-blue.min.css HTTP/1.1" 200 3037
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/iCheck/all.css HTTP/1.1" 200 1568
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/iCheck/line/blue.css HTTP/1.1" 200 2222
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/tag/bootstrap-tagsinput.css HTTP/1.1" 200 1317
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/daterangepicker/daterangepicker.css HTTP/1.1" 200 6666
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/datatables/dataTables.bootstrap.css HTTP/1.1" 200 8829
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/viewbox/viewbox.css HTTP/1.1" 200 2544
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/dist/css/bootstrap-datetimepicker.min.css HTTP/1.1" 200 7785
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/select2/select2.css HTTP/1.1" 200 17620
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/waitMe/waitMe.css HTTP/1.1" 200 15284
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/fancybox/dist/jquery.fancybox.min.css HTTP/1.1" 200 13735
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /html/images/quoteL.png HTTP/1.1" 200 9401
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /html/images/logo.png HTTP/1.1" 200 42873
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /html/images/quoteR.png HTTP/1.1" 200 9494
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 200 2065
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/jqueryValidation/jquery.validate.min.js HTTP/1.1" 200 23261
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 37045
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/jquery/jquery.min.js HTTP/1.1" 200 86659
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /js/notify.min.js HTTP/1.1" 200 13780
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 200 79881
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /js/jquery.countdown.js HTTP/1.1" 200 10006
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/iCheck/icheck.min.js HTTP/1.1" 200 4516
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/dist/js/moment-with-locales.min.js HTTP/1.1" 200 249778
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /js/prism.js HTTP/1.1" 200 18549
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/tag/bootstrap-tagsinput.js HTTP/1.1" 200 21104
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/dist/js/adminlte.min.js HTTP/1.1" 200 12819
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/dist/js/bootstrap-datetimepicker.min.js HTTP/1.1" 200 38510
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/daterangepicker/daterangepicker.js HTTP/1.1" 200 64795
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/select2/select2.js HTTP/1.1" 200 141934
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/datepicker/bootstrap-datepicker.js HTTP/1.1" 200 46838
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/jqueryUI/jquery-ui.js HTTP/1.1" 200 470596
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/viewbox/jquery.viewbox.js HTTP/1.1" 200 8397
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/gdoc/jquery.gdocsviewer.min.js HTTP/1.1" 200 747
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/flot/jquery.flot.categories.js HTTP/1.1" 200 6033
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/flot/jquery.flot.pie.js HTTP/1.1" 200 23635
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/chartjs/Chart.min.js HTTP/1.1" 200 57275
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/flot/jquery.flot.js HTTP/1.1" 200 121627
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /js/init.js HTTP/1.1" 200 273
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/flot/jquery.flot.resize.js HTTP/1.1" 200 3135
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /admin-lte/plugins/waitMe/waitMe.js HTTP/1.1" 200 8910
+127.0.0.1 - - [18/Mar/2018:22:23:30 +0700] "GET /js/home.js HTTP/1.1" 200 2760
+127.0.0.1 - - [19/Mar/2018:00:05:46 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:00:05:46 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:00:05:46 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:00:05:46 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:00:07:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:26:04 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /css/loading.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/iCheck/line/blue.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/tag/bootstrap-tagsinput.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/daterangepicker/daterangepicker.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/datatables/dataTables.bootstrap.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/viewbox/viewbox.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/dist/css/bootstrap-datetimepicker.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/select2/select2.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/waitMe/waitMe.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/fancybox/dist/jquery.fancybox.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /html/images/quoteL.png HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /html/images/logo.png HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /html/images/quoteR.png HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/jqueryValidation/jquery.validate.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /js/notify.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/datatables/jquery.dataTables.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/datatables/dataTables.bootstrap.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/jqueryUI/jquery-ui.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /js/prism.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/iCheck/icheck.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/tag/bootstrap-tagsinput.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/select2/select2.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/dist/js/moment-with-locales.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/datepicker/bootstrap-datepicker.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/dist/js/bootstrap-datetimepicker.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/daterangepicker/daterangepicker.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/dist/js/adminlte.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/viewbox/jquery.viewbox.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/gdoc/jquery.gdocsviewer.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/chartjs/Chart.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/flot/jquery.flot.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/flot/jquery.flot.resize.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/flot/jquery.flot.pie.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/flot/jquery.flot.categories.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /js/init.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/plugins/waitMe/waitMe.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /html/images/bg.jpg HTTP/1.1" 200 260215
+127.0.0.1 - - [19/Mar/2018:10:26:05 +0700] "GET /admin-lte/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:06 +0700] "GET /admin-lte/ionicons/css/ionicons.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:06 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /administrator HTTP/1.1" 200 10203
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/dist/css/skins/skin-blue.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/all.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/square/_all.css HTTP/1.1" 200 15591
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/minimal/_all.css HTTP/1.1" 200 14176
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/flat/_all.css HTTP/1.1" 200 13773
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/futurico/futurico.css HTTP/1.1" 200 1421
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/line/_all.css HTTP/1.1" 200 21689
+127.0.0.1 - - [19/Mar/2018:10:26:07 +0700] "GET /admin-lte/plugins/iCheck/polaris/polaris.css HTTP/1.1" 200 1557
+127.0.0.1 - - [19/Mar/2018:10:26:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:10:26:16 +0700] "POST /administrator/action HTTP/1.1" 302 376
+127.0.0.1 - - [19/Mar/2018:10:26:16 +0700] "GET /administrator HTTP/1.1" 200 10203
+127.0.0.1 - - [19/Mar/2018:10:26:24 +0700] "POST /administrator/action HTTP/1.1" 302 404
+127.0.0.1 - - [19/Mar/2018:10:26:24 +0700] "GET /administrator/action HTTP/1.1" 200 14929
+127.0.0.1 - - [19/Mar/2018:10:26:25 +0700] "GET /admin-lte/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+127.0.0.1 - - [19/Mar/2018:10:26:25 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:10:26:27 +0700] "GET /download/data HTTP/1.1" 200 6912
+127.0.0.1 - - [19/Mar/2018:10:47:12 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [19/Mar/2018:10:47:13 +0700] "GET /admin-lte/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+127.0.0.1 - - [19/Mar/2018:10:47:13 +0700] "GET /admin-lte/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+127.0.0.1 - - [19/Mar/2018:10:47:15 +0700] "GET /administrator HTTP/1.1" 500 77723
+127.0.0.1 - - [19/Mar/2018:10:47:32 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:47:32 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:47:32 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:47:32 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:47:32 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:47:35 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:10:56:53 +0700] "GET /administrator HTTP/1.1" 200 15262
+127.0.0.1 - - [19/Mar/2018:10:56:54 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:10:59:32 +0700] "GET /administrator HTTP/1.1" 200 15262
+127.0.0.1 - - [19/Mar/2018:10:59:33 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:03:33 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:03:33 +0700] "GET /js/actionAdmin.js HTTP/1.1" 200 2244
+127.0.0.1 - - [19/Mar/2018:11:03:34 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:03:41 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:03:41 +0700] "GET /js/actionAdmin.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:03:41 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:03:41 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:03:53 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:03:53 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:03:53 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:03:53 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:04:01 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:04:13 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:04:13 +0700] "GET /js/actionAdmin.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:04:14 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:04:17 +0700] "GET /administrator HTTP/1.1" 200 15442
+127.0.0.1 - - [19/Mar/2018:11:04:17 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:04:57 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:04:58 +0700] "GET /js/actionAdmin.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:04:58 +0700] "GET /ajax/member HTTP/1.1" 200 695
+127.0.0.1 - - [19/Mar/2018:11:05:01 +0700] "GET /2018-03-18%2000:00:00 HTTP/1.1" 404 33170
+127.0.0.1 - - [19/Mar/2018:11:05:12 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:05:12 +0700] "GET /js/actionAdmin.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:05:12 +0700] "GET /ajax/member HTTP/1.1" 200 657
+127.0.0.1 - - [19/Mar/2018:11:05:14 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:05:15 +0700] "GET /ajax/member HTTP/1.1" 200 657
+127.0.0.1 - - [19/Mar/2018:11:05:26 +0700] "GET /administrator HTTP/1.1" 200 12683
+127.0.0.1 - - [19/Mar/2018:11:05:27 +0700] "GET /js/actionAdmin.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:05:27 +0700] "GET /ajax/member HTTP/1.1" 200 661
+127.0.0.1 - - [19/Mar/2018:11:21:17 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [19/Mar/2018:11:21:22 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [19/Mar/2018:11:21:22 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:21:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:21:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:21:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:21:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:21:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:22:57 +0700] "POST /register HTTP/1.1" 500 87640
+127.0.0.1 - - [19/Mar/2018:11:23:18 +0700] "POST /register HTTP/1.1" 500 87640
+127.0.0.1 - - [19/Mar/2018:11:23:33 +0700] "POST /register HTTP/1.1" 500 102058
+127.0.0.1 - - [19/Mar/2018:11:24:41 +0700] "POST /register HTTP/1.1" 500 102058
+127.0.0.1 - - [19/Mar/2018:11:27:32 +0700] "GET / HTTP/1.1" 200 18683
+127.0.0.1 - - [19/Mar/2018:11:27:54 +0700] "POST /register HTTP/1.1" 500 87550
+127.0.0.1 - - [19/Mar/2018:11:29:10 +0700] "POST /register HTTP/1.1" 500 87550
+127.0.0.1 - - [19/Mar/2018:11:31:17 +0700] "POST /register HTTP/1.1" 500 47357
+127.0.0.1 - - [19/Mar/2018:11:31:40 +0700] "POST /register HTTP/1.1" 500 47357
+127.0.0.1 - - [19/Mar/2018:11:32:05 +0700] "POST /register HTTP/1.1" 200 260
+127.0.0.1 - - [19/Mar/2018:11:33:17 +0700] "POST /register HTTP/1.1" 200 260
+127.0.0.1 - - [19/Mar/2018:11:33:25 +0700] "POST /register HTTP/1.1" 200 260
+127.0.0.1 - - [19/Mar/2018:11:37:59 +0700] "POST /register HTTP/1.1" 200 83
+127.0.0.1 - - [19/Mar/2018:11:38:06 +0700] "POST /register HTTP/1.1" 200 109
+127.0.0.1 - - [19/Mar/2018:11:38:14 +0700] "POST /register HTTP/1.1" 200 13
+127.0.0.1 - - [19/Mar/2018:11:38:18 +0700] "GET /challenge HTTP/1.1" 200 36162
+127.0.0.1 - - [19/Mar/2018:11:49:51 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:50:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:50:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:50:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:50:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:50:11 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:51:41 +0700] "GET /?flag=1 HTTP/1.1" 200 18681
+127.0.0.1 - - [19/Mar/2018:11:51:55 +0700] "POST /register HTTP/1.1" 200 13
+127.0.0.1 - - [19/Mar/2018:11:51:58 +0700] "GET /challenge HTTP/1.1" 200 35501
+127.0.0.1 - - [19/Mar/2018:11:52:10 +0700] "POST /result HTTP/1.1" 302 376
+127.0.0.1 - - [19/Mar/2018:11:52:13 +0700] "GET /member/result HTTP/1.1" 200 9665
+127.0.0.1 - - [19/Mar/2018:11:55:03 +0700] "GET /member/result HTTP/1.1" 200 9665
+127.0.0.1 - - [19/Mar/2018:11:55:03 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:55:03 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:55:08 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:55:21 +0700] "GET /?flag=1 HTTP/1.1" 200 18681
+127.0.0.1 - - [19/Mar/2018:11:55:40 +0700] "POST /register HTTP/1.1" 200 108
+127.0.0.1 - - [19/Mar/2018:11:55:44 +0700] "POST /register HTTP/1.1" 200 13
+127.0.0.1 - - [19/Mar/2018:11:55:48 +0700] "GET /challenge HTTP/1.1" 200 35328
+127.0.0.1 - - [19/Mar/2018:11:57:29 +0700] "POST /result HTTP/1.1" 302 376
+127.0.0.1 - - [19/Mar/2018:11:57:33 +0700] "GET /member/result HTTP/1.1" 200 9666
+127.0.0.1 - - [19/Mar/2018:11:58:08 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:58:39 +0700] "GET /js/home.js HTTP/1.1" 200 2735
+127.0.0.1 - - [19/Mar/2018:11:58:39 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:58:40 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:58:40 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:11:58:40 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:58:48 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:58:48 +0700] "GET /js/home.js HTTP/1.1" 200 2735
+127.0.0.1 - - [19/Mar/2018:11:58:48 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:58:58 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:58:58 +0700] "GET /js/home.js HTTP/1.1" 200 2735
+127.0.0.1 - - [19/Mar/2018:11:58:58 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:59:08 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:08 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:08 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:08 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:14 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:11:59:14 +0700] "GET /js/home.js HTTP/1.1" 200 2744
+127.0.0.1 - - [19/Mar/2018:11:59:14 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:11:59:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:11:59:34 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:12:04:47 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:04:47 +0700] "GET /js/home.js HTTP/1.1" 200 3739
+127.0.0.1 - - [19/Mar/2018:12:05:52 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:05:52 +0700] "GET /js/home.js HTTP/1.1" 200 3702
+127.0.0.1 - - [19/Mar/2018:12:06:18 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:06:18 +0700] "GET /js/home.js HTTP/1.1" 200 3737
+127.0.0.1 - - [19/Mar/2018:12:06:44 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:06:45 +0700] "GET /js/home.js HTTP/1.1" 200 3774
+127.0.0.1 - - [19/Mar/2018:12:07:10 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:07:10 +0700] "GET /js/home.js HTTP/1.1" 200 3682
+127.0.0.1 - - [19/Mar/2018:12:07:57 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:07:57 +0700] "GET /js/home.js HTTP/1.1" 200 3678
+127.0.0.1 - - [19/Mar/2018:12:08:00 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:08:00 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:12:08:10 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:12:08:10 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:12:08:11 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:08:29 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:08:29 +0700] "GET /js/home.js HTTP/1.1" 200 3679
+127.0.0.1 - - [19/Mar/2018:12:08:41 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:08:41 +0700] "GET /js/home.js HTTP/1.1" 200 3568
+127.0.0.1 - - [19/Mar/2018:12:09:03 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:09:03 +0700] "GET /js/home.js HTTP/1.1" 200 3226
+127.0.0.1 - - [19/Mar/2018:12:09:04 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:09:04 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:12:09:06 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:12:09:06 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [19/Mar/2018:12:09:07 +0700] "GET / HTTP/1.1" 200 14022
+127.0.0.1 - - [19/Mar/2018:12:09:08 +0700] "GET /js/home.js HTTP/1.1" 304 -
+127.0.0.1 - - [19/Mar/2018:12:09:26 +0700] "-" 408 -
+127.0.0.1 - - [19/Mar/2018:12:09:26 +0700] "-" 408 -

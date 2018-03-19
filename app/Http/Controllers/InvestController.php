@@ -264,6 +264,14 @@ class InvestController extends Controller
      */
     public function administrator()
     {
+        if (session()->has('admin')) {
+
+            $admin_session = \GuzzleHttp\json_decode(session('admin'),true);
+
+            if ($admin_session['check'] == md5(date('d/m/Y').$admin_session['admin'])) {
+                return view('administrator.action');
+            }
+        }
         return view('administrator.login');
     }
 
@@ -346,7 +354,7 @@ class InvestController extends Controller
     public function getListCandicate()
     {
         $allCandicate = Member::where('id','!=',1)
-            ->select(['id','name','dateOfBirth','facebook','email','phone','identification','score','university','speciality','course','CV'])->get();
+            ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])->get();
 
         return response()->json($allCandicate->toArray());
     }
@@ -358,12 +366,12 @@ class InvestController extends Controller
     {
         Excel::create('Thông tin thí sinh', function($excel) {
             $allCandicate = Member::where('id','!=',1)
-                ->select(['id','name','dateOfBirth','facebook','email','phone','identification','score','university','speciality','course','CV'])
+                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])
                 ->get()->toArray();
 
 
             $excel->setTitle('Thông tin thí sinh');
-            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Facebook','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV'];
+            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook'];
             array_unshift($allCandicate,$column);
 
 

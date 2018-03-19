@@ -12,14 +12,10 @@ $(document).ready(function(){
 });
 
 
-$('.clock').countdown('04/17/2018')
+$('.clock').countdown('03/19/2018 21:00:00')
     .on('update.countdown', function(event) {
-        var format = '%-H : %-M : %-S';
 
-        var totalDays= event.offset.weeks * 7 + event.offset.totalDays;
-        var hours = event.offset.hours;
-        var minutes = event.offset.minutes;
-        var seconds = event.offset.seconds;
+        var totalDays= event.offset.totalDays;
 
 
         $('span#countdown-day').html(totalDays);
@@ -27,12 +23,29 @@ $('.clock').countdown('04/17/2018')
         $('span#countdown-minute').html(event.strftime('%M'));
         $('span#countdown-second').html(event.strftime('%S'));
 
+        $('#btn-thuthach').prop('disabled',true);
 
     })
 
     .on('finish.countdown', function(event) {
-        $(this).html('This offer has expired!')
-            .parent().addClass('disabled');
+        $('#btn-thuthach').css('disable','');
+
+        $('.clock').countdown('04/05/2018')
+        .on('update.countdown', function(event) {
+            var totalDays= event.offset.totalDays;
+
+            $('span#countdown-day').html(totalDays);
+            $('span#countdown-hour').html(event.strftime('%H'));
+            $('span#countdown-minute').html(event.strftime('%M'));
+            $('span#countdown-second').html(event.strftime('%S'));
+
+
+        })
+            .on('finish.countdown', function(event) {
+                $('.table-responsive ').replaceWith('<h1>Thời gian thử thách đã kết thúc</h1>')
+                $('#btn-thuthach').remove();
+
+            });
 
     });
 

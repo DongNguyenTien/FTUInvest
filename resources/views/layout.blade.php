@@ -87,7 +87,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     body{
         background-image: url('{{asset('/html/images/bg.jpg')}}');
         background-size: contain;
-        background-repeat: repeat-y;
+        background-repeat: repeat;
         min-height: 800px;
         font-family: 'Roboto', sans-serif;
     }

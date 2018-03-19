@@ -128,6 +128,7 @@
 
 
                     $('.count-time').countdown(new Date(+now + 271e4))
+                    // $('.count-time').countdown(new Date(+now + 100000))
                         .on('update.countdown', function(event) {
                             var format = '%-M phút : %-S giây';
                             $(this).html(event.strftime(format));

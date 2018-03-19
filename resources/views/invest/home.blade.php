@@ -215,6 +215,6 @@
     @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{asset('/js/home.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/home.js?v=2')}}"></script>
 
     @endsection
