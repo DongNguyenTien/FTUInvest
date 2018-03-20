@@ -109,4 +109,65 @@ class UserController extends Controller
         }
         return implode('; ',$result);
     }
+
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function login()
+    {
+        return view('invest.login');
+    }
+
+    /**
+     * @param Request $request
+     * @return $this|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function loginPost(Request $request)
+    {
+        try{
+            //Validate data
+            $params = $request->all();
+            $validator = Validator::make($params,[
+                'phone'=>'required',
+                'email'=>['required','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
+                'password' => 'required',
+
+            ],[
+                'phone.required'=>'Số điện thoại không được để trống',
+                'email.required'=>'Họ về tên không được để trống',
+                'email.regex' => "Email không đúng định dạng",
+                'password.required' => 'Password không được để trống'
+            ]);
+
+            if($validator->fails()){
+                return redirect()->back()->withInput()->withErrors($validator->errors());
+            }
+
+
+
+            //Login
+            if (Auth::attempt(['phone' => $request->phone, 'email' => $request->email, 'password' => $request->password])) {
+                return redirect(route('challenge'));
+            }
+
+
+            return redirect()->back()->withInput()->withErrors(["Thông tin đăng nhập sai."]);
+
+        } catch(\Exception $ex) {
+            return redirect()->back()->withInput();
+        }
+    }
+
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function logout()
+    {
+        if (Auth::check()) {
+            Auth::logout();
+        }
+        return redirect()->route('home');
+    }
 }

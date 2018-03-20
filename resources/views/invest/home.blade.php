@@ -177,12 +177,14 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    <a type="button" class="btn btn-warning" href="{{route('login')}}">Đăng nhập</a>
                     <button type="button" class="btn btn-primary" onclick="return challenge()">Đăng ký</button>
                 </div>
                 </form>
             </div>
         </div>
     </div>
+
     @else
         <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
@@ -194,16 +196,34 @@
                         </div>
                         <div class="modal-body">
                             <div class="score-screen">
-                                <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
-                                <h3> Bạn đã hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
-                                <h3> Số điểm của bạn là <span style="font-size:200%;color: #198440">{{$member->score."/40"}}</span></h3>
-                                <h3> Cảm ơn bạn! </h3>
+
+
+                                @if($member->status == 1)
+                                    <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
+
+                                    <h3> Bạn đã hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
+                                    <h3> Số điểm của bạn là <span style="font-size:200%;color: #198440">{{$member->score."/40"}}</span></h3>
+                                    <h3> Cảm ơn bạn! </h3>
+                                @else
+                                    <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
+                                    <h3> Bạn chưa hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
+                                    <h3> Hãy tiếp tục làm bài thi của mình nhé!</h3>
+                                    <h3> Cảm ơn bạn! </h3>
+                                @endif
                             </div>
-                            <input type="hidden" value="1" name="flag">
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                            <button type="submit" class="btn btn-primary" >Đăng ký thí sinh mới</button>
+                            <input type="hidden" value="1" name="flag">
+
+                        @if($member->status == 1)
+                                <button type="submit" class="btn btn-primary" >Đăng ký thí sinh mới</button>
+                            @else
+                                <button type="submit" class="btn btn-primary" >Vào thi</button>
+                            @endif
+                            <a type="button" class="btn btn-warning" href="{{route('logout')}}" style="margin-left: 0">Đăng xuất</a>
+
                         </div>
                     </form>
                 </div>
@@ -216,5 +236,4 @@
 
 @section('scripts')
     <script type="text/javascript" src="{{asset('/js/home.js?v=2')}}"></script>
-
     @endsection

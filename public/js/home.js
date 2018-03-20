@@ -12,23 +12,6 @@ $(document).ready(function(){
 });
 
 
-$('.clock').countdown('03/19/2018 21:00:00')
-    .on('update.countdown', function(event) {
-
-        var totalDays= event.offset.totalDays;
-
-
-        $('span#countdown-day').html(totalDays);
-        $('span#countdown-hour').html(event.strftime('%H'));
-        $('span#countdown-minute').html(event.strftime('%M'));
-        $('span#countdown-second').html(event.strftime('%S'));
-
-        $('#btn-thuthach').prop('disabled',true);
-
-    })
-
-    .on('finish.countdown', function(event) {
-        $('#btn-thuthach').css('disable','');
 
         $('.clock').countdown('04/05/2018')
         .on('update.countdown', function(event) {
@@ -47,7 +30,7 @@ $('.clock').countdown('03/19/2018 21:00:00')
 
             });
 
-    });
+
 
 /**
  *
@@ -59,7 +42,6 @@ function challenge() {
 
     if (flag === 0) {
         var data = new FormData($("form#form-register")[0]);
-        console.log(data);
         $.ajax({
             beforeSend: function() {
                 on();

@@ -17,6 +17,8 @@ Route::get('/updateData','InvestController@updateData')->name('updateData');
 //Member
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@loginPost')->name('loginPost');
+Route::get('/logout','UserController@logout')->name('logout');
+
 
 Route::get('/register','UserController@register')->name('register');
 Route::post('/register','UserController@requestRegister')->name('register_post');

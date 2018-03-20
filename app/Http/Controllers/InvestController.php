@@ -32,17 +32,25 @@ class InvestController extends Controller
 //        $data = file_get_contents('./excel/data.json');
 //        $data = json_decode($data,true);
 //        dd($data);
+
         //Request new candicate
+
         if (!empty($request->flag) && Auth::check()) {
-            Auth::logout();
+            if (Auth::user()->status == 1) {
+                Auth::logout();
+            } else {
+                return redirect(route('challenge'));
+            }
             return view('invest.home');
         }
         if (Auth::check()) {
             $member = Auth::user();
             return view('invest.home',compact('member'));
         }
+
         return view('invest.home');
     }
+
 
     /**
      *
@@ -121,13 +129,11 @@ class InvestController extends Controller
     public function challenge()
     {
         if (Auth::check() && Auth::user()->status == 0) {
-
                 $data = file_get_contents('./excel/data.json');
                 $data = json_decode($data,true);
                 $data = $this->listQuestion($data);
 
                 $list_question = \GuzzleHttp\json_encode($data['list_question']);
-
                 $checking = JWT::encode( $data['answer'],$this->key);
 
                 return view('invest.challenge',compact('list_question','checking'));
@@ -166,6 +172,7 @@ class InvestController extends Controller
         $member = Member::find(Auth::id());
         $member->score = $correct;
         $member->status = 1;
+        $member->challenge_at = date('Y-m-d H:i:s');
         $member->save();
 
         //Update auth
@@ -220,7 +227,7 @@ class InvestController extends Controller
         foreach ($temp_list_question as $key=>$temp_question) {
             $true = $temp_question['true'];
 
-            $array_answer = [$temp_question['image'],$temp_question['true'],$temp_question['false1'],$temp_question['false2'],$temp_question['false3']];
+            $array_answer = [$temp_question['true'],$temp_question['false1'],$temp_question['false2'],$temp_question['false3']];
 
             //Save list question
             $obj_ques['question'] = $temp_question['question'];
@@ -366,12 +373,12 @@ class InvestController extends Controller
     {
         Excel::create('Thông tin thí sinh', function($excel) {
             $allCandicate = Member::where('id','!=',1)
-                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])
+                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook','created_at','challenge_at'])
                 ->get()->toArray();
 
 
             $excel->setTitle('Thông tin thí sinh');
-            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook'];
+            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook','Thời điểm đăng ký','Thời điểm nộp bài'];
             array_unshift($allCandicate,$column);
 
 
@@ -417,6 +424,14 @@ class InvestController extends Controller
             return view('administrator.test',compact('member'));
         }
         return view('administrator.test');
+    }
+
+    public function adminLogout()
+    {
+        if (session()->has('admin')) {
+            session()->put('admin',null);
+        }
+        return view('administrator.login');
     }
 }
 
