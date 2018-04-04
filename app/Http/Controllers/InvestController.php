@@ -128,7 +128,7 @@ class InvestController extends Controller
      */
     public function challenge()
     {
-        if (Auth::check() && Auth::user()->status == 0) {
+        if (Auth::check() && Auth::user()->status == 1 && strtotime("now") <= strtotime("05 april 2018")) {
                 $data = file_get_contents('./excel/data.json');
                 $data = json_decode($data,true);
                 $data = $this->listQuestion($data);
@@ -179,11 +179,11 @@ class InvestController extends Controller
         Auth::user()->status = 1;
 
         //Mail to notice result
-        if ((!empty($member))&&(!empty($member->email))) {
-            Mail::to($member->email)->queue(new NoticeResult(array(
-                'name'=>$member->name,
-            )));
-        }
+//        if ((!empty($member))&&(!empty($member->email))) {
+//            Mail::to($member->email)->queue(new NoticeResult(array(
+//                'name'=>$member->name,
+//            )));
+//        }
 
         return redirect()->route('show_result');
 

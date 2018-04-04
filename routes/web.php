@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','InvestController@homepage')->name('home');
+Route::get('/','Round2Controller@index')->name('home');
 Route::get('/updateData','InvestController@updateData')->name('updateData');
 
 //Member

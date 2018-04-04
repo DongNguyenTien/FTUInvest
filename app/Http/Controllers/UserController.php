@@ -68,12 +68,12 @@ class UserController extends Controller
 
             $member = Member::registerMember($params);
 
-            if ((!empty($member))&&(!empty($params['email']))) {
-                Mail::to($params['email'])->queue(new RegisterMember(array(
-                    'name'=>$params['name'],
-                    'temp_password' => $member['password']
-                )));
-            }
+//            if ((!empty($member))&&(!empty($params['email']))) {
+//                Mail::to($params['email'])->queue(new RegisterMember(array(
+//                    'name'=>$params['name'],
+//                    'temp_password' => $member['password']
+//                )));
+//            }
 
 
             Auth::login($member['member']);

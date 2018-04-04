@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 
-        $('.clock').countdown('04/05/2018')
+        $('.clock').countdown('05/04/2018')
         .on('update.countdown', function(event) {
             var totalDays= event.offset.totalDays;
 
