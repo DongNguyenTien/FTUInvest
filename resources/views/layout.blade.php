@@ -12,11 +12,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <title>@yield('title')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <link rel="icon" type="image/x-icon" href="{{asset('/logo-01.png')}}" />
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
+
+
+    <link type="text/css" rel="stylesheet" href="{{asset('/materialize/css/materialize.min.css')}}"  media="screen,projection"/>
+    <link href="{{asset('/icon/css/open-iconic-bootstrap.css')}}" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('admin-lte/font-awesome/css/font-awesome.min.css') }}">
@@ -125,6 +130,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{ asset('admin-lte/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/jqueryValidation/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('js/notify.min.js') }}"></script>
+
+<script type="text/javascript" src="{{asset('/materialize/js/materialize.min.js')}}"></script>
 
 <!-- Bootstrap core JavaScript -->
 

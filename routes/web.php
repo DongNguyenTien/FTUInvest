@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','Round2Controller@index')->name('home');
+Route::get('/','InvestController@homepage')->name('home');
 Route::get('/updateData','InvestController@updateData')->name('updateData');
 
 //Member
@@ -54,3 +54,5 @@ Route::get('/download/data','InvestController@exportExcel')->name('download_data
 
 Route::get('/check/administrator','InvestController@testcase')->name('test');
 
+//---------------------
+Route::post('/subscribe','Round2Controller@subscribe')->name("subscribe");

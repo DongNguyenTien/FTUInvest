@@ -2,76 +2,119 @@
 @section('title','Trang chủ')
 @section('content')
     <div class="container">
-        <div class="container text-center">
-            <div class="text-left"><img id="quoteL" src="{{asset('/html/images/quoteL.png')}}"></div>
-            <p> Thời sinh viên ai cũng đã từng được trao cho những cơ hội khác nhau để phát triển khả năng. Thế nhưng cho đến những năm <br> cuối Đại học, số đông đều cảm thấy tiếc nuối vì đã bỏ lỡ nhiều cơ hội quý giá. Tại sao vậy? Mọi sự tiếc nuối đều không tồn tại <br> nếu mỗi chúng ta dứt khoát bước khỏi vùng an toàn của mình. I-INVEST! được sinh ra để giải quyết một vấn đề rất rõ ràng: <br><br></p>
-
-                <span id="txtBorder"> <i>đã đến lúc sinh viên cần tự nắm lấy một cơ hội để bứt phá </i>
-
-                </span>
-            <br>
-            <br>
-            <p> Trải qua 9 năm tổ chức I-INVEST luôn khẳng định là cuộc thi Kinh tế - Tài chính lớn nhất miền Bắc với sự đầu <br> tư về chất lượng và quy mô. Hơn cả một cuộc thi dành cho sinh viên, I-INVEST! được CLB chứng khoán(SIC) <br> cho ra đời với sứ mệnh mang đến cho các bạn trẻ một cơ hội để thấu hiểu chính mình và lĩnh vực đang theo <br> đuổi. Từ đó, chúng tôi tin rằng, các bạn sẽ có thể thử thách và khẳng định bản thân trên con đường đã chọn</p>
-            <div class="text-right thumb"><img id="quoteR" src="{{asset('/html/images/quoteR.png')}}"></div>
-        </div>
-    </div>
-    <div class="container text-center countdown">
-
-        <div class="table-responsive table-clock" >
-            <table class="table no-border">
-                <tbody>
-                <tr>
-                    <td style="text-align: right;"><h2>Bạn còn</h2></td>
-
-
-                    <td class="time">
-                        <span class="clock" id="countdown-day"></span>
-                        <span class="after-clock">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-hour"></span>
-                        <span class="after-clock">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-minute"></span>
-                        <span class="after-clock">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-second"></span>
-                    </td>
-                    
-                    <td style="text-align: left;"><h2>để</h2></td>
-                </tr>
-
-                <tr>
-                    <td ></td>
-
-                    <td class="under-countdown">ngày</td>
-                    <td class="under-countdown">giờ</td>
-                    <td class="under-countdown">phút</td>
-                    <td class="under-countdown">giây</td>
-
-                    <td></td>
-                </tr>
-                
-                </tbody>
-            </table>
-
+        <div class="img-header">
+            <img src="{{asset('/top1.png')}}" class="img-header">
         </div>
 
-        <button type="button" id="btn-thuthach" class="btn" data-toggle="modal" data-target=".challenge">THỬ THÁCH</button>
 
+        <div class="container text-center countdown">
+            <button type="button" id="btn-thuthach" class="waves-effect waves-light btn modal-trigger"  data-target="modal" >THỬ THÁCH</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 col-lg-5 col-sm-12">
+                <div class="text-left row">
+                    <div class="col-md-3">
+                        <img id="quoteL" src="{{asset('/html/images/quoteL.png')}}">
+
+                    </div>
+                    <div class="col-md-9">
+                        <span class="text-quote">CÂU CHUYỆN CỦA BẠN.</span>
+
+                    </div>
+
+                </div>
+                <div class="content-left">
+                    <div class="text-long">
+                        <p>Thời sinh viên, ai cũng đã từng được trao cho những cơ hội khác nhau để phát triển khả năng. Nhưng, trong khi nhiều người đang đặt những bước vững chãi cho sự nghiệp của mình, có những người vẫn đang tiếc từng thời cơ vuột mất. </p>
+                    </div>
+
+                    <div class="text-long">
+                        <span>Một sự thật rằng: </span><span class="text-green">thành công của những người xung quanh sẽ là thử thách bạn cần vượt qua nếu muốn ghi dấu ấn cho bản thân.</span>
+
+                    </div>
+
+                    <div class="text-long">
+                        <p>Bạn có biết bạn bè chúng ta đang đạt được những gì? Liệu chúng ta có đủ tự tin trên con đường của mình?</p>
+
+                    </div>
+
+                    <p>Cơ hội là thứ một nhà đầu tư sẽ không bỏ lỡ. Định vị bản thân - Định hướng chiến lược tương lai, là cơ hội dành cho bạn tại I-SHINE! - đêm chung kết cuộc thi I-INVEST! 2018.</p>
+
+
+
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12">
+                <div style="text-align: center">
+                    <iframe width="100%" height="420" src="https://www.youtube.com/embed/YI3tsmFsrOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <p class="text-under">Thách thức giới hạn của bản thân, phá vỡ ranh giới an toàn, TOP 5 của Cuộc thi I-INVEST! 2018 đã bứt phá ngoạn mục qua từng vòng thi để giành lấy tấm vé bước vào Đêm Chung kết I-SHINE!.</p>
+
+            </div>
+
+        </div>
+
+        <div class="text-right thumb"><img id="quoteR" src="{{asset('/html/images/quoteR.png')}}"></div>
+
+
+        <div class="image-left row">
+            <div class="col-md-4 col-lg-4 col-sm-6">
+                <div class="img-content">
+                    <img src="{{asset("/top1.png")}}" style="max-height: 340px">
+                </div>
+            </div>
+
+            <div class="col-md-8 col-lg-8 col-sm-6 text-info">
+                <h4 class="name-candidate">Thí sinh A</h4>
+                <h6 class="h6-margin">Truong</h6>
+                <p> The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                </p>
+            </div>
+        </div>
+
+        <div class="image-left row">
+            <div class="col-md-8 col-lg-8 col-sm-6 text-info-right">
+                <h4 class="name-candidate">Thí sinh A</h4>
+                <h6 class="h6-margin">Truong</h6>
+                <p> The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
+                </p>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-sm-6 " style="float: right">
+                <div class="img-content">
+                    <img src="{{asset("/top1.png")}}" style="max-height: 340px">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div style="padding-bottom: 30px"></div>
     </div>
 
 
-    @if(empty($member))
-    <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
+
+
+
+    <div class="modal" id="modal">
             <div class="modal-content">
-                <form enctype="multipart/form-data" id="form-register" method="post" action="">
+                <form enctype="multipart/form-data" id="form-register" method="post" >
 
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--}}
                     <h4 class="modal-title" id="myModalLabel">Đăng ký thông tin trước vòng thi</h4>
                 </div>
                 <div class="modal-body">
@@ -97,63 +140,85 @@
                         <strong id="alert">Error!</strong>
                     </div>
 
-                        <div class="row">
+                    <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Họ và tên (*)</label>
-                                    <input type="text" class="form-control" name="name">
-                                </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Ngày tháng năm sinh (*)</label>
-                                    <div class='input-group date'>
-                                        <input type="text" class="form-control" id="datetimepicker" name="dateOfBirth">
-                                        <label class="input-group-addon btn" for="date">
-                                            <span class="fa fa-calendar open-datetimepicker"></span>
-                                        </label>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="name" name="name" class="validate" required>
+                                        <label for="name">Họ và tên (*)</label>
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Địa chỉ email (*)</label>
-                                    <input type="email" class="form-control"   placeholder="name@example.com" name="email">
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text"  id="datetimepicker" name="dateOfBirth" class="validate" required>
+                                        <label for="datetimepicker">Ngày tháng năm sinh (*)</label>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Số điện thoại (*)</label>
-                                    <input type="text" class="form-control" name="phone">
+
+                                <div class="row">
+                                    <div class="input-field">
+                                        <select name="university" onchange='return other("university",this)' required>
+                                            <option value="" disabled selected>Chọn trường đại học của bạn</option>
+                                            <option value="1">Đại học Ngoại Thương</option>
+                                            <option value="2">Đại học Kinh tế Quốc dân</option>
+                                            <option value="3">Đại Học Bách Khoa Hà Nội</option>
+                                            <option value="4">Học viện Tài chính</option>
+                                            <option value="5">Đại học Quốc Gia Hà Nội</option>
+                                            <option value="6">Đại học Thương mại</option>
+                                            <option value="7">Đại học Luật Hà Nội</option>
+
+                                            <option id="other_university" value="-1">Khác</option>
+                                        </select>
+                                        <label for="university">Trường đại học hiện tại (*)</label>
+                                    </div>
+
+                                    <input type="hidden"  name="other_university" class="validate" required >
+
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Số chứng minh nhân dân (*)</label>
-                                    <input type="text" class="form-control" name="identification">
-                                </div>
+
+
+
+
                             </div>
 
                             <div class="col-md-6 col-sm-12">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Trường đại học hiện tại (*)</label>
-                                    <input type="text" class="form-control" name="university">
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="email" id="email" name="email"  class="validate" required>
+                                        <label for="email">Địa chỉ email (*)</label>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Chuyên ngành (*)</label>
-                                    <input type="text" class="form-control"  name="speciality">
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input type="text" id="phone" name="phone" class="validate" required>
+                                        <label for="phone">Số điện thoại (*)</label>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Khoá (*)</label>
-                                    <input type="text" class="form-control" name="course">
-                                </div>
 
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Mã số sinh viên (*)</label>
-                                    <input type="text" class="form-control" name="MSSV">
-                                </div>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <select name="year" onchange='return other("year",this)' required>
+                                            <option value="" disabled selected>Bạn đang làm sinh viên năm ..</option>
+                                            <option value="Năm nhất">Năm nhất</option>
+                                            <option value="Năm hai">Năm hai</option>
+                                            <option value="Năm ba">Năm ba</option>
+                                            <option value="Năm cuối">Năm cuối</option>
 
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Trang facebook của bạn </label>
-                                    <input type="text" class="form-control" placeholder=facebook.com/example name="facebook">
+                                            <option id="other_year" value="-1">Khác</option>
+
+                                        </select>
+
+                                        <label for="year">Năm (*)</label>
+
+                                    </div>
+                                    <input type="hidden"  name="other_year" class="validate" required >
+
                                 </div>
 
 
@@ -162,78 +227,54 @@
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">CV của bạn</label>
-                                    <input type="file" class="form-control" placeholder="CV của bạn" name="CV" accept=".pdf">
+
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="input-field">
+                                    <textarea id="textarea1" name="desire" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Bạn mong muốn điều gì khi tham gia đêm chung kết Cuộc thi I-INVEST! 2018?</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field">
+                                    <textarea id="textarea2" name="message" class="materialize-textarea"></textarea>
+                                    <label for="textarea2">Bạn có điều gì muốn nhắn gửi đến BTC cuộc thi?</label>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
 
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                    <a type="button" class="btn btn-warning" href="{{route('login')}}">Đăng nhập</a>
-                    <button type="button" class="btn btn-primary" onclick="return challenge()">Đăng ký</button>
+                    <button type="submit" class="btn waves-effect waves-light" >Đăng ký</button>
                 </div>
                 </form>
             </div>
-        </div>
     </div>
 
-    @else
-        <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <form enctype="multipart/form-data" method="get" action="{{route('home')}}">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Thông báo</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="score-screen">
-
-
-                                @if($member->status == 1)
-                                    <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
-
-                                    <h3> Bạn đã hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
-                                    <h3> Số điểm của bạn là <span style="font-size:200%;color: #198440">{{$member->score."/40"}}</span></h3>
-                                    <h3> Cảm ơn bạn! </h3>
-                                @else
-                                    <h3> Xin chào <span class="invest-font">{{$member->name}}</span></h3>
-                                    <h3> Bạn chưa hoàn thành bài thi Vòng 1: I-START! Cuộc thi <span class="invest-font">I-INVEST! 2018 </span> </h3>
-                                    <h3> Hãy tiếp tục làm bài thi của mình nhé!</h3>
-                                    <h3> Cảm ơn bạn! </h3>
-                                @endif
-                            </div>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                            <input type="hidden" value="1" name="flag">
-
-                        @if($member->status == 1)
-                                <button type="submit" class="btn btn-primary" >Đăng ký thí sinh mới</button>
-                            @else
-                                <button type="submit" class="btn btn-primary" >Vào thi</button>
-                            @endif
-                            <a type="button" class="btn btn-warning" href="{{route('logout')}}" style="margin-left: 0">Đăng xuất</a>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    @endif
 
     @endsection
 
 @section('scripts')
     <script type="text/javascript" src="{{asset('/js/home.js?v=2')}}"></script>
+    <script type="text/javascript">
+
+
+        function other (type,_this) {
+            // $("select."+type).on("change", function(){
+                if($("option:selected", _this).attr("id") === "other_"+type) {
+                    $("input[name=other_"+type+"]").attr("type","text");
+                } else {
+                    $("input[name=other_"+type+"]").attr("type","hidden");
+                }
+            // })
+        }
+
+
+    </script>
     @endsection

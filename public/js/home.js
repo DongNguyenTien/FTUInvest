@@ -6,6 +6,11 @@ $(function () {
 });
 
 $(document).ready(function(){
+
+    //Initialization
+    $('.modal').modal();
+    $('select').formSelect();
+
     $('.input-group-addon').click(function(){
         $('#datetimepicker ').datetimepicker("show","format:\"DD-MM-YYYY\"");
     });
@@ -13,7 +18,7 @@ $(document).ready(function(){
 
 
 
-        $('.clock').countdown('05/04/2018')
+        $('.clock').countdown('05/04/2019')
         .on('update.countdown', function(event) {
             var totalDays= event.offset.totalDays;
 
@@ -36,17 +41,33 @@ $(document).ready(function(){
  *
  * @returns {boolean}
  */
-function challenge() {
-    //Validate
-    var flag = validateData();
-
-    if (flag === 0) {
+$("form#form-register").validate({
+    errorPlacement: function(error, element) {},
+    // errorClass:"errormassagevalide",
+    // rules: {
+    //     OPRID: "required",
+    //     OPRDEFNDESC: "required"
+    //     //other form element
+    //
+    // },
+    // messages: {
+    //     OPRID: "please  insert please ",
+    //     OPRDEFNDESC: " please  insert OPRDEFNDESC"
+    // },
+    // highlight: function(element) {
+    //     jQuery(element).parent().addClass("has-error");
+    // },
+    // unhighlight: function(element) {
+    //     jQuery(element).parent().removeClass("has-error");
+    // },
+    submitHandler: function(form) {//your ajax code
         var data = new FormData($("form#form-register")[0]);
+        // console.log(data);
         $.ajax({
             beforeSend: function() {
                 on();
             },
-            url: '/register',
+            url: '/subscribe',
             type: 'post',
             data: data,
 
@@ -56,8 +77,8 @@ function challenge() {
                 off();
 
                 if (data['success'] === 1) {
-                    window.location.href = '/challenge';
-
+                    // window.location.href = '/challenge';
+                    alert(123);
                     return false;
                 } else {
                     console.log(data);
@@ -74,11 +95,11 @@ function challenge() {
             processData: false
         });
         return false;
-    } else {
-        off();
-        return false;
-    }
-}
+    },
+});
+
+
+
 
 
 /**
@@ -87,24 +108,29 @@ function challenge() {
  */
 function validateData() {
     var flag = 0;
-
-    $('input[type=text]').each(function(){
-        $(this).css('border','1px solid black');
-        if ($(this).val() == "" && $(this).attr('name')!== "facebook") {
-            flag = 1;
-            $(this).effect( "bounce" );
-            $(this).css('border','1px solid red');
-
-        }
-    });
-
-    if ($('input[type=email]').val() === "") {
-        flag = 1;
-        $('input[type=email]').effect( "bounce" );
-        $('input[type=email]').css('border','1px solid red');
-    } else {
-        $('input[type=email]').css('border','1px solid black');
-    }
-
+    //
+    // $('input[type=text]').each(function(){
+    //     $(this).css('border','1px solid black');
+    //     if ($(this).val() == "" && $(this).attr('name')!== "facebook") {
+    //         flag = 1;
+    //         $(this).effect( "bounce" );
+    //         $(this).css('border','1px solid red');
+    //
+    //     }
+    // });
+    //
+    // if ($('input[type=email]').val() === "") {
+    //     flag = 1;
+    //     $('input[type=email]').effect( "bounce" );
+    //     $('input[type=email]').css('border','1px solid red');
+    // } else {
+    //     $('input[type=email]').css('border','1px solid black');
+    // }
+    //
     return flag;
 }
+
+
+
+
+
