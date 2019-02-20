@@ -4,14 +4,14 @@
     <div class="container">
         <div class="container text-center">
             <div class="text-left"><img id="quoteL" src="{{asset('/html/images/quoteL.png')}}"></div>
-            <p> Thời sinh viên ai cũng đã từng được trao cho những cơ hội khác nhau để phát triển khả năng. Thế nhưng cho đến những năm <br> cuối Đại học, số đông đều cảm thấy tiếc nuối vì đã bỏ lỡ nhiều cơ hội quý giá. Tại sao vậy? Mọi sự tiếc nuối đều không tồn tại <br> nếu mỗi chúng ta dứt khoát bước khỏi vùng an toàn của mình. I-INVEST! được sinh ra để giải quyết một vấn đề rất rõ ràng: <br><br></p>
+            <p> Bước vào cánh cổng Đại học, ai cũng mang theo mình những khát vọng lớn lao cho tương lai của bản thân. Thế nhưng, chỉ có số ít là người thành công sau cùng với những điều mình mong muốn. Bởi không phải ai, cũng sẵn sàng học khi người khác ngủ, lao động khi người khác lười nhác, chuẩn bị khi người khác chơi bời, và có giấc mơ khi người khác chỉ ước ao. </p>
 
-            <span id="txtBorder"> <i>đã đến lúc sinh viên cần tự nắm lấy một cơ hội để bứt phá </i>
+            <span id="txtBorder"> <i>Hãy nghiêm túc đầu tư cho chính bản thân ngày hôm nay để làm giàu cho chính tương lai ngay mai của bạn!</i>
 
                 </span>
             <br>
             <br>
-            <p> Trải qua 9 năm tổ chức I-INVEST luôn khẳng định là cuộc thi Kinh tế - Tài chính lớn nhất miền Bắc với sự đầu <br> tư về chất lượng và quy mô. Hơn cả một cuộc thi dành cho sinh viên, I-INVEST! được CLB chứng khoán(SIC) <br> cho ra đời với sứ mệnh mang đến cho các bạn trẻ một cơ hội để thấu hiểu chính mình và lĩnh vực đang theo <br> đuổi. Từ đó, chúng tôi tin rằng, các bạn sẽ có thể thử thách và khẳng định bản thân trên con đường đã chọn</p>
+            <p>Khóa học Chứng khoán Cơ bản START-UP 2018 CHÍNH THỨC TRỞ LẠI năm thứ 11 với nhiều đổi mới về chất lượng và phương thức tổ chức tự tin mang lại một môi trường học tập thực tiễn, với những giá trị thiết thực, đem đến cho các bạn sinh viên cơ hội học tập và trao đổi cùng những vị chuyên gia hàng đầu trong lĩnh vực, nâng bước các bạn tiến tới thành công trên con đường Chứng khoán.</p>
             <div class="text-right thumb"><img id="quoteR" src="{{asset('/html/images/quoteR.png')}}"></div>
         </div>
     </div>

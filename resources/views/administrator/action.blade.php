@@ -6,30 +6,37 @@
     <div class="container-fluid">
         <div class="row" style="margin: 20px">
             <!-- Indicates a successful or positive action -->
-            <a href="{{route('download_data')}}" type="button" class="btn btn-success list-button" >Tải xuống thông tin thí sinh</a>
+            <a href="{{route('download_data')}}" type="button" class="btn btn-info" >Tải xuống thông tin thí sinh</a>
 
-            <a href="/responsive_filemanager/filemanager/dialog.php?type=1&lang=en_EN'" data-fancybox data-caption="Upload file manager" class="btn btn-warning iframe-btn list-button" type="button">Upload ảnh</a>
+            {{--<a href="/responsive_filemanager/filemanager/dialog.php?type=1&lang=en_EN'" data-fancybox data-caption="Upload file manager" class="btn btn-warning iframe-btn list-button" type="button">Upload ảnh</a>--}}
             <!-- Contextual button for informational alert messages -->
-            <button data-toggle="modal" data-target="#modal" type="button" class="btn btn-info">Đổi mật khẩu</button>
+            <button data-target="modal" type="button" class="btn btn-primary">Đổi mật khẩu</button>
         </div>
+
+
         <div class="table-layout">
             <table id="listCandicate" class="table-responsive table">
                 <thead>
                 <tr>
                     <th>ID</th>
                     <th>Tên</th>
-                    <th>Ngày sinh</th>
+                    <th>Số CMND</th>
                     <th>Email</th>
                     <th>Số điện thoại</th>
-                    <th>Số CMND</th>
-                    <th>Điểm</th>
-                    <th>Trường</th>
-                    <th>Chuyên ngành</th>
-                    <th>Khoá</th>
-                    <th>CV</th>
+                    <th>Tình trạng</th>
+                    <th>Nơi làm việc</th>
                     <th>Facebook</th>
-
-
+                    <th>Thanh toán</th>
+                    <th>Trình độ</th>
+                    <th>Đầu tư chứng khoán</th>
+                    <th>Mong muốn</th>
+                    <th>Dk cùng bạn?</th>
+                    <th>Tên của bạn</th>
+                    <th>SDT của bạn</th>
+                    <th>Email của bạn</th>
+                    <th>Số CMND của bạn</th>
+                    <th>Facebook của bạn</th>
+                    <th>Ngày đăng ký</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -42,11 +49,11 @@
 
     </div>
 
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal" id="modal" >
             <div class="modal-content">
+
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--}}
                     <h4 class="modal-title" id="myModalLabel">Đổi mật khẩu</h4>
                 </div>
 
@@ -83,7 +90,6 @@
                     <button type="button" class="btn btn-primary" onclick="return changePassword()">Đổi mật khẩu</button>
                 </div>
             </div>
-        </div>
     </div>
 
 
@@ -95,31 +101,8 @@
     <script type="text/javascript" src="{{asset('js/actionAdmin.js')}}"></script>
     <script src="{{asset('admin-lte/plugins/fancybox/dist/jquery.fancybox.min.js')}}"></script>
     <script type="text/javascript">
-        (function () {
-            var converter1 = Markdown.getSanitizingConverter();
-
-            converter1.hooks.chain("preBlockGamut", function (text, rbg) {
-                return text.replace(/^ {0,3}""" *\n((?:.*?\n)+?) {0,3}""" *$/gm, function (whole, inner) {
-                    return "<blockquote>" + rbg(inner) + "</blockquote>\n";
-                });
-            });
-
-            var editor1 = new Markdown.Editor(converter1);
-
-            editor1.run();
-
-
-        })();
 
 
     </script>
-    <script type="text/javascript">
 
-        $("[data-fancybox]").fancybox({
-            'width'		: 900,
-            'height'	: 600,
-            'type'		: 'iframe',
-            'autoScale'    	: true
-        });
-    </script>
     @endsection

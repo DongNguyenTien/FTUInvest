@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Candidate;
 use App\Mail\NoticeResult;
 use App\Mail\ResetPassword;
 use App\Model\Member;
+use App\Subscribe;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -41,14 +43,14 @@ class InvestController extends Controller
             } else {
                 return redirect(route('challenge'));
             }
-            return view('invest.home');
+            return view('administrator.test');
         }
         if (Auth::check()) {
             $member = Auth::user();
-            return view('invest.home',compact('member'));
+            return view('administrator.test',compact('member'));
         }
 
-        return view('invest.home');
+        return view('administrator.test');
     }
 
 
@@ -360,10 +362,18 @@ class InvestController extends Controller
      */
     public function getListCandicate()
     {
-        $allCandicate = Member::where('id','!=',1)
-            ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])->get();
+//        $allCandicate = Member::where('id','!=',1)
+//            ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])->get();
 
-        return response()->json($allCandicate->toArray());
+//        $members = Subscribe::whereNull('deleted_at')
+//            ->select(["id",'name',"dateOfBirth","email","phone","university","year","desire","message"])->get();
+
+        //Update 23/10/2018
+        $allCandidate = Candidate::whereNull('deleted_at')
+            ->select(['id','name','identification', 'email','phone','status','work_place','facebook','payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();
+
+        $allCandidate = $this->handleData($allCandidate);
+        return response()->json($allCandidate);
     }
 
     /**
@@ -372,18 +382,31 @@ class InvestController extends Controller
     public function exportExcel()
     {
         Excel::create('Thông tin thí sinh', function($excel) {
-            $allCandicate = Member::where('id','!=',1)
-                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook','created_at','challenge_at'])
-                ->get()->toArray();
+//            $allCandicate = Member::where('id','!=',1)
+//                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook','created_at','challenge_at'])
+//                ->get()->toArray();
+//
+//
+//            $excel->setTitle('Thông tin thí sinh');
+//            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook','Thời điểm đăng ký','Thời điểm nộp bài'];
+//            array_unshift($allCandicate,$column);
 
+//            $allCandicate = Subscribe::whereNull('deleted_at')
+//                ->select(["id",'name',"dateOfBirth","email","phone","university","year","desire","message","created_at"])->get()->toArray();
 
+            //Update 23/10/2018
+            $allCandidate = Candidate::whereNull('deleted_at')
+                ->select(['id','name','identification', 'email','phone','status','work_place', 'facebook', 'payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();
+            $allCandidate = $this->handleData($allCandidate);
+
+            
             $excel->setTitle('Thông tin thí sinh');
-            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook','Thời điểm đăng ký','Thời điểm nộp bài'];
-            array_unshift($allCandicate,$column);
+            $column = ['Id','Tên','Số CMND','Email','Số điện thoại','Tình trạng','Nơi làm việc', 'Facebook','Thanh toán','Trình độ',"Chứng khoán","Mong muốn","dky cùng bạn?","Tên của bạn","SDT của bạn","Email của bạn", "Số CMND của bạn", "Facebook của bạn", "Ngày đăng ký"];
 
+            array_unshift($allCandidate,$column);
 
-            $excel->sheet('DATA', function($sheet)use($allCandicate) {
-                $sheet->rows($allCandicate);
+            $excel->sheet('DATA', function($sheet)use($allCandidate) {
+                $sheet->rows($allCandidate);
             });
 
 
@@ -393,6 +416,101 @@ class InvestController extends Controller
 
     }
 
+    public function handleData($data) 
+    {
+        $result = [];
+        foreach ($data as $m) {
+            switch ($m["status"]) {
+                case 1 : {
+                    $m["status"] = "Năm nhất";
+                    break;
+                    }
+                case 2 : {
+                    $m["status"] = "Năm 2";
+                    break;
+                    }
+                case 3 : {
+                    $m["status"] = "Năm 3";
+                    break;
+                    }
+                case 4 : {
+                    $m["status"] = "Năm 4";
+                    break;
+                    }
+                case 5 : {
+                    $m["status"] = "Năm 5";
+                    break;
+                    }
+                case 6 : {
+                    $m["status"] = "Đã đi làm";
+                    break;
+                }
+                default: break;
+            }
+
+            switch ($m["payment_type"]) {
+                case 0 : {
+                    $m["payment_type"] = "Offline (Bàn trực...)";
+                    break;
+                    }
+                case 1 : {
+                    $m["payment_type"] = "Online (Chuyển khoản...)";
+                    break;
+                }
+                default: break;
+            }
+
+            switch ($m["level"]) {
+                case 1 : {
+                    $m["level"] = "Chưa biết";
+                    break;
+                    }
+                case 2 : {
+                    $m["level"] = "Biết một vài kiến thức cơ bản";
+                    break;
+                    }
+                case 3 : {
+                    $m["level"] = "Kiến thức cơ bản ổn";
+                    break;
+                    }
+                 default: break;
+
+            }
+
+            switch ($m["is_sponsor"]) {
+                case 1 : {
+                    $m["is_sponsor"] = "Chưa";
+                    break;
+                    }
+                case 2 : {
+                    $m["is_sponsor"] = "Có đầu tư theo yêu thích";
+                    break;
+                    }
+                case 3 : {
+                    $m["is_sponsor"] = "Có đầu tư bài bản";
+                    break;
+                    }
+                 default: break;
+            }
+
+
+
+            !empty($m["facebook"]) ? $m["facebook"] = self::makeClickableLinks($m["facebook"]) : "";
+            !empty($m["friend_facebook"]) && !empty($m["is_have_friend"]) ? $m["friend_facebook"] = self::makeClickableLinks($m["friend_facebook"]) : "";
+
+
+            if ($m["is_have_friend"] === 1) {
+                $m["is_have_friend"] = 'Có';
+            }
+            else {
+                $m["is_have_friend"] = 'Không';
+            }
+
+            $result[] = $m;
+        }
+
+        return $result;
+    }
     /**
      * @param Request $request
      * @return mixed
@@ -432,6 +550,15 @@ class InvestController extends Controller
             session()->put('admin',null);
         }
         return view('administrator.login');
+    }
+
+
+    public static function makeClickableLinks($s) {
+        if (!preg_match('/.*?https?.*?/',$s)) {
+            $s = 'https://'.$s;
+        }
+
+        return '<a href="'.$s.'" target="_blank">Click</a>';
     }
 }
 

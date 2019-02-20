@@ -10,25 +10,25 @@ $(document).ready(function() {
         }
     });
 
-    // jQuery.extend(jQuery.validator.messages, {
-    //     required: "Vui lòng nhập dữ liệu",
-    //     remote: "Please fix this field.",
-    //     email: "Vui lòng nhập đúng định dạng địa chỉ email",
-    //     url: "Vui lòng nhập url chính xác.",
-    //     date: "Giá trị ngày chưa đúng",
-    //     dateISO: "Vui lòng nhập đúng định dạng ngày (ISO).",
-    //     number: "Vui lòng nhập vào kiểu dữ liệu là số.",
-    //     digits: "Please enter only digits.",
-    //     creditcard: "Vui lòng nhập đúng số thẻ tín dụng.",
-    //     equalTo: "Vui lòng xác nhận lại giá trị.",
-    //     accept: "Please enter a value with a valid extension.",
-    //     maxlength: jQuery.validator.format("Vui lòng không nhập quá {0} ký tự."),
-    //     minlength: jQuery.validator.format("Vui lòng nhập tối thểu {0} ký tự."),
-    //     rangelength: jQuery.validator.format("Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký tự."),
-    //     range: jQuery.validator.format("Vui lòng nhập giá trị trong khoảng {0} và {1}."),
-    //     max: jQuery.validator.format("Vui lòng nhập giá trị nhỏ hơn hoặc bằng {0}."),
-    //     min: jQuery.validator.format("Vui lòng nhập giá trị lớn hơn hoặc bằng {0}.")
-    // });
+    jQuery.extend(jQuery.validator.messages, {
+        required: "Vui lòng nhập dữ liệu",
+        remote: "Please fix this field.",
+        email: "Vui lòng nhập đúng định dạng địa chỉ email",
+        url: "Vui lòng nhập url chính xác.",
+        date: "Giá trị ngày chưa đúng",
+        dateISO: "Vui lòng nhập đúng định dạng ngày (ISO).",
+        number: "Vui lòng nhập vào kiểu dữ liệu là số.",
+        digits: "Please enter only digits.",
+        creditcard: "Vui lòng nhập đúng số thẻ tín dụng.",
+        equalTo: "Vui lòng xác nhận lại giá trị.",
+        accept: "Please enter a value with a valid extension.",
+        maxlength: jQuery.validator.format("Vui lòng không nhập quá {0} ký tự."),
+        minlength: jQuery.validator.format("Vui lòng nhập tối thểu {0} ký tự."),
+        rangelength: jQuery.validator.format("Vui lòng nhập giá trị có độ dài từ {0} đến {1} ký tự."),
+        range: jQuery.validator.format("Vui lòng nhập giá trị trong khoảng {0} và {1}."),
+        max: jQuery.validator.format("Vui lòng nhập giá trị nhỏ hơn hoặc bằng {0}."),
+        min: jQuery.validator.format("Vui lòng nhập giá trị lớn hơn hoặc bằng {0}.")
+    });
 
     // Init validation
     jQuery('form.validate').each(function () {

@@ -16,61 +16,41 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="icon" type="image/x-icon" href="{{asset('/logo-01.png')}}" />
+    <link rel="icon" type="image/x-icon" href="{{asset('/FTU2/images/icon.png')}}" />
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
-
-
-    <link type="text/css" rel="stylesheet" href="{{asset('/materialize/css/materialize.min.css')}}"  media="screen,projection"/>
-    <link href="{{asset('/icon/css/open-iconic-bootstrap.css')}}" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('admin-lte/font-awesome/css/font-awesome.min.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('admin-lte/dist/css/AdminLTE.min.css') }}">
 
     <!-- Custom CSS -->
     <link href="{{asset('/css/style.css')}}" rel="stylesheet" type="text/css">
+
+    <link href="{{asset('/css/styleFTU2.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/loading.css')}}" rel="stylesheet" type="text/css">
 
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/ionicons/css/ionicons.min.css') }}">
 
-
-    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-          page. However, you can choose any other skin. Make sure you
-          apply the skin class to the body tag so the changes take effect. -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/dist/css/skins/skin-blue.min.css') }}">
-
-
-    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/iCheck/line/blue.css')}}">
-    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/iCheck/all.css') }}">
-
-
-    <!--bootstrap tab-->
-    <link rel="stylesheet" href="{{asset('admin-lte/tag/bootstrap-tagsinput.css')}}">
-
-
-    <!-- Include Date Range Picker -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/daterangepicker/daterangepicker.css') }}">
 
     <link rel="stylesheet" href="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.css') }}">
 
-    <!-- css viewbox -->
-    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/viewbox/viewbox.css') }}">
 
     <link rel="stylesheet" href="{{ URL::asset('admin-lte/dist/css/bootstrap-datetimepicker.min.css') }}" />
 
-    <!-- select2 -->
-    <link href="{{ asset('admin-lte/plugins/select2/select2.css') }}" rel="stylesheet" />
 
     <!-- Waitme -->
     <link href="{{ asset('admin-lte/plugins/waitMe/waitMe.css') }}" rel="stylesheet" />
 
+    <!-- Icheck -->
+    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/iCheck/all.css') }}">
+
     <!-- Loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css">
 
-    {{--Fancybox--}}
-    <link rel="stylesheet" type="text/css" href="{{asset('admin-lte/plugins/fancybox/dist/jquery.fancybox.min.css')}}">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,28 +63,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <![endif]-->
 
-<!-- Google Font -->
 
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
 <style>
     body{
-        background-image: url('{{asset('/html/images/bg.jpg')}}');
-        background-size: contain;
-        background-repeat: repeat;
-        min-height: 800px;
-        font-family: 'Roboto', sans-serif;
+        {{--background-image: url('{{asset('/image/Background.jpg')}}');--}}
+        {{--background-size: cover;--}}
+        {{--background-repeat: repeat;--}}
+        {{--min-height: 800px;--}}
+        {{--font-family: 'Roboto', sans-serif;--}}
+    }
+    .header {
+        font-family: 'iCiel';
+        margin: 0 -15px 0;
+        background-size: cover;
+        background-position-y: center;
+        background-image: url(/FTU2/images/banner-header2.png);
+        min-height: 200px;
+    }
+    .logo img {
+        width: 60%;
+        margin: 0;
     }
 </style>
+
 
 <div class="container-fluid">
     <header class="header">
         @component('components.header')@endcomponent
     </header>
-    {{--<aside class="main-sidebar">--}}
-        {{--@component('components.admin_main_sidebar')@endcomponent--}}
-    {{--</aside>--}}
+
     <div class="content">
         @yield('content')
     </div>
@@ -129,9 +119,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- Bootstrap 3.3.7 -->
 <script src="{{ asset('admin-lte/bootstrap/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/jqueryValidation/jquery.validate.min.js') }}"></script>
-<script src="{{ asset('js/notify.min.js') }}"></script>
-
-<script type="text/javascript" src="{{asset('/materialize/js/materialize.min.js')}}"></script>
 
 <!-- Bootstrap core JavaScript -->
 
@@ -140,47 +127,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- Jquery countdown-->
 <script src="{{asset('/js/jquery.countdown.js')}}"></script>
-<script src="{{asset('/admin-lte/plugins/jqueryUI/jquery-ui.js')}}"></script>
-
-
-<!-- Prism -->
-<script src="{{asset('/js/prism.js')}}"></script>
-
-<!--Icheck-->
-<script src="{{ asset('admin-lte/plugins/iCheck/icheck.min.js') }}"></script>
-
-<!--bootstrap tab-->
-<script src="{{ asset('admin-lte/tag/bootstrap-tagsinput.js') }}"></script>
 
 <!-- Select 2 -->
 <script src="{{ asset('admin-lte/plugins/select2/select2.js') }}"></script>
 <script src="{{ URL::asset('admin-lte/dist/js/moment-with-locales.min.js') }}"></script>
+
+
 <!-- AdminLTE App -->
-
-
-<script src="{{ asset('admin-lte/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
 <script src="{{ URL::asset('admin-lte/dist/js/bootstrap-datetimepicker.min.js') }}"></script>
-
-
-<!-- Include Date Range Picker -->
-<script src="{{ asset('admin-lte/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <script src="{{ asset('admin-lte/dist/js/adminlte.min.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/viewbox/jquery.viewbox.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/gdoc/jquery.gdocsviewer.min.js') }}"></script>
 
 
 
-<!--chart js-->
-<script src="{{ asset('admin-lte/plugins/chartjs/Chart.min.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/flot/jquery.flot.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/flot/jquery.flot.resize.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/flot/jquery.flot.pie.js') }}"></script>
-<script src="{{ asset('admin-lte/plugins/flot/jquery.flot.categories.js') }}"></script>
-
+<!--Icheck-->
+<script src="{{ asset('admin-lte/plugins/iCheck/icheck.min.js') }}"></script>
 
 <!-- Custom -->
 <script src="{{ asset('js/init.js') }}"></script>
 <script src="{{ asset('admin-lte/plugins/waitMe/waitMe.js') }}"></script>
+<script src="{{ asset('js/notify.min.js') }}"></script>
+<script src="{{asset('admin-lte/dist/js/custom.js')}}"></script>
+
 
 @yield('scripts')
 

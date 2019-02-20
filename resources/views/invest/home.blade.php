@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="img-header">
-            <img src="{{asset('/top1.png')}}" class="img-header">
+            <img src="{{asset('/image/1.png')}}" class="img-header">
         </div>
 
 
@@ -46,8 +46,9 @@
                 </div>
             </div>
             <div class="col-md-7 col-lg-7 col-sm-12">
-                <div style="text-align: center">
-                    <iframe width="100%" height="420" src="https://www.youtube.com/embed/YI3tsmFsrOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div style="text-align: center" >
+                    <img src="{{asset('/image/2-01.jpg')}}" class="img-header">
+                    {{--<iframe width="100%" height="420" src="https://www.youtube.com/embed/YI3tsmFsrOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>--}}
                 </div>
             </div>
         </div>
@@ -63,45 +64,103 @@
         <div class="text-right thumb"><img id="quoteR" src="{{asset('/html/images/quoteR.png')}}"></div>
 
 
-        <div class="image-left row">
-            <div class="col-md-4 col-lg-4 col-sm-6">
+        <div class="information-member row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                 <div class="img-content">
-                    <img src="{{asset("/top1.png")}}" style="max-height: 340px">
+                    <img src="{{asset("/image/3-01.png")}}" style="max-height: 280px">
                 </div>
             </div>
 
-            <div class="col-md-8 col-lg-8 col-sm-6 text-info">
-                <h4 class="name-candidate">Thí sinh A</h4>
-                <h6 class="h6-margin">Truong</h6>
-                <p> The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                </p>
+            <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 text-info">
+                <h4 class="name-candidate">Phạm Hồng Quân</h4>
+                <h6 class="h6-margin">Trường đại học ngoại thương - Chuyên ngành Kinh tế đối ngoại</h6>
+
+                <ul class="list-can">
+                    <li>- Thực tập sinh môi giới Chứng khoán SSI</li>
+                    <li>- Top 5 team Vietnam CFA Institute Research Challenge 2017</li>
+                    <li>- Top 5 Go Finance 2017</li>
+                    <li>- Quán quân Economics Olympic 2017</li>
+                </ul>
             </div>
         </div>
 
-        <div class="image-left row">
-            <div class="col-md-8 col-lg-8 col-sm-6 text-info-right">
-                <h4 class="name-candidate">Thí sinh A</h4>
-                <h6 class="h6-margin">Truong</h6>
-                <p> The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                    The following example will create an aspect ratio of 1:1 (the height and width is always equal)
-                </p>
+        <div class="information-member row">
+            <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 text-info-right">
+                <h4 class="name-candidate">Đặng Khánh Linh</h4>
+                <h6 class="h6-margin">Học viện ngân hàng - Chuyên ngành Tài chính</h6>
+                <ul class="list-can">
+                    <li>- Top 4 team Vietnam CFA Institute Research Challenge 2017</li>
+                    <li>- Phòng quan hệ khách hàng MBS</li>
+                    <li>- Top 05 Go Finance 2018</li>
+                </ul>
             </div>
 
-            <div class="col-md-4 col-lg-4 col-sm-6 " style="float: right">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" style="float: right">
                 <div class="img-content">
-                    <img src="{{asset("/top1.png")}}" style="max-height: 340px">
+                    <img src="{{asset("/image/4-01.png")}}" style="max-height: 340px">
                 </div>
             </div>
 
 
         </div>
 
+        <div class="information-member row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="img-content">
+                    <img src="{{asset("/image/5-01.png")}}" style="max-height: 280px">
+                </div>
+            </div>
 
+            <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 text-info">
+                <h4 class="name-candidate">Nguyễn Văn Huấn</h4>
+                <h6 class="h6-margin">Trường đại học ngoại thương - Chuyên ngành Tài chính ngân hàng</h6>
+                <ul class="list-can">
+                    <li>- Thực tập sinh Deloitte Vietnam</li>
+                    <li>- Phòng môi giới Chứng khoán SSI</li>
+                    <li>- Top 20 I-INVEST! 2017</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="information-member row">
+            <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 text-info-right">
+                <h4 class="name-candidate">Nguyễn Hoài Thu</h4>
+                <h6 class="h6-margin">Trường đại học kinh tế quốc dân - Chuyên ngành Thị trường chứng khoán</h6>
+                <ul class="list-can">
+                    <li>- Quí quân Bản lĩnh Nhà đầu tư 2017</li>
+                    <li>- Quán quân "Trải nghiệm đầu tư Chứng khoán - NEU"</li>
+                    <li>- Nghiên cứu khoa học?????</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" style="float: right">
+                <div class="img-content">
+                    <img src="{{asset("/image/6-01.png")}}" style="max-height: 340px">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="information-member row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="img-content">
+                    <img src="{{asset("/image/7-01.png")}}" style="max-height: 280px">
+                </div>
+            </div>
+
+            <div class="col-md-8 col-lg-8 col-sm-6 col-xs-12 text-info">
+                <h4 class="name-candidate">Vũ An Hoà</h4>
+                <h6 class="h6-margin">Trường đại học kinh tế quốc dân - Chuyên ngành Tài Chính</h6>
+                <ul class="list-can">
+                    <li>- Quán quân "The Catalyst"</li>
+                    <li>- Quán quân CFA Research Challenge 2017 - NEU</li>
+                    <li>- Chuyên viên đầu tư VNDirect</li>
+                    <li>- Equity Analyst Intern - Baoviet Fund</li>
+                    <li>- Senior Technial Analyst - Davinci Adcademy</li>
+                </ul>
+            </div>
+        </div>
         <div style="padding-bottom: 30px"></div>
     </div>
 
@@ -109,172 +168,10 @@
 
 
 
-    <div class="modal" id="modal">
-            <div class="modal-content">
-                <form enctype="multipart/form-data" id="form-register" method="post" >
-
-                <div class="modal-header">
-                    {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>--}}
-                    <h4 class="modal-title" id="myModalLabel">Đăng ký thông tin trước vòng thi</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="overlay" style="display: none;">
-                        <div class="sk-fading-circle" style="top:15%">
-                            <div class="sk-circle1 sk-circle"></div>
-                            <div class="sk-circle2 sk-circle"></div>
-                            <div class="sk-circle3 sk-circle"></div>
-                            <div class="sk-circle4 sk-circle"></div>
-                            <div class="sk-circle5 sk-circle"></div>
-                            <div class="sk-circle6 sk-circle"></div>
-                            <div class="sk-circle7 sk-circle"></div>
-                            <div class="sk-circle8 sk-circle"></div>
-                            <div class="sk-circle9 sk-circle"></div>
-                            <div class="sk-circle10 sk-circle"></div>
-                            <div class="sk-circle11 sk-circle"></div>
-                            <div class="sk-circle12 sk-circle"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="alert alert-danger"  style="display: none; text-align: center">
-                        <strong id="alert">Error!</strong>
-                    </div>
-
-                    <div class="row">
-                            <div class="col-md-6 col-sm-12">
-
-                                <div class="row">
-                                    <div class="input-field">
-                                        <input type="text" id="name" name="name" class="validate" required>
-                                        <label for="name">Họ và tên (*)</label>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="input-field">
-                                        <input type="text"  id="datetimepicker" name="dateOfBirth" class="validate" required>
-                                        <label for="datetimepicker">Ngày tháng năm sinh (*)</label>
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="input-field">
-                                        <select name="university" onchange='return other("university",this)' required>
-                                            <option value="" disabled selected>Chọn trường đại học của bạn</option>
-                                            <option value="1">Đại học Ngoại Thương</option>
-                                            <option value="2">Đại học Kinh tế Quốc dân</option>
-                                            <option value="3">Đại Học Bách Khoa Hà Nội</option>
-                                            <option value="4">Học viện Tài chính</option>
-                                            <option value="5">Đại học Quốc Gia Hà Nội</option>
-                                            <option value="6">Đại học Thương mại</option>
-                                            <option value="7">Đại học Luật Hà Nội</option>
-
-                                            <option id="other_university" value="-1">Khác</option>
-                                        </select>
-                                        <label for="university">Trường đại học hiện tại (*)</label>
-                                    </div>
-
-                                    <input type="hidden"  name="other_university" class="validate" required >
-
-                                </div>
-
-
-
-
-
-                            </div>
-
-                            <div class="col-md-6 col-sm-12">
-                                <div class="row">
-                                    <div class="input-field">
-                                        <input type="email" id="email" name="email"  class="validate" required>
-                                        <label for="email">Địa chỉ email (*)</label>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="input-field">
-                                        <input type="text" id="phone" name="phone" class="validate" required>
-                                        <label for="phone">Số điện thoại (*)</label>
-                                    </div>
-                                </div>
-
-
-                                <div class="row">
-                                    <div class="input-field">
-                                        <select name="year" onchange='return other("year",this)' required>
-                                            <option value="" disabled selected>Bạn đang làm sinh viên năm ..</option>
-                                            <option value="Năm nhất">Năm nhất</option>
-                                            <option value="Năm hai">Năm hai</option>
-                                            <option value="Năm ba">Năm ba</option>
-                                            <option value="Năm cuối">Năm cuối</option>
-
-                                            <option id="other_year" value="-1">Khác</option>
-
-                                        </select>
-
-                                        <label for="year">Năm (*)</label>
-
-                                    </div>
-                                    <input type="hidden"  name="other_year" class="validate" required >
-
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12">
-                            <div class="row">
-                                <div class="input-field">
-                                    <textarea id="textarea1" name="desire" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">Bạn mong muốn điều gì khi tham gia đêm chung kết Cuộc thi I-INVEST! 2018?</label>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="input-field">
-                                    <textarea id="textarea2" name="message" class="materialize-textarea"></textarea>
-                                    <label for="textarea2">Bạn có điều gì muốn nhắn gửi đến BTC cuộc thi?</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn waves-effect waves-light" >Đăng ký</button>
-                </div>
-                </form>
-            </div>
-    </div>
 
 
     @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{asset('/js/home.js?v=2')}}"></script>
-    <script type="text/javascript">
 
-
-        function other (type,_this) {
-            // $("select."+type).on("change", function(){
-                if($("option:selected", _this).attr("id") === "other_"+type) {
-                    $("input[name=other_"+type+"]").attr("type","text");
-                } else {
-                    $("input[name=other_"+type+"]").attr("type","hidden");
-                }
-            // })
-        }
-
-
-    </script>
     @endsection

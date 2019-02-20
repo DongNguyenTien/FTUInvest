@@ -2,9 +2,12 @@
 @section('title','Đối tác')
 @section('content')
 
-    <div style="margin-top:1%;padding-bottom: 100px" class="container text-center">
-        <div style="background-color: #f3f3f3;border-radius: 10px;padding: 20px 40px 20px 40px">
-            <img class="img-timeline" src="{{asset('/html/images/bg-doitac-02.png')}}">
+    <div>
+        <div >
+            <div class="text-background-underline">
+                <span class="align-center span-underline">ĐỐI TÁC</span>
+            </div>
+            <img class="img-timeline" src="{{asset('/FTU2/images/doitac.png')}}">
 
         </div>
     </div>

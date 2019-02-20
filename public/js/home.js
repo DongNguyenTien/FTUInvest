@@ -8,7 +8,10 @@ $(function () {
 $(document).ready(function(){
 
     //Initialization
-    $('.modal').modal();
+    $('.modal').modal({
+        inDuration: 150,
+        outDuration: 150
+    });
     $('select').formSelect();
 
     $('.input-group-addon').click(function(){

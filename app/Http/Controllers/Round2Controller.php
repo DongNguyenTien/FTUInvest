@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Libraries\callAPI;
+use App\Mail\True;
 use App\Subscribe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -10,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class Round2Controller extends Controller
 {
@@ -19,6 +21,13 @@ class Round2Controller extends Controller
     {
         $this->callApi = new callAPI();
     }
+
+    public function homeRound2()
+    {
+        return view('invest.homeRound2');
+    }
+
+
 
     public function subscribe(Request $request)
     {
@@ -30,7 +39,7 @@ class Round2Controller extends Controller
             $validator = Validator::make($params,[
                 'name'=>'required',
                 'phone'=>'required',
-                'email'=>['required','unique:member','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
+                'email'=>['required','unique:subscribe','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
                 'dateOfBirth' => 'required',
                 'university' => 'required',
                 'other_university' => 'required_if:university,-1',
@@ -92,7 +101,9 @@ class Round2Controller extends Controller
                     case 7 :
                         $params["university"] = "Đại học Luật Hà Nội";
                         break;
-
+                    case 8:
+                        $params["university"] = "Học viện Tài Chính";
+                        break;
                 }
             }
 
@@ -108,7 +119,7 @@ class Round2Controller extends Controller
             }
 
             $member = Subscribe::subscribe($params);
-
+//
             if ((!empty($member))&&(!empty($params['email']))) {
                 Mail::to($params['email'])->queue(new \App\Mail\Subscribe(array(
                     'name'=>$params['name'],
@@ -147,4 +158,36 @@ class Round2Controller extends Controller
         return implode('; ',$result);
     }
 
+
+    public function readData()
+    {
+        $result = [];
+
+        Excel::load(public_path('/excel/mail.xlsx'),function($reader)use($result){
+            $result = $reader->get();
+        });
+
+
+        $str = $this->get_rand_alphanumeric(8);
+
+
+        dd($result);
+
+
+
+        //Save json file
+        $fp = file_put_contents('./excel/data.json',json_encode($result));
+    }
+
+    public function get_rand_alphanumeric($length)
+    {
+        if ($length > 0) {
+            $rand_id = "";
+            for ($i = 1; $i <= $length; $i++) {
+                mt_srand((double)microtime() * 1000000);
+                $num = mt_rand(1, 36);
+                $rand_id .= assign_rand_value($num);
+            }
+        }
+    }
 }

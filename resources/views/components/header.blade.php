@@ -2,7 +2,7 @@
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="logo">
-                    <a href="{{route('home')}}"><img src="{{asset('/html/images/logo.png')}}"/> </a>
+                    <a href="{{route('home')}}"><img src="{{asset('/FTU2/images/logostu.png')}}"/> </a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -22,10 +22,10 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a class="cool-link menu-border-right" href="{{route('home')}}">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-                                <li><a class="cool-link menu-border-right" href="#">VỀ CHÚNG TÔI</a></li>
+                                <li><a class="cool-link menu-border-right" href="https://sic-ftu.org/">VỀ CHÚNG TÔI</a></li>
                                 <li><a class="cool-link menu-border-right" href="{{route('tongquan')}}">TỔNG QUAN</a></li>
                                 <li><a class="cool-link " href="{{route('doitac')}}">ĐỐI TÁC</a></li>
-                                <li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>
+                                {{--<li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>--}}
                             </ul>
                         </div><!-- /.navbar-collapse -->
                 </nav>

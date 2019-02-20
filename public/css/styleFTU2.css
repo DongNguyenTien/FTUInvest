@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'SanFranciscoThin';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Thin.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: bold;
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+@font-face {
+    font-family: 'SanFranciscoBold';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Semibold.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Regular.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+@font-face {
+    font-family: 'iCiel';
+    src: url(/FTU2/Font/iCielEffra.otf)
+}
+@font-face {
+    font-family: 'Elegant';
+    src: url(/FTU2/Font/IcielBlooming-Elegant-Sans1.ttf)
+}
+
+.align-center {
+    text-align: center;
+}
+.span-underline {
+    font-size: 270%;
+    position: relative;
+    font-family: 'Elegant';
+    text-shadow: 3px 3px #e9edf0;
+}
+.text-background-underline {
+    display: block;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+.span-underline::after, .quote-home::after {
+    content: "";
+    background-color: #c5d6df;
+    position: absolute;
+    width: 108%;
+    height: 80%;
+    top: 50%;
+    right: -4%;
+    z-index: -1;
+}
+.quote{
+    padding: 20px 20px 0;
+    text-align: center;
+}
+.quote-i {
+    color: #4c93c3;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 1.5px;
+    font-family: 'SanFranciscoThin';
+
+}
+.step-small-text{
+    display: block;
+    font-size: 14px;
+}
+/*.step-small-text .span-underline::after {*/
+    /*width: 100%;*/
+    /*right: 0%;*/
+/*}*/
+.img-step {
+    max-width: 100%;
+    text-align: center;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+    text-align: right;
+}
+.supply-title {
+    font-size: 30px;
+    position: relative;
+    right: -0.5%;
+    font-family: 'Elegant';
+}
+.div-step-quote{
+    margin-left: 32%;
+    text-align: right;
+}
+.step-quote {
+    color: #4c93c3;
+    font-size : 15px;
+    font-family: iCiel;
+}
+.text-center {
+    text-align: center;
+}
+.after-step-2 {
+    margin-top: 25px;
+}
+.text-color-general {
+    font-family: iCiel;
+    font-weight: 100;
+    font-size: 18px;
+    color: #035085;
+}
+.model {
+    margin-top: 40px;
+    background-color: #e9edf0;
+    position: relative;
+}
+.model .row {
+    padding: 40px 20px 20px;
+}
+.model-element h4 {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.span-padding {
+    padding-left: 25px;
+    font-family: SanFrancisco;
+    letter-spacing: 1px;
+}
+.model::before {
+    content: "";
+    background-color: #d7e4f3;
+    width: 25%;
+    height: 8%;
+    left: 37.5%;
+    top: -6%;
+    /* bottom: 12%; */
+    /* display: block; */
+    position: absolute;
+}
+.model-title {
+    font-family: 'Elegant';
+    font-size: 35px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    font-weight: 50;
+}
+
+.margin-top {
+    margin-top: 30px;
+    display: block;
+    float: inherit;
+}
+.lecture .span-underline {
+    font-size: 170%;
+}
+.lecture .text-background-underline {
+    padding-bottom: 20px;
+    letter-spacing: 6px;
+}
+
+.text-right {
+    text-align: right;
+}
+.lecture {
+    padding: 0 6% 0;
+    font-family: SanFrancisco;
+}
+.student-image {
+    max-width: 100%;
+}
+.student-col {
+    padding-left: 0px;
+    padding-right: 0;
+}
+.content-inside {
+    background-color: #e9edf0;
+    margin: 0 5px 0;
+    padding: 0 10px 0;
+    min-height: 380px;
+
+}
+.image-div {
+    padding-top: 10px;
+}
+
+.content-full-width {
+    background-color: #e9edf0;
+    margin: 30px -15px 0px;
+    padding-bottom: 30px;
+}
+
+.object-content {
+    padding-top: 10px;
+    text-align: center;
+}
+.end-text-left {
+    margin-top: 32px;
+    padding-right: 7%;
+    text-align: right;
+    font-family: 'Elegant';
+}
+.end-text-left .color-blue {
+    color : #4c93c3
+}
+.end-text-left p {
+    font-size: 36px;
+    line-height: 0.5em;
+    letter-spacing: 2px;
+}
+
+.end-text-right {
+    margin-top: 20px;
+    padding-left: 7%;
+    text-align: left;
+}
+.end-text-right .span-padding {
+    padding-left: 0px;
+    line-height: 1.5;
+
+}
+.end-text-left .img-step {
+    margin-top: 10%;
+}
+.text-end {
+    font-family: Elegant;
+    font-weight: 100;
+    font-size: 35px;
+    color: #035085;
+    letter-spacing: 1.5px;
+}
+.end-text-right h4 {
+    font-size: 30px;
+}
+.text-right ul {
+    list-style-type: none;
+}
+
+/*Homepage*/
+td.under-countdown {
+    font-size: 22px;
+    color: #035085;
+    padding: 0 14px 0 5px !important;
+}
+.container, #txtBorder {
+    color: #035085 !important;
+    background-color: #f7f7f7;
+}
+.txtBorder {
+    /*background: linear-gradient(180deg, transparent 50% , #e9edf0 50%);*/
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: SanFranciscoBold;
+    position: relative;
+    z-index: 2;
+}
+#btn-thuthach {
+    border-radius: 4px;
+    background-color: #035085;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: auto;
+}
+.modal, #form-input h4, .countdown h2 {
+    font-family: 'iCiel';
+}
+.cool-link {
+    color: #fff;
+}
+.is_friend {
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+.clock, span.after-clock {
+    color: #035085;
+}
+.after-step-2 p {
+    font-family: 'Elegant';
+    font-size: 35px;
+}
+.quote-home {
+    position: relative;
+    font-family: 'Elegant';
+    font-size: 35px;
+}
+.quote-home::after {
+    width: 102%;
+    right: -1%;
+}
+.nav.navbar-right > li > a:hover, .nav.navbar-right > li > a:focus{
+    color: #5bbcff;
+}
+.cool-link::after{
+    background: #5bbcff;
+}
+.container {
+    font-family: 'SanFrancisco' !important;
+    font-weight: 900;
+}
+p {
+    line-height: 25px;
+}
