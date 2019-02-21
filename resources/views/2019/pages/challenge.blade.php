@@ -41,7 +41,7 @@
 
             <form action="{{route('submit_result')}}" method="post" id="result">
                 {{csrf_field()}}
-                <input hidden value="{{$checking}}" name="checking">
+                <input hidden id="check" value="" name="checking">
                 <div id="list-question" hidden>
 
                     <input type="submit" class="btn btn-challenge btn-lg center-block" style="" value="NỘP BÀI">
@@ -52,6 +52,7 @@
         </div>
     </div>
 
+    <div id="someid"></div>
 @endsection
 <div style="float:right">
     <span class="count-time">20':00</span>
@@ -65,51 +66,6 @@
         });
 
         var html = "";
-        var array_question = {!! $list_question !!};
-
-        for(var i = 0; i < array_question.length; i++) {
-            html += '<div class="header-question">' +
-                '                    <h4> <strong class="text-bold">Câu '+ (i+1) +': </strong>'+array_question[i].question+' :</h4>';
-
-            // if (array_question[i].image !== null) {
-            //     html +=  '<img class="img-question" src="'+array_question[i].image+'">';
-            // }
-
-            html+=
-                '                    <div class="row answer-between">' +
-                '                        <div class="answer-left col-md-4">' +
-                '                            <div class="radio">' +
-                '                                <label>' +
-                '                                    <input type="radio" name="'+i+'" value="0">'+array_question[i].answer[0]+'' +
-                '                                </label>' +
-                '                            </div>' +
-                '                        </div>' +
-                '                        <div class="col-md-offset-2 col-md-4">' +
-                '                            <div class="radio">' +
-                '                                <label>' +
-                '                                    <input type="radio" name="'+i+'" value="1">'+array_question[i].answer[1]+' ' +
-                '                                </label>' +
-                '                            </div>' +
-                '                        </div>' +
-                '                    </div>' +
-                '                    <div class="row">' +
-                '                        <div class="answer-left col-md-4">' +
-                '                            <div class="radio">' +
-                '                                <label>' +
-                '                                    <input type="radio" name="'+i+'" value="2">'+array_question[i].answer[2]+'' +
-                '                                </label>' +
-                '                            </div>' +
-                '                        </div>' +
-                '                        <div class="col-md-offset-2 col-md-4">' +
-                '                            <div class="radio">' +
-                '                                <label>' +
-                '                                    <input type="radio" name="'+i+'" value="3">'+array_question[i].answer[3]+'' +
-                '                                </label>' +
-                '                            </div>' +
-                '                        </div>' +
-                '                    </div>' +
-                '                </div>'
-        }
 
 
         $('input[type=checkbox]').on('ifChecked',function(e){
@@ -130,28 +86,79 @@
                     $('#overlay').css('display','none');
                     $("body").css("overflow", "auto");
 
-                    $('#list-question').closest('.container-info').removeClass('container-info text-center').addClass('container-question')
-                    $('#list-question').prepend(html);
-                    $('#list-question').css('display','block');
+                    var data = $.post('{{route('getExam')}}',[], function(response){
+                        html = generate(response.exam)
 
-                    $('#rule').css('display','none');
+                        $('#list-question').closest('.container-info').removeClass('container-info text-center').addClass('container-question')
+                        $('#list-question').prepend(html);
+                        $('#list-question').css('display','block');
+                        $('input#check').val(response.check)
+
+                        $('#rule').css('display','none');
 
 
 
-                    $('.count-time').countdown(new Date(+now + 120e4))
-                    // $('.count-time').countdown(new Date(+now + 100000))
-                        .on('update.countdown', function(event) {
-                            var format = "%-M':%-S";
-                            $(this).html(event.strftime(format));
-                        })
+                        $('.count-time').countdown(new Date(+now + 120e4))
+                        // $('.count-time').countdown(new Date(+now + 100000))
+                            .on('update.countdown', function(event) {
+                                var format = "%-M':%-S";
+                                $(this).html(event.strftime(format));
+                            })
 
-                        .on('finish.countdown', function(event) {
-                            $('form#result').submit();
-                        });
+                            .on('finish.countdown', function(event) {
+                                $('form#result').submit();
+                            });
+                    });
+
+
 
                 });
         })
 
+        function generate(array_question) {
+            for(var i = 0; i < array_question.length; i++) {
+                html += '<div class="header-question">' +
+                    '                    <h4> <strong class="text-bold">Câu '+ (i+1) +': </strong>'+array_question[i].question+' :</h4>';
+
+
+                html+=
+                    '                    <div class="row answer-between">' +
+                    '                        <div class="answer-left col-md-4">' +
+                    '                            <div class="radio">' +
+                    '                                <label>' +
+                    '                                    <input type="radio" name="'+i+'" value="0">'+array_question[i].answer[0]+'' +
+                    '                                </label>' +
+                    '                            </div>' +
+                    '                        </div>' +
+                    '                        <div class="col-md-offset-2 col-md-4">' +
+                    '                            <div class="radio">' +
+                    '                                <label>' +
+                    '                                    <input type="radio" name="'+i+'" value="1">'+array_question[i].answer[1]+' ' +
+                    '                                </label>' +
+                    '                            </div>' +
+                    '                        </div>' +
+                    '                    </div>' +
+                    '                    <div class="row">' +
+                    '                        <div class="answer-left col-md-4">' +
+                    '                            <div class="radio">' +
+                    '                                <label>' +
+                    '                                    <input type="radio" name="'+i+'" value="2">'+array_question[i].answer[2]+'' +
+                    '                                </label>' +
+                    '                            </div>' +
+                    '                        </div>' +
+                    '                        <div class="col-md-offset-2 col-md-4">' +
+                    '                            <div class="radio">' +
+                    '                                <label>' +
+                    '                                    <input type="radio" name="'+i+'" value="3">'+array_question[i].answer[3]+'' +
+                    '                                </label>' +
+                    '                            </div>' +
+                    '                        </div>' +
+                    '                    </div>' +
+                    '                </div>'
+            }
+
+            return html
+        }
 
     </script>
 @endsection

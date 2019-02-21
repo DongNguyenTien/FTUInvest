@@ -27,6 +27,7 @@ Route::get('/doitac','FTU2019Controller@doitac')->name('doitac');
 Route::get('/challenge','FTU2019Controller@challenge')->name('challenge');
 Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
 Route::get('/member/result','FTU2019Controller@showResult')->name('show_result');
+Route::post('/getExam','FTU2019Controller@getExam')->name('getExam');
 
 
 //Member

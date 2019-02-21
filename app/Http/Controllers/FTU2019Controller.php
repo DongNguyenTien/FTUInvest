@@ -173,24 +173,37 @@ class FTU2019Controller extends Controller
     public function challenge()
     {
 //        if (!Auth::check() && Auth::user()->status == 1 && strtotime("now") <= strtotime("05 april 2018")) {
-            $data = [];
-            $data = array_merge($data, Question::where('type', 1)->inRandomOrder()->take(4)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 2)->inRandomOrder()->take(3)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 3)->inRandomOrder()->take(3)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 4)->inRandomOrder()->take(2)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 5)->inRandomOrder()->take(3)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 6)->inRandomOrder()->take(2)->get()->toArray());
-            $data = array_merge($data, Question::where('type', 7)->inRandomOrder()->take(3)->get()->toArray());
 
-            $data = $this->listQuestion($data);
-            $list_question = \GuzzleHttp\json_encode($data['list_question']);
-            $checking = JWT::encode( $data['answer'],$this->key);
-
-            return view('2019.pages.challenge',compact('list_question','checking'));
+            return view('2019.pages.challenge');
 //        }
 
         return redirect(route('home'));
 
+    }
+
+    public function getExam() {
+        $data = [];
+        $data = array_merge($data, Question::where('type', 1)->inRandomOrder()->take(4)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 2)->inRandomOrder()->take(3)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 3)->inRandomOrder()->take(3)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 4)->inRandomOrder()->take(2)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 5)->inRandomOrder()->take(3)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 6)->inRandomOrder()->take(2)->get()->toArray());
+        $data = array_merge($data, Question::where('type', 7)->inRandomOrder()->take(3)->get()->toArray());
+
+        $data = $this->listQuestion($data);
+        $list_question = $data['list_question'];
+        $checking = JWT::encode( $data['answer'],$this->key);
+
+        //Tao ban ghi challenge
+
+
+
+
+        return [
+            'exam' => $list_question,
+            'check' => $checking,
+        ];
     }
 
     /**
