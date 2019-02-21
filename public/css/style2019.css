@@ -59,16 +59,6 @@
     margin: 0;
 }
 
-#btn-thuthach{
-    border-radius: 4px;
-    background-color: #198440;
-    color: #fff;
-    font-size: 30px;
-    padding: 15px 20px 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    height: auto;
-}
 
 #timkiem{
     border: 1px solid;
@@ -581,107 +571,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 
 
 
-@media screen and (max-width: 480px) {
-    .table-clock {
-        width: 100%;
-        margin-left: 0;
 
-    }
-    .table-clock h2 {
-        display: none;
-    }
-    .clock{
-        font-size: 30px;
-    }
-    .after-clock {
-        font-size: 30px !important;
-    }
-    .text-left, .text-right {
-        display: none;
-    }
-    .container{
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 640px) {
-    .text-info-right, .text-info{
-        position: relative !important;
-        text-align: center;
-        margin: 15px 0;
-    }
-    .modal.open {
-        width: 90%;
-
-    }
-
-    .
-}
-
-@media screen and (max-width: 768px) {
-    .table-clock {
-        width: 100%;
-        margin-left: 0;
-        border: none;
-    }
-    .text-quote {
-        color: #ffffff;
-        font-size: 40px;
-    }
-    .long-label {
-        top: -60% !important;
-    }
-    .text-info-right, .text-info{
-        position: relative !important;
-        text-align: center;
-        margin: 15px 0;
-    }
-    .container {
-        margin-bottom: 70px;
-    }
-
-
-
-}
-@media only screen and (max-width: 993px){
-    .container {
-        width: 80%;
-    }
-
-    .logo {
-        width: 40%;
-        text-align: center;
-        display: block;
-        margin: auto;
-        float: none;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    #quoteL{
-        width: 10%;
-        height: 10%;
-        /*margin: 20px 0px 10px 40px;*/
-        margin-left: 3%;
-        vertical-align: top;
-    }
-    .text-quote {
-        color: #ffffff;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-
-
-}
-
-@media screen and (max-width: 1366px) {
-    .logo img {
-        width: 100%;
-    }
-}
 
 
 
@@ -913,9 +803,9 @@ td.under-countdown {
     position: relative;
     z-index: 2;
 }
-#btn-thuthach {
+#btn-dangky {
     border-radius: 4px;
-    background-color: #035085;
+    background-color: #198440;
     color: #fff;
     font-size: 30px;
     padding: 10px 20px 10px 20px;
@@ -1093,7 +983,7 @@ td.under-countdown {
 }
 
 .light {
-    max-width: 80%;
+    max-width: 70%;
     transform: rotate(50deg);
     position: relative;
     left: -40%;
@@ -1126,4 +1016,293 @@ td.under-countdown {
 .price-minus {
     margin-top: -80px;
 }
+
+.doitac .restric-title {
+    max-width: 80%;
+}
+
+.doitac .tongquan-title {
+    font-size: 40px;
+}
+
+.doitac .round-1 {
+    font-size: 36px;
+}
+
+.doitac .round-1:after {
+    margin: 10px 0 10px 0;
+    width: 40%;
+}
+
+.doitac-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.donors {
+    padding-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.donors h3 {
+    font-family: 'icielBold';
+}
+
+.logo-container {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.logo-donor-container {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.logo-communication-container {
+    position: relative;
+    margin: 0 10px;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.list-logo {
+    display: inline-block;
+}
+
+.doitac .margin-bottom {
+    margin-bottom: 40px;
+}
+
+#list-question h4{
+    font-family: 'iciel';
+}
+
+.register-title {
+    font-family: 'montserratBold';
+    text-transform: uppercase;
+    margin: 0 0 35px 0 ;
+}
+
+.box-register {
+    padding: 30px 5% 80px 5% ;
+}
+
+.box-register h3 {
+    margin: 0;
+    font-family: 'iciel';
+}
+
+.box-register input, .box-register i, .box-register textarea {
+    border-radius: 6px;
+    margin: 10px 0 5px 35px;
+}
+
+.box-register .row {
+    margin-bottom: 25px;
+}
+
+.box-register .row > div {
+    padding-right: 6%
+}
+
+.register-radio .radio input{
+    margin-top: 0px;
+}
+.register-radio {
+    margin: 10px 0 5px 35px;;
+}
+
+.form-group.has-error label[id$=error] {
+    font-size: 15px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 35px;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .logo img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #quoteL{
+        width: 10%;
+        height: 10%;
+        /*margin: 20px 0px 10px 40px;*/
+        margin-left: 3%;
+        vertical-align: top;
+    }
+    .text-quote {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .price-minus {
+        margin-top: 20px;
+    }
+
+    .nav>li>a {
+        padding: 10px 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 993px){
+    .container {
+        width: 80%;
+    }
+
+    .logo {
+        width: 40%;
+        text-align: center;
+        display: block;
+        margin: auto;
+        float: none;
+    }
+
+    .img-banner {
+        width: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .table-clock {
+        width: 100%;
+        margin-left: 0;
+        border: none;
+    }
+    .text-quote {
+        color: #ffffff;
+        font-size: 40px;
+    }
+    .long-label {
+        top: -60% !important;
+    }
+    .text-info-right, .text-info{
+        position: relative !important;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .container {
+        margin-bottom: 70px;
+    }
+
+    .box-register, .box-tong-quan {
+        font-size: 100%;
+    }
+
+    .box-register input, .box-register i, .box-register textarea {
+        border-radius: 6px;
+        margin: 0;
+    }
+
+    .register-radio {
+        margin: 0;
+    }
+
+    .register-title, .box-register h3 {
+        font-size: 100%;
+    }
+
+    .container-info {
+        margin: 0;
+
+    }
+
+    .home-title {
+        font-size: 150%;
+    }
+
+    .donors {
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .text-info-right, .text-info{
+        position: relative !important;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .modal.open {
+        width: 90%;
+
+    }
+
+    .img-banner {
+        width: 40%;
+    }
+
+    .navbar {
+         margin-bottom: 0px;
+    }
+
+    .rule-left .restric-title {
+        max-width: 100%;
+    }
+
+    .container-price {
+        font-size: 120%;
+        margin: 0 6%;
+    }
+
+    .rule-right {
+        padding-left: 0px;
+    }
+
+    .donors {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table-clock {
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .table-clock h2 {
+        display: none;
+    }
+    .clock{
+        font-size: 30px;
+    }
+    .after-clock {
+        font-size: 30px !important;
+    }
+    .text-left, .text-right {
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .img-banner {
+        width: 50%;
+    }
+
+}
+
+
 

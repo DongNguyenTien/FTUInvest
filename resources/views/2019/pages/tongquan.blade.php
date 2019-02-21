@@ -39,7 +39,7 @@
                         <img style="width: 12%;position: absolute;left: 58%; top: 49%; opacity: 0.2;" src="{{asset('/2019/yellow.png')}}">
                         <img style="width: 8%;position: absolute;left: 30%;top: 35%; opacity: 0.1;" src="{{asset('/2019/yellow.png')}}">
                         <img style="width: 11%;position: absolute;left: 80%;top: 30%; opacity: 0.53;" src="{{asset('/2019/yellow.png')}}">
-                        <img style="width: 7%;position: absolute;left: 64%;top: 28%; opacity: 1;" src="{{asset('/2019/yellow.png')}}">
+                        <img style="width: 7%;position: absolute;left: 64%;top: 28%; opacity: 0.45;" src="{{asset('/2019/yellow.png')}}">
                         <img style="width: 4%;position: absolute;left: 83%;top: 44%; opacity: 0.67;" src="{{asset('/2019/yellow.png')}}">
 
                         <img style="width: 5%;position: absolute;left: 60%;top: 70%; opacity: 0.6;" src="{{asset('/2019/yellow.png')}}">

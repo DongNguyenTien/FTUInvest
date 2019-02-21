@@ -16,11 +16,11 @@
  */
 
 Route::get('/','FTU2019Controller@homepage')->name('home');
-Route::get('/updateData','InvestController@updateData')->name('updateData');
+Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
 
 //Page lien quan
 Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
-Route::post('/register','FTU2Controller@register')->name('register');
+//Route::post('/register','FTU2Controller@register')->name('register');
 Route::get('/doitac','FTU2019Controller@doitac')->name('doitac');
 
 //Challenge
@@ -33,8 +33,8 @@ Route::get('/member/result','FTU2019Controller@showResult')->name('show_result')
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@loginPost')->name('loginPost');
 Route::get('/logout','UserController@logout')->name('logout');
-Route::get('/register','UserController@register')->name('register');
-Route::post('/register','UserController@requestRegister')->name('register_post');
+Route::get('/dang-ky','UserController@register')->name('dangky');
+Route::post('/register','UserController@requestRegister')->name('register');
 Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
 Route::get('/password/reset/{token?}', 'UserController@resetPassword');
 Route::post('/password/email', 'UserController@sendResetLinkEmail')->name('password.email');

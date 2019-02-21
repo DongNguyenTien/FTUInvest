@@ -15,6 +15,11 @@ use DB;
 
 class UserController extends Controller
 {
+    public function register ()
+    {
+        return view('2019.pages.register');
+    }
+
     public function requestRegister(Request $request)
     {
         DB::beginTransaction();
@@ -24,14 +29,16 @@ class UserController extends Controller
             $validator = Validator::make($params,[
                 'name'=>'required',
                 'phone'=>'required',
-                'email'=>['required','unique:member','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
+                'email'=>['required','unique:candidates','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
                 'dateOfBirth' => 'required',
-                'university' => 'required',
-                'speciality' => 'required',
-                'course' => 'required',
-                'MSSV' => 'required',
-                'identification' => ['required','unique:member'],
+                'identification' => ['required','unique:candidates'],
 //                'facebook' => 'required',
+//                'university' => 'required',
+//                'course' => 'required',
+//                'MSSV' => 'required,
+//                'status' => 'required',
+
+
 
             ],[
                 'name.required'=>'Họ về tên không được để trống',
@@ -41,12 +48,12 @@ class UserController extends Controller
                 'email.required'=>'Họ về tên không được để trống',
                 'email.regex' => "Email không đúng định dạng",
                 'email.unique' => 'Email này đã được sử dụng',
-                'university.required'=>'Trường đại học không được để trống',
-                'speciality.required'=>'Ngành học không được để trống',
-                'course.required'=>'Khoá đang theo học không được để trống',
-                'MSSV.required'=>'Mã số sinh viên không được để trống',
+//                'university.required'=>'Trường đại học không được để trống',
+//                'speciality.required'=>'Ngành học không được để trống',
+//                'course.required'=>'Khoá đang theo học không được để trống',
+//                'MSSV.required'=>'Mã số sinh viên không được để trống',
 //                'facebook.required'=>'Địa chỉ Facebook không được để trống',
-                'dateOfBirth.required'=>'Ngày sinh không được để trống',
+                'dateOfBirth.required'=>'Năm sinh không được để trống',
             ]);
 
             if($validator->fails()){
@@ -57,17 +64,18 @@ class UserController extends Controller
             }
             //Register
 
-            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
+//            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
 
-            $CV_filename = "";
-            if(!empty($params['CV'])) {
-                $CV_filename = Member::addCV($request);
-            }
-
-            $params['CV'] = 'iinvest.test/CV/'.$CV_filename;
+//            $CV_filename = "";
+//            if(!empty($params['CV'])) {
+//                $CV_filename = Member::addCV($request);
+//            }
+//
+//            $params['CV'] = 'iinvest.test/CV/'.$CV_filename;
 
             $member = Member::registerMember($params);
 
+            //Send email
 //            if ((!empty($member))&&(!empty($params['email']))) {
 //                Mail::to($params['email'])->queue(new RegisterMember(array(
 //                    'name'=>$params['name'],

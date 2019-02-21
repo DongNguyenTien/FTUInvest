@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Question;
 use Illuminate\Http\Request;
 use App\Candidate;
 use App\Mail\NoticeResult;
@@ -19,10 +20,12 @@ use PHPExcel_Style_NumberFormat;
 class FTU2019Controller extends Controller
 {
     public $key;
+    public $keyQues;
 
     public function __construct()
     {
-        $this->key = md5("iinvest2018");
+        $this->key = md5("iinvest2019!");
+        $this->keyQues = md5("Asdag34@#AS!@#a");
     }
 
     /**
@@ -49,34 +52,79 @@ class FTU2019Controller extends Controller
 
 
     /**
-     *
+     * Du lieu => DB
      */
     public function updateData()
     {
-        $result = [];
+        $files = [
+            'vimo.txt',
+            'vimo1.txt',
+            'sanchungkhoan.txt',
+            'iq.txt',
+            'taichinh.txt',
+            'thucte.txt',
+            'kythuat.txt',
+        ];
 
-        Excel::load(public_path('/excel/test.xlsx'),function($reader)use(&$result){
+        $i = 1;
+        foreach ($files as $file) {
+            $questions = file_get_contents('./2019/dethi/'.$file);
+            preg_match_all('/(?<questions>Câu.*?\n4..*?\n)/s', $questions, $raw);
 
+            $result = [];
+            foreach ($raw["questions"] as $raw_question) {
+                $item = [];
+                preg_match_all('/Câu.*?:\s(?<question>.*?)(:|\?)/s', $raw_question, $question);
+                preg_match_all('/[1-4]\.\s(?<answer>.*?)\n/s', $raw_question, $answer);
 
-            $reader->each(function($sheet)use(&$result) {
-                $result[$sheet->getTitle()] = [];
-                $title = $sheet->getTitle();
+                $item["question"] = $question["question"][0];
+                $item["answer"] = \GuzzleHttp\json_encode($answer["answer"]);
 
-
-                if ($title == "Chứng khoán") {
-                    $result[$title] = $this->dataSheet($sheet->toArray(),10);
-                } else {
-                    $result[$title] = $this->dataSheet($sheet->toArray(),5);
+                if (empty(Question::where('question',$item["question"])->first())) {
+                    Question::create([
+                        "question" => $item["question"],
+                        "answer" => $item["answer"],
+                        "type" => $i
+                    ]);
                 }
 
+                $result[] = $item;
+            }
+            $i++;
+        }
 
-            });
 
-        });
+        dd($result);
 
         //Save json file
         $fp = file_put_contents('./excel/data.json',json_encode($result));
 
+    }
+
+    public function reshapeData()
+    {
+//        $right = [2,2,1,3,3,2,3,3,2,3,2,3,2,1];
+//        $right = [2,1,0,3,3,0,3,2,0,1,0,3,1];
+//        $right = [2,2,0,3,1,2,0,0,0,0,1];
+//        $right = [2,3,1,2,3,2];
+//        $right = [2,2,0,3,0,2,3,0,1,3,1,0];
+//        $right = [0,1,0,0];
+//        $right = [1,2,0,0,1,1,0,0,0,1];
+
+
+        $questions = Question::where('type',7)->get();
+//        dd($questions[10], \GuzzleHttp\json_decode($questions[10]["answer"]));
+        $i = 0;
+        foreach ($questions as $question) {
+            $answer = \GuzzleHttp\json_decode($question["answer"], true);
+            $t = Question::find($question->id);
+            $index = $right[$i];
+            $t->true = $answer[$index];
+            array_splice($answer, $index,1);
+            $t->false = \GuzzleHttp\json_encode($answer);
+            $t->save();
+            $i++;
+        }
     }
 
     /**
@@ -124,15 +172,19 @@ class FTU2019Controller extends Controller
      */
     public function challenge()
     {
-//        if (Auth::check() && Auth::user()->status == 1 && strtotime("now") <= strtotime("05 april 2018")) {
-            $data = file_get_contents('./excel/data.json');
-            $data = json_decode($data,true);
+//        if (!Auth::check() && Auth::user()->status == 1 && strtotime("now") <= strtotime("05 april 2018")) {
+            $data = [];
+            $data = array_merge($data, Question::where('type', 1)->inRandomOrder()->take(4)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 2)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 3)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 4)->inRandomOrder()->take(2)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 5)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 6)->inRandomOrder()->take(2)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 7)->inRandomOrder()->take(3)->get()->toArray());
+
             $data = $this->listQuestion($data);
-//
             $list_question = \GuzzleHttp\json_encode($data['list_question']);
             $checking = JWT::encode( $data['answer'],$this->key);
-//        $list_question = [];
-//        $checking = [];
 
             return view('2019.pages.challenge',compact('list_question','checking'));
 //        }
@@ -153,28 +205,25 @@ class FTU2019Controller extends Controller
         $checking = \GuzzleHttp\json_decode(\GuzzleHttp\json_encode($checking),true);
 
         $check = [];
-        for($i=0; $i<40; $i++) {
+        for($i=0; $i<20; $i++) {
             $check[] = $checking[$i][$i];
         }
 
         unset($params['checking'],$params['_token']);
         $member_answer = $params;
 
-
-
         //check answer
         $correct = count(array_intersect_assoc($check,$member_answer));
 
-
         //Member
-        $member = Member::find(Auth::id());
-        $member->score = $correct;
-        $member->status = 1;
-        $member->challenge_at = date('Y-m-d H:i:s');
-        $member->save();
+//        $member = Member::find(Auth::id());
+//        $member->score = $correct;
+//        $member->status = 1;
+//        $member->challenge_at = date('Y-m-d H:i:s');
+//        $member->save();
 
         //Update auth
-        Auth::user()->status = 1;
+//        Auth::user()->status = 1;
 
         //Mail to notice result
 //        if ((!empty($member))&&(!empty($member->email))) {
@@ -210,15 +259,9 @@ class FTU2019Controller extends Controller
      * @return array
      */
     public function listQuestion($data){
-        $temp_list_question = [];
+        $temp_list_question = $data;
         $final_list_question = [];
         $answer = [];
-
-
-        foreach ($data as $sheet) {
-            $index_set_random = array_rand($sheet);
-            $temp_list_question = array_merge($temp_list_question,$sheet[$index_set_random]);
-        }
 
         //Shuffle array
         shuffle($temp_list_question);
@@ -226,11 +269,10 @@ class FTU2019Controller extends Controller
         foreach ($temp_list_question as $key=>$temp_question) {
             $true = $temp_question['true'];
 
-            $array_answer = [$temp_question['true'],$temp_question['false1'],$temp_question['false2'],$temp_question['false3']];
+            $array_answer = array_merge([$temp_question['true']],\GuzzleHttp\json_decode($temp_question['false'], true));
 
             //Save list question
             $obj_ques['question'] = $temp_question['question'];
-            $obj_ques['image'] = $temp_question['image'];
             shuffle($array_answer);
             $obj_ques['answer'] = $array_answer;
             array_push($final_list_question,$obj_ques);
@@ -252,7 +294,7 @@ class FTU2019Controller extends Controller
 
     public function doitac()
     {
-        return view('invest.doitac');
+        return view('2019.pages.doitac');
     }
 
     public function tongquan()
@@ -359,12 +401,6 @@ class FTU2019Controller extends Controller
      */
     public function getListCandicate()
     {
-//        $allCandicate = Member::where('id','!=',1)
-//            ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook'])->get();
-
-//        $members = Subscribe::whereNull('deleted_at')
-//            ->select(["id",'name',"dateOfBirth","email","phone","university","year","desire","message"])->get();
-
         //Update 23/10/2018
         $allCandidate = Candidate::whereNull('deleted_at')
             ->select(['id','name','identification', 'email','phone','status','work_place','facebook','payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();
@@ -379,18 +415,6 @@ class FTU2019Controller extends Controller
     public function exportExcel()
     {
         Excel::create('Thông tin thí sinh', function($excel) {
-//            $allCandicate = Member::where('id','!=',1)
-//                ->select(['id','name','dateOfBirth','email','phone','identification','score','university','speciality','course','CV','facebook','created_at','challenge_at'])
-//                ->get()->toArray();
-//
-//
-//            $excel->setTitle('Thông tin thí sinh');
-//            $column = ['id','Tên thí sinh','Ngày tháng năm sinh','Email','Số điện thoại','Số chứng minh nhân dân','Điểm thi','Trường đại học','Chuyên ngành','Khoá','CV','Facebook','Thời điểm đăng ký','Thời điểm nộp bài'];
-//            array_unshift($allCandicate,$column);
-
-//            $allCandicate = Subscribe::whereNull('deleted_at')
-//                ->select(["id",'name',"dateOfBirth","email","phone","university","year","desire","message","created_at"])->get()->toArray();
-
             //Update 23/10/2018
             $allCandidate = Candidate::whereNull('deleted_at')
                 ->select(['id','name','identification', 'email','phone','status','work_place', 'facebook', 'payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();

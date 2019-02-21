@@ -15,7 +15,7 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
 {
     use SoftDeletes, Authenticatable, CanResetPassword;
 
-    protected $table = "member";
+    protected $table = "candidates";
     protected $guarded = [];
 
     public function setPasswordAttribute($pass)
@@ -44,13 +44,17 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
             'password' => $random,
             'dateOfBirth' => $params['dateOfBirth'],
             'university' => $params['university'],
-            'speciality' => $params['speciality'],
-            'course' => $params['course'],
-            'MSSV' => $params['MSSV'],
             'facebook' => $params['facebook'],
-            'CV' => $params['CV'],
             'identification' => $params['identification'],
-            'status' => 0,
+            'extracurricular' => $params['extracurricular'],
+            'shift' => $params['shift'],
+            'prices' => $params['prices'],
+            'location' => $params['location']
+//            'speciality' => $params['speciality'],
+//            'course' => $params['course'],
+//            'MSSV' => $params['MSSV'],
+//            'CV' => $params['CV'],
+//            'status' => 0,
         ));
 
 

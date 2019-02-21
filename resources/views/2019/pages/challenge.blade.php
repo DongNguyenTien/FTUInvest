@@ -23,8 +23,8 @@
 
 
             <div id="rule">
-                <p>Bài thi gồm <strong class="text-bold">20 câu hỏi trắc nghiệm</strong></p>
-                <p style="margin-bottom: 30px;">Thời gian làm bài <strong class="text-bold">20 phút </strong></p>
+                <p>Bài thi gồm <span class="text-bold">20 câu hỏi trắc nghiệm</span></p>
+                <p style="margin-bottom: 30px;">Thời gian làm bài <span class="text-bold">20 phút </span></p>
 
                 <i><u>Lưu ý trước khi làm bài:</u></i>
                 <p style="margin-top: 15px;">- Bạn chỉ được quyền làm bài thi <strong class="text-bold">một lần duy
@@ -69,11 +69,11 @@
 
         for(var i = 0; i < array_question.length; i++) {
             html += '<div class="header-question">' +
-                '                    <h4> <strong class="text-bold">Câu '+ (i+1) +': </strong>'+array_question[i].question+' </h4>';
+                '                    <h4> <strong class="text-bold">Câu '+ (i+1) +': </strong>'+array_question[i].question+' :</h4>';
 
-            if (array_question[i].image !== null) {
-                html +=  '<img class="img-question" src="'+array_question[i].image+'">';
-            }
+            // if (array_question[i].image !== null) {
+            //     html +=  '<img class="img-question" src="'+array_question[i].image+'">';
+            // }
 
             html+=
                 '                    <div class="row answer-between">' +
@@ -138,7 +138,7 @@
 
 
 
-                    $('.count-time').countdown(new Date(+now + 271e4))
+                    $('.count-time').countdown(new Date(+now + 120e4))
                     // $('.count-time').countdown(new Date(+now + 100000))
                         .on('update.countdown', function(event) {
                             var format = "%-M':%-S";

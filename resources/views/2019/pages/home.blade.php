@@ -4,17 +4,7 @@
     <h2 class="home-title">Cuộc thi i-invest! 2019</h2>
     <h1 class="home-title round-1">vòng 1</h1>
     <div class="container-info text-center countdown">
-        <p>Bài thi gồm <strong class="text-bold">20 câu hỏi trắc nghiệm</strong></p>
-        <p style="margin-bottom: 30px;">Thời gian làm bài <strong class="text-bold">20 phút </strong></p>
 
-        <i><u>Lưu ý trước khi làm bài:</u></i>
-        <p style="margin-top: 15px;">- Bạn chỉ được quyền làm bài thi <strong class="text-bold">một lần duy nhất.</strong></p>
-        <p>- BTC được quyền hủy bỏ kết quả thi nếu phát hiện có bất kỳ gian lận nào trong quá trình làm bài.</p>
-        <p>Chúc bạn may mắn!</p>
-
-        <div class="margin-top">
-            <input type="checkbox" class="check-accept"><span class="text-main-color">Tôi đã đọc và đồng ý.</span>
-        </div>
         <div class="table-responsive " style="width: 70%;margin-left: 15%;" >
             <table class="table no-border">
                 <tbody>
@@ -57,12 +47,13 @@
 
         </div>
 
-        <button type="button" id="btn-thuthach" class="btn" data-toggle="modal" data-target=".challenge">Đăng ký ngay</button>
+        {{--<button type="button" id="btn-thuthach" class="btn" data-toggle="modal" data-target=".challenge">Đăng ký ngay</button>--}}
+        <a type="button" id="btn-dangky" href="{{route('dangky')}}" class="btn" >Đăng ký ngay</a>
 
     </div>
 
 
-    <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+   {{-- <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <form enctype="multipart/form-data" class="validate" id="form-input" method="post" action="{{route('register')}}">
@@ -107,23 +98,23 @@
                                     <input type="text" class="form-control" name="name" required>
                                 </div>
 
-                                {{--<div class="form-group">--}}
-                                {{--<label for="exampleInputEmail1">Ngày tháng năm sinh (*)</label>--}}
-                                {{--<div class='input-group date'>--}}
-                                {{--<input type="text" class="form-control" id="datetimepicker" name="dateOfBirth">--}}
-                                {{--<label class="input-group-addon btn" for="date">--}}
-                                {{--<span class="fa fa-calendar open-datetimepicker"></span>--}}
-                                {{--</label>--}}
-                                {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<div class="form-group">--}}
-                                {{--<label>Giới tính (*)</label>--}}
-                                {{--<select name="sex" class="form-control" required>--}}
-                                {{--<option value >--Chọn giới tính--</option>--}}
-                                {{--<option value="0">Nam</option>--}}
-                                {{--<option value="1">Nữ</option>--}}
-                                {{--</select>--}}
-                                {{--</div>--}}
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Ngày tháng năm sinh (*)</label>
+                                    <div class='input-group date'>
+                                        <input type="text" class="form-control" id="datetimepicker" name="dateOfBirth">
+                                        <label class="input-group-addon btn" for="date">
+                                            <span class="fa fa-calendar open-datetimepicker"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <label>Giới tính (*)</label>
+                                <select name="sex" class="form-control" required>
+                                <option value >--Chọn giới tính--</option>
+                                <option value="0">Nam</option>
+                                <option value="1">Nữ</option>
+                                </select>
+                                </div>
                                 <div class="form-group">
                                     <label >Số chứng minh nhân dân (*)</label>
                                     <input type="text" class="form-control" name="identification" required>
@@ -141,23 +132,8 @@
                                 </div>
 
 
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Bạn là (*)</label>
-                                    <select name="status" class="form-control" required>
-                                        <option value >--Chọn tình trạng--</option>
-                                        <option value="1">Sinh viên năm nhất</option>
-                                        <option value="2">Sinh viên năm 2</option>
-                                        <option value="3">Sinh viên năm 3</option>
-                                        <option value="4">Sinh viên năm 4</option>
-                                        <option value="5">Sinh viên năm 5</option>
-                                        <option value="6">Đã đi làm</option>
-                                    </select>
-                                </div>
 
-                                <div class="form-group">
-                                    <label>Nơi làm việc / học tập (*): </label>
-                                    <input name="work_place" class="form-control" placeholder="" required>
-                                </div>
+
 
 
 
@@ -169,38 +145,20 @@
                                     <label>Trang facebook của bạn (*)</label>
                                     <input type="text" class="form-control" placeholder=facebook.com/example name="facebook" required>
                                 </div>
+
                                 <div class="form-group">
-                                    <label>Bạn đóng tiền dưới hình thức (*):</label>
-                                    <select name="payment_type" required class="form-control">
-                                        <option value>--Chọn câu trả lời--</option>
-                                        <option value="0">Offline (Bàn trực...)</option>
-                                        <option value="1">Online (Chuyển khoản...)</option>
-                                    </select>
+                                    <label>Trường</label>
+                                    <input type="text" class="form-control"  name="university" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Tự nhận xét trình độ kiến thức chuyên môn Chứng khoán hiện tại của bạn: </label>
-                                    <select name="level" class="form-control">
-                                        <option value>--Chọn câu trả lời--</option>
-                                        <option value="1">Chưa biết</option>
-                                        <option value="2">Biết một vài kiến thức cơ bản</option>
-                                        <option value="3">Kiến thức cơ bản ổn</option>
-                                    </select>
+                                    <label>Thành tích học tập, kinh nghiệm làm việc nổi bật</label>
+                                    <textarea name="prices" rows="4" class="form-control"></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Bạn đã đầu tư Chứng khoán chưa?</label>
-                                    <select name="is_sponsor" class="form-control">
-                                        <option value>--Chọn câu trả lời--</option>
-                                        <option value="1">Chưa</option>
-                                        <option value="2">Có đầu tư theo yêu thích</option>
-                                        <option value="3">Có đầu tư bài bản</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Bạn mong muốn gì về Khóa học Chứng khoán cơ bản START-UP 2018?</label>
-                                    <textarea name="aspiration" rows="4" class="form-control"></textarea>
+                                    <label>Thành tích ngoại khóa nổi bật (tối đa 3 cái)</label>
+                                    <textarea name="extracurricular" rows="4" class="form-control"></textarea>
                                 </div>
                             </div>
 
@@ -211,8 +169,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <div class="box box-success box-solid">
                                     <div class="box-header with-border">
-                                        <h3 class="box-title">Dành cho học viên đăng kí theo nhóm</h3>
-                                        <span class="is_friend" ><input id="isFriend" name="is_have_friend" type="checkbox" ></span>
+                                        <h3 class="box-title">Đăng kí địa điểm và lịch thi (nếu được vào vòng 2)</h3>
                                         <!-- /.box-tools -->
                                     </div>
                                     <!-- /.box-header -->
@@ -220,30 +177,27 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="exampleInputPassword1">Họ và tên người đăng kí cùng bạn</label>
-                                                    <input name="friend_name" type="text" class="form-control" readonly>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Email người đăng kí cùng bạn</label>
-                                                    <input name="friend_email" type="email" class="form-control" readonly>
+                                                    <label for="exampleInputPassword1">Địa điểm</label>
+                                                    <select name="location" class="form-control" required>
+                                                        <option value >--Chọn địa điểm--</option>
+                                                        <option value="1">Đại học Kinh tế Quốc dân</option>
+                                                        <option value="2">Đại học Ngoại thương</option>
+                                                    </select>
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Số điện thoại người đăng kí cùng bạn</label>
-                                                    <input name="friend_phone" type="text" class="form-control" readonly>
-                                                </div>
                                             </div>
                                             <div class="col-md-6">
-
-
                                                 <div class="form-group">
-                                                    <label for="exampleInputPassword1">Số chứng minh thư/căn cước công dân người đăng kí cùng bạn</label>
-                                                    <input name="friend_identification" type="text" class="form-control" readonly>
+                                                    <label for="exampleInputPassword1">Ca thi</label>
+                                                    <select name="shift" class="form-control" required>
+                                                        <option value >--Chọn ca thi--</option>
+                                                        <option value="1">Ca 1: 8h00 - 9h30</option>
+                                                        <option value="2">Ca 2: 10h00 - 11h30</option>
+                                                        <option value="3">Ca 3: 14h00 - 15h30</option>
+                                                        <option value="4">Ca 4: 16h00 - 17h30</option>
+                                                    </select>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Link Facebook người đăng kí cùng bạn</label>
-                                                    <input name="friend_facebook" type="text" class="form-control" readonly>
-                                                </div>
+
                                             </div>
 
                                         </div>
@@ -268,7 +222,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>--}}
 
 
 @endsection
@@ -299,7 +253,7 @@
                     $.post('{{route('register')}}',$(this).serialize(), function(response) {
                         $('#overlay').css('display','none');
                         if (response.status == 1) {
-                            alert(response.method);
+                            alert("Đăng ký thành công");
                             $(this).reset();
                         } else {
                             alert(response.message)
@@ -335,17 +289,7 @@
 
                 });
 
-            $('input#isFriend').on('ifChecked',function (event) {
-                $('input[name^="friend_"]').prop('required',true).prop('readonly',false);
 
-
-
-            })
-            $('input#isFriend').on('ifUnchecked',function (event) {
-                $('input[name^="friend_"]').prop('required',false).prop('readonly',true);
-
-
-            })
         });
 
 
