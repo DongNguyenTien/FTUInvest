@@ -5,6 +5,23 @@
         <img src="{{asset('/2019/text i-invest .png')}}" class="img-banner">
     </div>
     <form enctype="multipart/form-data" class="validate" id="form-input" method="post" action="{{route('register')}}">
+        {{csrf_field()}}
+        <div id="overlay" style="display: none;">
+            <div class="sk-fading-circle" style="top:45%; margin: auto;">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
         <div class="container-info box-register">
             <h2 class="text-main-color register-title">Thông tin cá nhân</h2>
             <div class="row">
@@ -159,13 +176,14 @@
 
             $('#form-input').on('submit',function(e) {
                 e.preventDefault();
+
                 if ($(this).valid()) {
                     $('#overlay').css('display','block');
                     $.post('{{route('register')}}',$(this).serialize(), function(response) {
                         $('#overlay').css('display','none');
                         if (response.success === 1) {
                             alert("Đăng ký thành công");
-                            window.location.reload()
+                            window.location.href = '{{route('home')}}'
                         } else {
                             alert(response.messages)
                         }

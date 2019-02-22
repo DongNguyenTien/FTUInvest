@@ -55,8 +55,12 @@
 
         </div>
 
-        <button type="button" id="btn-dangky" class="btn" data-toggle="modal" data-target=".challenge">Thử thách</button>
-        {{--<a type="button" id="btn-dangky" href="{{route('dangky')}}" class="btn" >Thử thách</a>--}}
+        @if (\Illuminate\Support\Facades\Auth::check())
+            <a type="button" id="btn-dangky" href="{{route('challenge')}}" class="btn" >Thử thách</a>
+        @else
+            <button type="button" id="btn-dangky" class="btn" data-toggle="modal" data-target=".challenge">Thử thách</button>
+
+        @endif
 
     </div>
 
@@ -64,9 +68,10 @@
     <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <form enctype="multipart/form-data" class="validate" id="form-input" method="post" action="{{route('register')}}">
+                <form enctype="multipart/form-data" class="validate" id="form-input" method="post" action="{{route('loginPost')}}">
+                    {{csrf_field()}}
                     <div id="overlay" style="display: none;">
-                        <div class="sk-fading-circle" style="top:15%">
+                        <div class="sk-fading-circle" style="top:45%; margin: auto;">
                             <div class="sk-circle1 sk-circle"></div>
                             <div class="sk-circle2 sk-circle"></div>
                             <div class="sk-circle3 sk-circle"></div>
@@ -97,31 +102,20 @@
                             <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email (*)</label>
-                                    <input type="text" class="form-control" name="name" required>
+                                    <input type="text" class="form-control" name="email" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label >Mật khẩu (*)</label>
-                                    <input type="password" class="form-control" name="identification" required>
+                                    <input type="password" class="form-control" name="password" required>
                                 </div>
-
-
-
                             </div>
-
-
-
                         </div>
-
-
-
-
-
 
                     </div>
                     <div class="modal-footer">
-                        <a type="button" class="btn btn-default" href="{{route('dangky')}}">Đăng ký</a>
-                        <button type="submit" class="btn btn-primary" id="button-submit">Đăng nhập</button>
+                        <a type="button" class="btn btn-lg btn-default" href="{{route('dangky')}}">Đăng ký</a>
+                        <button type="submit" class="btn btn-lg btn-primary" id="button-submit">Đăng nhập</button>
                     </div>
                 </form>
             </div>
@@ -154,13 +148,12 @@
                 e.preventDefault();
                 if ($(this).valid()) {
                     $('#overlay').css('display','block');
-                    $.post('{{route('register')}}',$(this).serialize(), function(response) {
+                    $.post('{{route('loginPost')}}',$(this).serialize(), function(response) {
                         $('#overlay').css('display','none');
-                        if (response.status == 1) {
-                            alert("Đăng ký thành công");
-                            $(this).reset();
+                        if (response.success == true) {
+                            window.location.href = '{{route('challenge')}}'
                         } else {
-                            alert(response.message)
+                            alert(response.errors)
                         }
 
                     });
@@ -168,12 +161,6 @@
 
                 return false;
             });
-
-            $('.input-group-addon').click(function(){
-                $('#datetimepicker ').datetimepicker("show","format:\"DD-MM-YYYY\"");
-            });
-
-
 
 
             $('.clock').countdown('03/10/2019')

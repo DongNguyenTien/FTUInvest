@@ -51,6 +51,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css">
 
+    <!-- PACE PRELOADING -->
+    <script src="{{asset('admin-lte/plugins/pace/pace.min.js')}}"></script>
+    <link id="flashPace" href="{{asset('admin-lte/plugins/pace/themes/green/pace-theme-flash.css')}}" rel="stylesheet" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

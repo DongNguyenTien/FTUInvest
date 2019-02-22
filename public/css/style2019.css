@@ -245,8 +245,9 @@ td.time {
 }
 .countdown-challenge {
     top: 31%;
-    position: absolute;
-    left: 38%;
+    position: relative;
+    margin: auto;
+    display: block;
     text-align: center;
 }
 
@@ -1179,6 +1180,27 @@ td.under-countdown {
 .cover {
     max-width: 100%;
 }
+
+.modal-content {
+    border-radius: 30px;
+}
+
+.modal-content input {
+    border-radius: 15px;
+}
+
+.modal-content .form-group.has-error label[id$=error] {
+    margin-left: 0px;
+}
+
+.btn-primary {
+    background-color: #198440;
+    border-color: #198440;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+    background-color: #259e51;
+}
+
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
@@ -1212,6 +1234,9 @@ td.under-countdown {
         padding: 10px 10px;
     }
 
+    .btn-challenge {
+        margin-left: auto;
+    }
 }
 
 
@@ -1230,6 +1255,14 @@ td.under-countdown {
 
     .img-banner {
         width: 30%;
+    }
+
+    .donors {
+        padding-top: 20%;
+    }
+
+    .answer-left {
+        margin-left: 0%;
     }
 }
 
@@ -1299,6 +1332,10 @@ td.under-countdown {
         padding: 0 20px 0 5px !important;
         font-size: 18px;
     }
+
+    .container-info {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1339,6 +1376,15 @@ td.under-countdown {
 
     .homepage {
         margin: 40px 0 40px 0;
+    }
+
+    .container-question {
+        padding: 2% 4% 1em;
+        margin: 0px 0% 5%;
+    }
+
+    #rule {
+        padding: 0 3px;
     }
 }
 

@@ -25,13 +25,13 @@ class APIReturnHelper
      * @param $errors
      * @return string
      */
-    public function getMessageErros($errors){
+    public function getMessageErrors($errors){
         $result = array();
         if(!empty($errors)){
             foreach ($errors->getMessages() as $key=>$value){
                 $result[] = $value[0];
             }
         }
-        return implode(';',$result);
+        return implode('; ',$result);
     }
 }

@@ -21,13 +21,14 @@ Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
 //Page lien quan
 Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
 //Route::post('/register','FTU2Controller@register')->name('register');
-Route::get('/doitac','FTU2019Controller@doitac')->name('doitac');
+Route::get('/doi-tac','FTU2019Controller@doitac')->name('doitac');
 
 //Challenge
-Route::get('/challenge','FTU2019Controller@challenge')->name('challenge');
+Route::get('/thu-thach','FTU2019Controller@challenge')->name('challenge');
 Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
-Route::get('/member/result','FTU2019Controller@showResult')->name('show_result');
+Route::get('/ket-qua','FTU2019Controller@showResult')->name('show_result');
 Route::post('/getExam','FTU2019Controller@getExam')->name('getExam');
+Route::post('/verify', 'FTU2019Controller@verifyExam')->name('verify');
 
 
 //Member

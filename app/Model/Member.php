@@ -49,9 +49,10 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
             'facebook' => $params['facebook'],
             'identification' => $params['identification'],
             'extracurricular' => $params['extracurricular'],
-            'shift' => $params['shift'],
             'prices' => $params['prices'],
-            'location' => $params['location']
+            'location' => !empty($params['location']) ? $params['location'] : 0,
+            'shift' => !empty($params["shift"])? $params['shift'] : 0,
+
 //            'speciality' => $params['speciality'],
 //            'course' => $params['course'],
 //            'MSSV' => $params['MSSV'],

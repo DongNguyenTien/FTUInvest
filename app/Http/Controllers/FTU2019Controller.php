@@ -16,11 +16,13 @@ use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Mail;
 use App\MyValueBinder;
 use PHPExcel_Style_NumberFormat;
+use App\Challenge;
 
 class FTU2019Controller extends Controller
 {
     public $key;
     public $keyQues;
+    public $time_out = "17 march 2019";
 
     public function __construct()
     {
@@ -172,40 +174,101 @@ class FTU2019Controller extends Controller
      */
     public function challenge()
     {
-//        if (!Auth::check() && Auth::user()->status == 1 && strtotime("now") <= strtotime("05 april 2018")) {
-
-            return view('2019.pages.challenge');
-//        }
+        if (Auth::check() && Auth::user()->status == 0 && strtotime("now") <= strtotime($this->time_out)) {
+            $record_challenge = Challenge::where('candidate_id', Auth::id())->first();
+            $chance = !empty($record_challenge) ? 3 - (int)$record_challenge->chance : 3;
+            return view('2019.pages.challenge', compact('chance'));
+        } else if (Auth::check() && (Auth::user()->status == 1 || strtotime("now") > strtotime($this->time_out))) {
+            $member = Auth::user();
+            return view('2019.pages.score', compact('member'));
+        }
 
         return redirect(route('home'));
 
     }
 
+    /**
+     * @return array
+     */
     public function getExam() {
-        $data = [];
-        $data = array_merge($data, Question::where('type', 1)->inRandomOrder()->take(4)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 2)->inRandomOrder()->take(3)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 3)->inRandomOrder()->take(3)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 4)->inRandomOrder()->take(2)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 5)->inRandomOrder()->take(3)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 6)->inRandomOrder()->take(2)->get()->toArray());
-        $data = array_merge($data, Question::where('type', 7)->inRandomOrder()->take(3)->get()->toArray());
+        if (Auth::check() && Auth::user()->status == 0 && strtotime("now") <= strtotime($this->time_out)) {
+            $data = [];
+            $data = array_merge($data, Question::where('type', 1)->inRandomOrder()->take(4)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 2)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 3)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 4)->inRandomOrder()->take(2)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 5)->inRandomOrder()->take(3)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 6)->inRandomOrder()->take(2)->get()->toArray());
+            $data = array_merge($data, Question::where('type', 7)->inRandomOrder()->take(3)->get()->toArray());
 
-        $data = $this->listQuestion($data);
-        $list_question = $data['list_question'];
-        $checking = JWT::encode( $data['answer'],$this->key);
+            $data = $this->listQuestion($data);
+            $list_question = $data['list_question'];
+            $checking = JWT::encode( $data['answer'],$this->key);
 
-        //Tao ban ghi challenge
+            //Tao ban ghi challenge
+            $record_challenge = Challenge::where('candidate_id',Auth::id())->first();
+
+            if (!empty($record_challenge) && $record_challenge->status == 0) {
+                $record_challenge->chance += 1;
+                $record_challenge->chance == 3 ? $record_challenge->status = 1 : $record_challenge->status = 0;
+                $record_challenge->questions = \GuzzleHttp\json_encode($list_question);
+                $record_challenge->check = $checking;
+                $record_challenge->answer = "";
+                $record_challenge->save();
+
+                if ($record_challenge->chance == 3) {
+                    Auth::user()->status = 1;
+                    Auth::user()->save();
+                }
+
+            } else if (!empty($record_challenge) && $record_challenge->status == 1) {
+                return 0;
+
+            } else {
+                $record_challenge = Challenge::create([
+                    'candidate_id' => Auth::id(),
+                    'questions' => \GuzzleHttp\json_encode($list_question),
+                    'check' => $checking,
+                    'answer' => '',
+                ]);
+            }
 
 
 
-
-        return [
-            'exam' => $list_question,
-            'check' => $checking,
-        ];
+            return [
+                'exam' => $list_question,
+                'check' => $checking,
+            ];
+        }
     }
 
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function verifyExam(Request $request)
+    {
+        $params = $request->all();
+
+        $checking = JWT::decode($params['checking'],$this->key, array('HS256'));
+        $checking = \GuzzleHttp\json_decode(\GuzzleHttp\json_encode($checking),true);
+
+        $check = [];
+        for($i=0; $i<20; $i++) {
+            $check[] = $checking[$i][$i];
+        }
+
+        unset($params['checking'],$params['_token']);
+        $member_answer = $params;
+
+
+        //Update record challenge
+        $record_challenge = Challenge::where('candidate_id', Auth::id())->first();
+        $record_challenge->answer = \GuzzleHttp\json_encode($member_answer);
+        $record_challenge->save();
+
+        return [];
+    }
     /**
      * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -229,21 +292,26 @@ class FTU2019Controller extends Controller
         $correct = count(array_intersect_assoc($check,$member_answer));
 
         //Member
-//        $member = Member::find(Auth::id());
-//        $member->score = $correct;
-//        $member->status = 1;
-//        $member->challenge_at = date('Y-m-d H:i:s');
-//        $member->save();
+        $member = Member::find(Auth::id());
+        $member->score = $correct;
+        $member->status = 1;
+        $member->save();
 
         //Update auth
-//        Auth::user()->status = 1;
+        Auth::user()->status = 1;
+
+        //Update record challenge
+        $record_challenge = Challenge::where('candidate_id', Auth::id())->first();
+        $record_challenge->status = 1;
+        $record_challenge->answer = \GuzzleHttp\json_encode($member_answer);
+        $record_challenge->save();
 
         //Mail to notice result
-//        if ((!empty($member))&&(!empty($member->email))) {
-//            Mail::to($member->email)->queue(new NoticeResult(array(
-//                'name'=>$member->name,
-//            )));
-//        }
+        if ((!empty($member))&&(!empty($member->email))) {
+            Mail::to($member->email)->send(new NoticeResult(array(
+                'name'=>$member->name,
+            )));
+        }
 
         return redirect()->route('show_result');
 
@@ -256,11 +324,10 @@ class FTU2019Controller extends Controller
     public function showResult()
     {
         //Member
-//        if (Auth::check()) {
-//            $member =Auth::user();
-//            return view('2019.pages.score',compact('member'));
-            return view('2019.pages.score');
-//        }
+        if (Auth::check()) {
+            $member =Auth::user();
+            return view('2019.pages.score',compact('member'));
+        }
         return redirect(route('home'));
     }
 

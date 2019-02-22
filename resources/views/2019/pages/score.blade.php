@@ -8,7 +8,7 @@
     <div class="container-info">
 
         <div class="test-content score-screen" >
-            <h3> Chúc mừng bạn đã hoàn thành bài thi <span class="text-bold">Vòng 1: I-START!</span>
+            <h3> Chúc mừng bạn {{$member->name}} đã hoàn thành bài thi <span class="text-bold">Vòng 1: I-START!</span>
                 <p>cuộc thi <span class="text-bold">I-INVEST! 2019 </span></p>
                 <p> BTC xin cảm ơn!</p>
             </h3>

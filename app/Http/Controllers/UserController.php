@@ -12,6 +12,8 @@ use Mockery\Exception;
 use Illuminate\Support\Facades\Validator;
 use Carbon\Carbon;
 use DB;
+use Illuminate\Http\Response;
+use App\APIReturnHelper;
 
 class UserController extends Controller
 {
@@ -63,9 +65,9 @@ class UserController extends Controller
                 ];
             }
             //Register
-
 //            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
 
+            //CV
 //            $CV_filename = "";
 //            if(!empty($params['CV'])) {
 //                $CV_filename = Member::addCV($request);
@@ -76,12 +78,12 @@ class UserController extends Controller
             $member = Member::registerMember($params);
 
             //Send email
-//            if ((!empty($member))&&(!empty($params['email']))) {
-//                Mail::to($params['email'])->queue(new RegisterMember(array(
-//                    'name'=>$params['name'],
-//                    'temp_password' => $member['password']
-//                )));
-//            }
+            if ((!empty($member))&&(!empty($params['email']))) {
+                Mail::to($params['email'])->send(new RegisterMember(array(
+                    'name'=>$params['name'],
+                    'temp_password' => $member['password']
+                )));
+            }
 
 
             Auth::login($member['member']);
@@ -137,30 +139,41 @@ class UserController extends Controller
             //Validate data
             $params = $request->all();
             $validator = Validator::make($params,[
-                'phone'=>'required',
+//                'phone'=>'required',
                 'email'=>['required','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
                 'password' => 'required',
 
             ],[
-                'phone.required'=>'Số điện thoại không được để trống',
-                'email.required'=>'Họ về tên không được để trống',
+//                'phone.required'=>'Số điện thoại không được để trống',
+                'email.required'=>'Email không được để trống',
                 'email.regex' => "Email không đúng định dạng",
                 'password.required' => 'Password không được để trống'
             ]);
 
             if($validator->fails()){
-                return redirect()->back()->withInput()->withErrors($validator->errors());
+//                return redirect()->back()->withInput()->withErrors($validator->errors());
+                $helper = new APIReturnHelper();
+                return array(
+                    'success' => false,
+                    'errors' => $helper->getMessageErrors($validator->errors())
+                );
             }
 
 
 
             //Login
-            if (Auth::attempt(['phone' => $request->phone, 'email' => $request->email, 'password' => $request->password])) {
-                return redirect(route('challenge'));
+            if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+                return array(
+                    'success' => true,
+                );
             }
 
 
-            return redirect()->back()->withInput()->withErrors(["Thông tin đăng nhập sai."]);
+//            return redirect()->back()->withInput()->withErrors(["Thông tin đăng nhập sai."]);
+            return array(
+                'success' => false,
+                'errors' => "Thông tin đăng nhập sai."
+            );
 
         } catch(\Exception $ex) {
             return redirect()->back()->withInput();

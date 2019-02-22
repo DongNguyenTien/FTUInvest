@@ -27,8 +27,9 @@
                 <p style="margin-bottom: 30px;">Thời gian làm bài <span class="text-bold">20 phút </span></p>
 
                 <i><u>Lưu ý trước khi làm bài:</u></i>
-                <p style="margin-top: 15px;">- Bạn chỉ được quyền làm bài thi <strong class="text-bold">một lần duy
+                <p style="margin-top: 15px;">- Bạn chỉ được quyền tạo đề thi <span class="text-bold" >ba lần</span> (còn {{$chance}} lần) và nộp bài thi <strong class="text-bold">một lần duy
                         nhất.</strong></p>
+
                 <p>- BTC được quyền hủy bỏ kết quả thi nếu phát hiện có bất kỳ gian lận nào trong quá trình làm bài.</p>
                 <p>Chúc bạn may mắn!</p>
 
@@ -67,7 +68,6 @@
 
         var html = "";
 
-
         $('input[type=checkbox]').on('ifChecked',function(e){
             var now = new Date();
 
@@ -86,28 +86,44 @@
                     $('#overlay').css('display','none');
                     $("body").css("overflow", "auto");
 
-                    var data = $.post('{{route('getExam')}}',[], function(response){
+                    $.post('{{route('getExam')}}', [], function (response) {
                         html = generate(response.exam)
 
                         $('#list-question').closest('.container-info').removeClass('container-info text-center').addClass('container-question')
                         $('#list-question').prepend(html);
-                        $('#list-question').css('display','block');
+                        $('#list-question').css('display', 'block');
                         $('input#check').val(response.check)
 
-                        $('#rule').css('display','none');
-
+                        $('#rule').css('display', 'none');
 
 
                         $('.count-time').countdown(new Date(+now + 120e4))
-                        // $('.count-time').countdown(new Date(+now + 100000))
-                            .on('update.countdown', function(event) {
+                            .on('update.countdown', function (event) {
                                 var format = "%-M':%-S";
                                 $(this).html(event.strftime(format));
                             })
 
-                            .on('finish.countdown', function(event) {
+                            .on('finish.countdown', function (event) {
                                 $('form#result').submit();
                             });
+
+                        setTimeout(function() {
+                            verifySchedule();
+                        }, 5000); // for 4-5 minutes delay
+
+                        setTimeout(function() {
+                            verifySchedule();
+                        }, 10000);
+
+                        setTimeout(function() {
+                            verifySchedule();
+                        }, 80e4);
+
+                        setTimeout(function() {
+                            verifySchedule();
+                        }, 110e4);
+
+
                     });
 
 
@@ -159,6 +175,12 @@
 
             return html
         }
+
+        function verifySchedule() {
+            $.post('{{route('verify')}}', $('form#result').serialize(), function (response) {
+            })
+        }
+
 
     </script>
 @endsection
