@@ -5,8 +5,8 @@
     /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
 }
 @font-face {
-    font-family: 'Blooming';
-    src: url(/2019/font/Blooming Elegant Sans1.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'blooming';
+    src: url(/2019/font/BloomingElegantSans1.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
 }
 @font-face {
@@ -788,8 +788,9 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 /*Homepage*/
 td.under-countdown {
     font-size: 22px;
-    color: #035085;
-    padding: 0 14px 0 5px !important;
+    color: #198440;
+    padding: 0 30px 0 5px !important;
+    text-transform: uppercase;
 }
 .container-info, #txtBorder {
     background-color: #f7f7f7;
@@ -804,7 +805,7 @@ td.under-countdown {
     z-index: 2;
 }
 #btn-dangky {
-    border-radius: 4px;
+    border-radius: 25px;
     background-color: #198440;
     color: #fff;
     font-size: 30px;
@@ -812,10 +813,25 @@ td.under-countdown {
     margin-top: 20px;
     margin-bottom: 40px;
     height: auto;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    box-shadow: 2px 2px #e6e6ac
 }
-.modal, #form-input h4, .countdown h2 {
-    font-family: 'iCiel';
+.countdown h2 {
+    font-family: 'blooming';
+    font-size: 180%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
+
+#form-input h4 {
+    font-family: 'iciel';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
 .cool-link {
     color: #595758;
 }
@@ -824,7 +840,10 @@ td.under-countdown {
     vertical-align: text-bottom;
 }
 .clock, span.after-clock {
-    color: #035085;
+    color: #198440;
+    font-family: 'blooming';
+    font-size: 130px;
+    text-shadow: 2px 2px #e6e6ac;
 }
 .after-step-2 p {
     font-family: 'Elegant';
@@ -870,6 +889,10 @@ td.under-countdown {
     padding-bottom: 2em;
 }
 
+.countdown .table-responsive {
+    width: 70%;
+    margin-left: 15%;
+}
 
 .home-title {
     text-transform: uppercase;
@@ -1133,10 +1156,37 @@ td.under-countdown {
     margin-left: 35px;
 }
 
+.homepage {
+    margin: 40px 8% 40px 8%;
+    font-size: 25px;
+    font-family: 'iciel';
+}
 
+.homepage p {
+    text-align: left;
+}
+
+.homepage .quotes {
+    font-family: 'blooming';
+    margin: -10px 0 30px;
+    font-size: 170%;
+    font-style: italic;
+}
+
+.homepage .under-quotes {
+}
+
+.cover {
+    max-width: 100%;
+}
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
+    }
+
+    .countdown .table-responsive {
+        width: 100%;
+        margin-left: 0%;
     }
 }
 
@@ -1237,6 +1287,18 @@ td.under-countdown {
         margin-top: 100px;
     }
 
+    .homepage {
+        font-size: 15px;
+    }
+
+    .clock, span.after-clock{
+        font-size: 60px;
+    }
+
+    td.under-countdown {
+        padding: 0 20px 0 5px !important;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1274,6 +1336,10 @@ td.under-countdown {
     .donors {
         margin-top: 150px;
     }
+
+    .homepage {
+        margin: 40px 0 40px 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1285,12 +1351,8 @@ td.under-countdown {
     .table-clock h2 {
         display: none;
     }
-    .clock{
-        font-size: 30px;
-    }
-    .after-clock {
-        font-size: 30px !important;
-    }
+
+
     .text-left, .text-right {
         display: none;
     }

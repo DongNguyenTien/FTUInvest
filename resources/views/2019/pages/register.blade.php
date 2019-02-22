@@ -1,5 +1,5 @@
 @extends('2019.layout')
-@section('title','Tổng quan')
+@section('title','Đăng ký')
 @section('content')
     <div class="text-center">
         <img src="{{asset('/2019/text i-invest .png')}}" class="img-banner">
@@ -15,24 +15,41 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-7 col-md-7 col-xs-12 form-group">
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
+                    <label>Năm sinh (*):</label>
+                    <input type="text" class="form-control" name="dateOfBirth" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
                     <label for="exampleInputEmail1">Email (*):</label>
                     <input type="email" class="form-control" placeholder="name@example.com" name="email" required>
                 </div>
-                <div class="col-lg-5 col-md-5 col-xs-12 form-group">
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
                     <label for="exampleInputEmail1">Số điện thoại (*):</label>
                     <input type="text" class="form-control" name="phone" required>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-xs-12 form-group">
-                    <label>Năm sinh (*):</label>
-                    <input type="text" class="form-control" name="dateOfBirth" required>
-                </div>
-                <div class="col-lg-7 col-md-7 col-xs-12 form-group">
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
                     <label>Trường học:</label>
-                    <input type="text" class="form-control" name="university" require>
+                    <input type="text" class="form-control" name="university">
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
+                    <label for="exampleInputEmail1">Chuyên ngành: </label>
+                    <input type="text" class="form-control" name="speciality">
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 form-group">
+                    <label for="exampleInputEmail1">Khóa:</label>
+                    <input type="text" class="form-control" name="year">
+                </div>
+
+
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-xs-12 form-group">

@@ -1,17 +1,23 @@
 @extends('2019.layout')
 @section('title','Trang chủ')
 @section('content')
-    <h2 class="home-title">Cuộc thi i-invest! 2019</h2>
-    <h1 class="home-title round-1">vòng 1</h1>
-    <div class="container-info text-center countdown">
 
-        <div class="table-responsive " style="width: 70%;margin-left: 15%;" >
-            <table class="table no-border">
+    <img class="cover" src="{{asset('/2019/cover-web-01.jpg')}}">
+    <div class="text-center countdown homepage">
+        <p>Bạn muốn khẳng định giá trị của bản thân trong chính lĩnh vực mà mình yêu thích. Để làm được điều đó, bạn không ngừng tìm kiếm các cơ hội tiếp cận với nghề nghiệp trong tương lai trước nhiều người giỏi và có cùng đam mê như mình. Tuy nhiên, nếu bạn nhận ra được cơ hội nào là đắt giá để thử, để trải nghiệm hết mình, đó đã là bước đầu thành công giúp bạn nâng tầm giá trị bản thân. Chúng tôi tin rằng:</p>
+        <h3 class="text-main-color quotes">
+            “Giá trị bản thân làm nên sự khác biệt”
+        </h3>
+        <i class="text-bold under-quotes">Sự khác biệt của người thành công và không thành công cũng nằm ở chỗ họ có nhìn ra được cơ hội tốt ngay trước mắt và nắm bắt lấy nó hay không.</i>
+        <p></p>
+        <p>Với sự đầu tư kỹ càng về quy mô cũng như chất lượng nội dung chuyên môn, <span class="text-bold">CLB Chứng khoán SIC</span> hy vọng <span class="text-bold">Cuộc thi I-INVEST! 2019</span> sẽ là nơi tỏa sáng dành cho những sinh viên tài năng và khát khao khẳng định giá trị bản thân mình.</p>
+        <div class="table-responsive " style="" >
+            <table class="table no-border" style="margin-top: -6%;">
                 <tbody>
                 <tr>
-                    <td style="text-align: right;"><h2>Bạn còn</h2></td>
-
-
+                    <td style="text-align: right; padding-right: 5%;">
+                        <h2 class="text-main-color">Bạn còn</h2>
+                    </td>
                     <td class="time">
                         <span class="clock" id="countdown-day"></span>
                         <span class="after-clock">:</span>
@@ -28,7 +34,9 @@
                         <span class="clock" id="countdown-second"></span>
                     </td>
 
-                    <td style="text-align: left;"><h2>để</h2></td>
+                    <td style="text-align: left;">
+                        <h2 class="text-main-color">để</h2>
+                    </td>
                 </tr>
 
                 <tr>
@@ -47,13 +55,13 @@
 
         </div>
 
-        {{--<button type="button" id="btn-thuthach" class="btn" data-toggle="modal" data-target=".challenge">Đăng ký ngay</button>--}}
-        <a type="button" id="btn-dangky" href="{{route('dangky')}}" class="btn" >Đăng ký ngay</a>
+        <button type="button" id="btn-dangky" class="btn" data-toggle="modal" data-target=".challenge">Thử thách</button>
+        {{--<a type="button" id="btn-dangky" href="{{route('dangky')}}" class="btn" >Thử thách</a>--}}
 
     </div>
 
 
-   {{-- <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal fade challenge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <form enctype="multipart/form-data" class="validate" id="form-input" method="post" action="{{route('register')}}">
@@ -75,16 +83,10 @@
                     </div>
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Đăng kí Khóa học Chứng khoán cơ bản START-UP 2018 </h4>
+                        <h4 class="modal-title" id="myModalLabel">Đăng nhập I-Invest 2019! </h4>
                     </div>
 
                     <div class="modal-body">
-                        <div class="alert alert-info">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            Các thông tin này sẽ được dùng để xác thực việc đăng ký tham gia Khóa học chứng khoán Cơ bản START-UP 2018 của bạn.
-                            <i>(Phần thông tin để BTC xác nhận bạn đã đăng kí theo nhóm, không nhằm mục đích đăng kí hộ người khác.)</i>
-                        </div>
-
 
 
                         <div class="alert alert-danger"  style="display: none; text-align: center">
@@ -92,137 +94,39 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-12 col-sm-12">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Họ và tên (*)</label>
+                                    <label for="exampleInputEmail1">Email (*)</label>
                                     <input type="text" class="form-control" name="name" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Ngày tháng năm sinh (*)</label>
-                                    <div class='input-group date'>
-                                        <input type="text" class="form-control" id="datetimepicker" name="dateOfBirth">
-                                        <label class="input-group-addon btn" for="date">
-                                            <span class="fa fa-calendar open-datetimepicker"></span>
-                                        </label>
-                                    </div>
+                                    <label >Mật khẩu (*)</label>
+                                    <input type="password" class="form-control" name="identification" required>
                                 </div>
-                                <div class="form-group">
-                                <label>Giới tính (*)</label>
-                                <select name="sex" class="form-control" required>
-                                <option value >--Chọn giới tính--</option>
-                                <option value="0">Nam</option>
-                                <option value="1">Nữ</option>
-                                </select>
-                                </div>
-                                <div class="form-group">
-                                    <label >Số chứng minh nhân dân (*)</label>
-                                    <input type="text" class="form-control" name="identification" required>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Địa chỉ email (*)</label>
-                                    <input type="email" class="form-control"   placeholder="name@example.com" name="email" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Số điện thoại (*)</label>
-                                    <input type="text" class="form-control" name="phone" required>
-                                </div>
-
-
-
-
 
 
 
                             </div>
 
-                            <div class="col-md-6 col-sm-12">
-
-                                <div class="form-group">
-                                    <label>Trang facebook của bạn (*)</label>
-                                    <input type="text" class="form-control" placeholder=facebook.com/example name="facebook" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Trường</label>
-                                    <input type="text" class="form-control"  name="university" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Thành tích học tập, kinh nghiệm làm việc nổi bật</label>
-                                    <textarea name="prices" rows="4" class="form-control"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <label>Thành tích ngoại khóa nổi bật (tối đa 3 cái)</label>
-                                    <textarea name="extracurricular" rows="4" class="form-control"></textarea>
-                                </div>
-                            </div>
 
 
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="box box-success box-solid">
-                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Đăng kí địa điểm và lịch thi (nếu được vào vòng 2)</h3>
-                                        <!-- /.box-tools -->
-                                    </div>
-                                    <!-- /.box-header -->
-                                    <div class="box-body">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Địa điểm</label>
-                                                    <select name="location" class="form-control" required>
-                                                        <option value >--Chọn địa điểm--</option>
-                                                        <option value="1">Đại học Kinh tế Quốc dân</option>
-                                                        <option value="2">Đại học Ngoại thương</option>
-                                                    </select>
-                                                </div>
 
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="exampleInputPassword1">Ca thi</label>
-                                                    <select name="shift" class="form-control" required>
-                                                        <option value >--Chọn ca thi--</option>
-                                                        <option value="1">Ca 1: 8h00 - 9h30</option>
-                                                        <option value="2">Ca 2: 10h00 - 11h30</option>
-                                                        <option value="3">Ca 3: 14h00 - 15h30</option>
-                                                        <option value="4">Ca 4: 16h00 - 17h30</option>
-                                                    </select>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                    <!-- /.box-body -->
-                                </div>
-
-                            </div>
-
-
-                        </div>
 
 
 
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                        <button type="submit" class="btn btn-primary" id="button-submit">Đăng ký</button>
+                        <a type="button" class="btn btn-default" href="{{route('dangky')}}">Đăng ký</a>
+                        <button type="submit" class="btn btn-primary" id="button-submit">Đăng nhập</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>--}}
+    </div>
 
 
 @endsection
@@ -272,7 +176,7 @@
 
 
 
-            $('.clock').countdown('11/07/2019')
+            $('.clock').countdown('03/10/2019')
                 .on('update.countdown', function(event) {
                     var totalDays= event.offset.totalDays;
 

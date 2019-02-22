@@ -74,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         background-size: cover;
         background-repeat: repeat;
         min-height: 800px;
-        font-family: 'blooming', sans-serif;
+        font-family: 'iciel', sans-serif;
     }
 
 

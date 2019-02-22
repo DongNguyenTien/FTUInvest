@@ -44,6 +44,8 @@ class Member extends Model implements AuthenticatableContract, CanResetPasswordC
             'password' => $random,
             'dateOfBirth' => $params['dateOfBirth'],
             'university' => $params['university'],
+            'speciality' => $params['speciality'],
+            'year' => $params['year'],
             'facebook' => $params['facebook'],
             'identification' => $params['identification'],
             'extracurricular' => $params['extracurricular'],
