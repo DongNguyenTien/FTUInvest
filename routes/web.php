@@ -48,21 +48,22 @@ Route::post('/password/reset', 'UserController@saveNewPassword')->name('password
  * Admin
  **/
 
-Route::get('/administrator','InvestController@administrator')->name('administrator.login');
+Route::get('/administrator','FTU2019Controller@administrator')->name('administrator.login');
+Route::post('/administrator/action','FTU2019Controller@administratorAction')->name('administrator.action');
+Route::get('/administrator/action','FTU2019Controller@viewAdminAction')->name('administrator.action.view');
+Route::get('/administrator/logout', 'FTU2019Controller@adminLogout');
 
-Route::get('/reset/password','InvestController@resetPassword')->name('administrator.reset');
-Route::post('/reset/password','InvestController@resetPasswordPost')->name('administrator.reset.post');
-
-Route::post('/administrator/action','InvestController@administratorAction')->name('administrator.action');
-Route::get('/administrator/action','InvestController@viewAdminAction')->name('administrator.action.view');
-
-Route::get('/ajax/member','InvestController@getListCandicate');
-
-Route::post('/ajax/changePassword','InvestController@changePassword');
-Route::get('/download/data','InvestController@exportExcel')->name('download_data');
+Route::get('/reset/password','FTU2019Controller@resetPassword')->name('administrator.reset');
+Route::post('/reset/password','FTU2019Controller@resetPasswordPost')->name('administrator.reset.post');
 
 
-Route::get('/check/administrator','InvestController@testcase')->name('test');
+Route::get('/ajax/member','FTU2019Controller@getListCandicate');
+
+Route::post('/ajax/changePassword','FTU2019Controller@changePassword');
+Route::get('/download/data','FTU2019Controller@exportExcel')->name('download_data');
+
+
+//Route::get('/check/administrator','InvestController@testcase')->name('test');
 
 
 /**

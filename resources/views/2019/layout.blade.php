@@ -36,7 +36,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 
-{{--    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.css') }}">--}}
+    <link rel="stylesheet" href="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.css') }}">
 
 
     <link rel="stylesheet" href="{{ URL::asset('admin-lte/dist/css/bootstrap-datetimepicker.min.css') }}" />
@@ -116,8 +116,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- Bootstrap core JavaScript -->
 
-{{--<script src="{{ asset('admin-lte/plugins/datatables/jquery.dataTables.min.js') }}"></script>--}}
-{{--<script src="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>--}}
+<script src="{{ asset('admin-lte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('admin-lte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
 
 <!-- Jquery countdown-->
 <script src="{{asset('/js/jquery.countdown.js')}}"></script>

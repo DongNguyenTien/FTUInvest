@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('2019.layout')
 @section('title','Quên mật khẩu')
 @section('content')
 

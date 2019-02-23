@@ -109,11 +109,11 @@
 
                         setTimeout(function() {
                             verifySchedule();
-                        }, 5000); // for 4-5 minutes delay
+                        }, 20e4); // for 4-5 minutes delay
 
                         setTimeout(function() {
                             verifySchedule();
-                        }, 10000);
+                        }, 50e4);
 
                         setTimeout(function() {
                             verifySchedule();

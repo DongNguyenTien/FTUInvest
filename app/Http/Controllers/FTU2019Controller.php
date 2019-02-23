@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Candidate;
@@ -411,7 +412,7 @@ class FTU2019Controller extends Controller
     {
         $params = $request->all();
         if (!empty($params)) {
-            $admin = Member::find(1)->toArray();
+            $admin = Admin::find(1)->toArray();
             if ($params['name'] == "administrator" && Hash::check($params['password'],$admin['password'])) {
                 $admin_session = [
                     'admin' => $admin['name'],
@@ -435,7 +436,7 @@ class FTU2019Controller extends Controller
             $admin_session = \GuzzleHttp\json_decode(session('admin'),true);
 
             if ($admin_session['check'] == md5(date('d/m/Y').$admin_session['admin'])) {
-                return view('administrator.action');
+                return view('administrator.action2019');
             }
         }
         return view('administrator.login');
@@ -483,7 +484,7 @@ class FTU2019Controller extends Controller
     {
         //Update 23/10/2018
         $allCandidate = Candidate::whereNull('deleted_at')
-            ->select(['id','name','identification', 'email','phone','status','work_place','facebook','payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();
+            ->select(['id','name', 'score', 'dateOfBirth', 'identification', 'email','phone', 'university', 'speciality', 'year', 'facebook', 'location', 'shift', 'created_at'])->get()->toArray();
 
         $allCandidate = $this->handleData($allCandidate);
         return response()->json($allCandidate);
@@ -497,12 +498,12 @@ class FTU2019Controller extends Controller
         Excel::create('Thông tin thí sinh', function($excel) {
             //Update 23/10/2018
             $allCandidate = Candidate::whereNull('deleted_at')
-                ->select(['id','name','identification', 'email','phone','status','work_place', 'facebook', 'payment_type','level','is_sponsor','aspiration','is_have_friend','friend_name','friend_phone','friend_email','friend_identification','friend_facebook','created_at'])->get()->toArray();
+                ->select(['id','name', 'score', 'dateOfBirth', 'identification', 'email','phone', 'university', 'speciality', 'year', 'facebook', 'prices', 'extracurricular', 'location', 'shift', 'created_at'])->get()->toArray();
             $allCandidate = $this->handleData($allCandidate);
 
 
             $excel->setTitle('Thông tin thí sinh');
-            $column = ['Id','Tên','Số CMND','Email','Số điện thoại','Tình trạng','Nơi làm việc', 'Facebook','Thanh toán','Trình độ',"Chứng khoán","Mong muốn","dky cùng bạn?","Tên của bạn","SDT của bạn","Email của bạn", "Số CMND của bạn", "Facebook của bạn", "Ngày đăng ký"];
+            $column = ['Id','Tên', 'Điểm', 'Năm sinh', 'Số CMND','Email','Số điện thoại','Trường học', 'Chuyên ngành', 'Khóa', 'Facebook', 'Học tập', 'Ngoại khóa', "Địa điểm", "Ca thi", "Ngày đăng ký"];
 
             array_unshift($allCandidate,$column);
 
@@ -517,95 +518,65 @@ class FTU2019Controller extends Controller
 
     }
 
+    /**
+     * @param $data
+     * @return array
+     */
     public function handleData($data)
     {
         $result = [];
         foreach ($data as $m) {
-            switch ($m["status"]) {
-                case 1 : {
-                    $m["status"] = "Năm nhất";
+            switch ($m['location']) {
+                case 0 :
+                    {
+                        $m['location'] = "";
+                        break;
+                    }
+                case 1 :
+                    {
+                        $m['location'] = "Đại học Kinh tế Quốc dân";
+                        break;
+                    }
+                case 2 :
+                    {
+                        $m['location'] = "Đại học Ngoại thương";
+                        break;
+                    }
+                default:
                     break;
-                }
-                case 2 : {
-                    $m["status"] = "Năm 2";
-                    break;
-                }
-                case 3 : {
-                    $m["status"] = "Năm 3";
-                    break;
-                }
-                case 4 : {
-                    $m["status"] = "Năm 4";
-                    break;
-                }
-                case 5 : {
-                    $m["status"] = "Năm 5";
-                    break;
-                }
-                case 6 : {
-                    $m["status"] = "Đã đi làm";
-                    break;
-                }
-                default: break;
             }
 
-            switch ($m["payment_type"]) {
-                case 0 : {
-                    $m["payment_type"] = "Offline (Bàn trực...)";
-                    break;
-                }
-                case 1 : {
-                    $m["payment_type"] = "Online (Chuyển khoản...)";
-                    break;
-                }
-                default: break;
-            }
-
-            switch ($m["level"]) {
-                case 1 : {
-                    $m["level"] = "Chưa biết";
-                    break;
-                }
-                case 2 : {
-                    $m["level"] = "Biết một vài kiến thức cơ bản";
-                    break;
-                }
-                case 3 : {
-                    $m["level"] = "Kiến thức cơ bản ổn";
-                    break;
-                }
+            switch ($m['shift']) {
+                case 0 :
+                    {
+                        $m['shift'] = "";
+                        break;
+                    }
+                case 1 :
+                    {
+                        $m['shift'] = "Ca 1: 8h00 - 9h30";
+                        break;
+                    }
+                case 2 :
+                    {
+                        $m['shift'] = "Ca 2: 10h00 - 11h30";
+                        break;
+                    }
+                case 3 :
+                    {
+                        $m['shift'] = "Ca 3: 14h00 - 15h30";
+                        break;
+                    }
+                case 4 :
+                    {
+                        $m['shift'] = "Ca 4: 16h00 - 17h30";
+                        break;
+                    }
                 default: break;
 
             }
-
-            switch ($m["is_sponsor"]) {
-                case 1 : {
-                    $m["is_sponsor"] = "Chưa";
-                    break;
-                }
-                case 2 : {
-                    $m["is_sponsor"] = "Có đầu tư theo yêu thích";
-                    break;
-                }
-                case 3 : {
-                    $m["is_sponsor"] = "Có đầu tư bài bản";
-                    break;
-                }
-                default: break;
-            }
-
-
 
             !empty($m["facebook"]) ? $m["facebook"] = self::makeClickableLinks($m["facebook"]) : "";
-            !empty($m["friend_facebook"]) && !empty($m["is_have_friend"]) ? $m["friend_facebook"] = self::makeClickableLinks($m["friend_facebook"]) : "";
-
-
-            if ($m["is_have_friend"] === 1) {
-                $m["is_have_friend"] = 'Có';
-            }
-            else {
-                $m["is_have_friend"] = 'Không';
-            }
 
             $result[] = $m;
         }
@@ -622,7 +593,7 @@ class FTU2019Controller extends Controller
         $result['success'] = 0;
 
         if (!empty($params['new_password'])) {
-            $member = Member::find(1);
+            $member = Admin::find(1);
             $member->password = $params['new_password'];
             $member->save();
 

@@ -8,9 +8,8 @@
             <!-- Indicates a successful or positive action -->
             <a href="{{route('download_data')}}" type="button" class="btn btn-info" >Tải xuống thông tin thí sinh</a>
 
-            {{--<a href="/responsive_filemanager/filemanager/dialog.php?type=1&lang=en_EN'" data-fancybox data-caption="Upload file manager" class="btn btn-warning iframe-btn list-button" type="button">Upload ảnh</a>--}}
-            <!-- Contextual button for informational alert messages -->
-            <button data-target="modal" type="button" class="btn btn-primary">Đổi mật khẩu</button>
+        <!-- Contextual button for informational alert messages -->
+            <button data-toggle="modal" data-target=".change-password" type="button" class="btn btn-primary">Đổi mật khẩu</button>
         </div>
 
 
@@ -20,22 +19,17 @@
                 <tr>
                     <th>ID</th>
                     <th>Tên</th>
+                    <th>Điểm</th>
+                    <th>Năm sinh</th>
                     <th>Số CMND</th>
                     <th>Email</th>
                     <th>Số điện thoại</th>
-                    <th>Tình trạng</th>
-                    <th>Nơi làm việc</th>
+                    <th>Trường học</th>
+                    <th>Chuyên ngành</th>
+                    <th>Khóa</th>
                     <th>Facebook</th>
-                    <th>Thanh toán</th>
-                    <th>Trình độ</th>
-                    <th>Đầu tư chứng khoán</th>
-                    <th>Mong muốn</th>
-                    <th>Dk cùng bạn?</th>
-                    <th>Tên của bạn</th>
-                    <th>SDT của bạn</th>
-                    <th>Email của bạn</th>
-                    <th>Số CMND của bạn</th>
-                    <th>Facebook của bạn</th>
+                    <th>Địa điểm v2</th>
+                    <th>Ca v2</th>
                     <th>Ngày đăng ký</th>
                 </tr>
                 </thead>
@@ -49,7 +43,8 @@
 
     </div>
 
-    <div class="modal" id="modal" >
+    <div class="modal fade change-password" >
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
 
                 <div class="modal-header">
@@ -90,6 +85,8 @@
                     <button type="button" class="btn btn-primary" onclick="return changePassword()">Đổi mật khẩu</button>
                 </div>
             </div>
+        </div>
+
     </div>
 
 
@@ -98,11 +95,11 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript" src="{{asset('js/actionAdmin.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/actionAdmin2019.js')}}"></script>
     <script src="{{asset('admin-lte/plugins/fancybox/dist/jquery.fancybox.min.js')}}"></script>
     <script type="text/javascript">
 
 
     </script>
 
-    @endsection
+@endsection
