@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12 form-group">
                     <label>Năm sinh (*):</label>
-                    <input type="text" class="form-control" name="dateOfBirth" required>
+                    <input type="text" class="form-control" id="datetimepicker" name="dateOfBirth" required>
                 </div>
             </div>
 
@@ -51,19 +51,19 @@
 
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12 form-group">
-                    <label>Trường học:</label>
-                    <input type="text" class="form-control" name="university">
+                    <label>Trường học (*):</label>
+                    <input type="text" class="form-control" name="university" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12 form-group">
-                    <label for="exampleInputEmail1">Chuyên ngành: </label>
-                    <input type="text" class="form-control" name="speciality">
+                    <label for="exampleInputEmail1">Chuyên ngành (*): </label>
+                    <input type="text" class="form-control" name="speciality" required>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12 form-group">
-                    <label for="exampleInputEmail1">Khóa:</label>
-                    <input type="text" class="form-control" name="year">
+                    <label for="exampleInputEmail1">Khóa (*):</label>
+                    <input type="text" class="form-control" name="year" required>
                 </div>
 
 
@@ -76,8 +76,8 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-xs-12 form-group">
-                    <label>Link facebook:</label>
-                    <input type="text" class="form-control" placeholder=facebook.com/example name="facebook" require>
+                    <label>Link facebook (*):</label>
+                    <input type="text" class="form-control" placeholder=facebook.com/example name="facebook" required>
                     <i>VD: https://www.facebook.com/nkthu.6399</i>
                 </div>
             </div>
@@ -98,12 +98,12 @@
             <h3 class="text-main-color" style="margin-bottom: 30px">(nếu được vào vòng 2)</h3>
 
             <div>
-                <label>Địa điểm:</label>
+                <label>Địa điểm (*):</label>
                 <div class="row register-radio">
                     <div class="col-md-6 col-lg-6 col-xs-12 form-group">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="location" value="1">Đại học Kinh tế Quốc dân
+                                <input type="radio" name="location" value="1" checked>Đại học Kinh tế Quốc dân
                             </label>
                         </div>
                     </div>
@@ -119,12 +119,12 @@
             </div>
 
             <div>
-                <label>Thời gian:</label>
+                <label>Thời gian (*):</label>
                 <div class="row register-radio" style="margin-bottom: 0">
                     <div class="col-md-6 col-lg-6 col-xs-12 form-group">
                         <div class="radio">
                             <label>
-                                <input type="radio" name="shift" value="1">Ca 1: 8h00 - 9h30
+                                <input type="radio" name="shift" value="1" checked>Ca 1: 8h00 - 9h30
                             </label>
                         </div>
                     </div>
@@ -173,6 +173,9 @@
                 onclick: false,
             });
 
+            $('#datetimepicker').datetimepicker({
+                format: "DD-MM-YYYY",
+            });
 
             $('#form-input').on('submit',function(e) {
                 e.preventDefault();
@@ -182,7 +185,8 @@
                     $.post('{{route('register')}}',$(this).serialize(), function(response) {
                         $('#overlay').css('display','none');
                         if (response.success === 1) {
-                            alert("Đăng ký thành công");
+                            alert("BTC xin thông báo bạn đã đăng ký thành công\n" +
+                                "Vui lòng check hòm mail để nhận thông tin đăng nhập và tham gia thi Vòng 1");
                             window.location.href = '{{route('home')}}'
                         } else {
                             alert(response.messages)

@@ -16,7 +16,8 @@
  */
 
 Route::get('/','FTU2019Controller@homepage')->name('home');
-Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
+//Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
+//Route::get('/test','FTU2019Controller@rawAns');
 
 //Page lien quan
 Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');

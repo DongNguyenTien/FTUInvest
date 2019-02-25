@@ -10,12 +10,12 @@
 
         <p>Bước sang năm thứ 10, <span class="text-bold">I-INVEST! 2019</span> rất hân hạnh khi tiếp tục nhận được sự tin tưởng và giúp đỡ, đồng hành từ Ủy ban Chứng khoán nhà nước, Sở giao dịch Chứng khoán Hà nội, Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam (VCBS),... cùng nhiều đơn vị khác.</p>
 
-        <p>Bên cạnh tổng giá trị giải thưởng lên đến hơn <span class="text-bold">250 triệu đồng, I-INVEST! 2019</span> cũng đem lại cho các thí sinh cơ hội được thực tập và làm việc tại những công ty hàng đầu trong lĩnh vực Kinh tế - Tài chính. Quan trọng hơn hết, <span class="text-bold">I-INVEST!</span> giúp các thí sinh có những đánh giá chính xác về năng lực của bản thân, giúp họ định hướng phát triển trong tương lai và tự tin khẳng định giá trị bản thân mình.</p>
+        <p>Bên cạnh tổng giá trị giải thưởng lên đến hơn <span class="text-bold">350 triệu đồng, I-INVEST! 2019</span> cũng đem lại cho các thí sinh cơ hội được thực tập và làm việc tại những công ty hàng đầu trong lĩnh vực Tài chính - Chứng khoán. Quan trọng hơn hết, <span class="text-bold">I-INVEST!</span> giúp các thí sinh có những đánh giá chính xác về năng lực của bản thân, giúp họ định hướng phát triển trong tương lai và tự tin khẳng định giá trị bản thân mình.</p>
 
         <p>Chúng tôi đã sẵn sàng để đem đến cho bạn những <span class="text-bold">“Trải nghiệm khác biệt”</span> chưa từng có ở một cuộc thi về Tài chính - Chứng khoán.</p>
 
         <div class="text-center">
-            <i class="text-main-color">Còn bạn, bạn đã sẵn sàng để chinh phục thử thách và nâng tầm giá trị bản thân mình?</i>
+            <i class="text-main-color">Còn bạn, bạn đã sẵn sàng chinh phục thử thách để nâng tầm giá trị bản thân?</i>
 
         </div>
     </div>
@@ -59,37 +59,37 @@
                         </div>
                         <div class="col-md-6">
                             <h5 class="home-title" >vòng 2 : <span class="text-main-color" >i-test!</span></h5>
-                            <p>Bài thi giấy bao gồm 50 câu hỏi trắc nghiệm và câu hỏi tự luận
-                                40 thí sinh xuất sắc nhất sẽ bước tiếp vào vòng 3</p>
+                            <p>Bài thi giấy bao gồm 50 câu hỏi trắc nghiệm và câu hỏi tự luận</p>
+                             <p>   40 thí sinh xuất sắc nhất sẽ bước tiếp vào vòng 3</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <h5 class="home-title" >vòng 3 : <span class="text-main-color" >i-trial!</span></h5>
                             <p>
-                                Khóa đào tạo phi lợi nhuận I-GAIN!: Để phục vụ cho vòng thi chính, Top 40 sẽ được tham dự khóa đào tạo gồm 2 buổi, giảng dạy bởi các chuyên gia hàng đầu trong lĩnh vực Tài chính - Chứng khoán
+                                40 thí sinh xuất sắc nhất sẽ được tham gia <span class="text-bold">Workshop đào tạo phi lợi nhuận <span class="text-main-color">I-GAIN!</span></span> được giảng dạy bởi các chuyên gia hàng đầu trong lĩnh vực Tài chính - Chứng khoán nhằm mục đích trang bị kiến thức cho vòng thi chính thức.
                             </p>
-                            <div class="col-md-5 half-inside">
+                            <div class="col-md-6 half-inside" style="padding-left: 0px">
                                 <h5 class="home-title" >3.1 Case study:</h5>
-                                <p>Top 40 sẽ được chia thành 10 đội thi và thực hiện giải case study</p>
+                                <p>Top 40 sẽ được chia thành 8 đội thi và thực hiện giải case study</p>
                             </div>
-                            <div class="col-md-5 col-md-offset-2 half-inside">
+                            <div class="col-md-6">
                                 <h5 class="home-title" >3.2 Individual test:</h5>
-                                <p>Phần thi nhóm + phần thi cá nhân
-                                    16 thí sinh xuất sắc nhất bước vào vòng 4
-                                </p>
+                                <p>Sau phần thi nhóm, 40 thí sinh sẽ làm bài kiểm tra kiến thức chuyên sâu.</p>
+                                <p>16 thí sinh xuất sắc nhất bước vào vòng 4</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <h5 class="home-title" >vòng 4 : <span class="text-main-color" >i-challenge!</span></h5>
-                            <p>Bài thi giấy bao gồm 50 câu hỏi trắc nghiệm và câu hỏi tự luận
-                                40 thí sinh xuất sắc nhất sẽ bước tiếp vào vòng 3</p>
+                            <p>Top 16 sẽ tham gia đầu tư thực tế bằng tài khoản đầu tư chứng khoán do VCBS tài trợ.
+                             Kết thúc thời gian đầu tư, các thí sinh sẽ thuyết trình bảo vệ danh mục đầu tư và phản biện trước Hội đồng Giám khảo.
+                            05 thí sinh xuất sắc nhất sẽ bước vào Chung kết"</p>
                         </div>
                         <div class="col-md-6">
-                            <h5 class="home-title" >ĐÊM GALA CHUNG KẾT <span class="text-main-color" >I-SHINE!</span></h5>
-                            <p>Top 06 sẽ tranh tài để tìm ra ngôi vị Quán quân</p>
+                            <h5 class="home-title" >ĐÊM GALA CHUNG KẾT <p class="text-main-color" >I-SHINE!</p></h5>
+                            <p>Top 05 sẽ tranh tài để tìm ra ngôi vị Quán quân</p>
                             <p>Địa điểm: Trung tâm nghệ thuật Âu Cơ - số 8 Huỳnh Thúc Kháng, Đống Đa, Hà Nội.
 
                             </p>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="price-box-extra">
                         <p> 30.000.000 VNĐ tiền mặt </p>
-                        <p> 01 năm sử dụng phần mềm FiinPro trị giá 108 triệu đồng</p>
+                        <p> 01 năm sử dụng hệ thống FiinPro trị giá 108 triệu đồng</p>
                         <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
 
                     </div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="price-box-extra">
                         <p> 15.000.000 VNĐ tiền mặt </p>
-                        <p> 06 tháng sử dụng phần mềm FiinPro trị giá 54 triệu đồng </p>
+                        <p> 06 tháng sử dụng hệ thống FiinPro trị giá 54 triệu đồng </p>
                         <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
 
 
@@ -159,7 +159,7 @@
                     </div>
                     <div class="price-box-extra">
                         <p> 10.000.000 VNĐ tiền mặt</p>
-                        <p> 03 tháng sử dụng phần mềm FiinPro trị giá 27 triệu đồng </p>
+                        <p> 03 tháng sử dụng hệ thống FiinPro trị giá 27 triệu đồng </p>
                         <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
 
                     </div>

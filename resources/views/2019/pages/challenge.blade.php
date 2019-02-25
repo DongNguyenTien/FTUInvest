@@ -27,11 +27,11 @@
                 <p style="margin-bottom: 30px;">Thời gian làm bài <span class="text-bold">20 phút </span></p>
 
                 <i><u>Lưu ý trước khi làm bài:</u></i>
-                <p style="margin-top: 15px;">- Bạn chỉ được quyền tạo đề thi <span class="text-bold" >ba lần</span> (còn {{$chance}} lần) và nộp bài thi <strong class="text-bold">một lần duy
+                <p style="margin-top: 15px;">- Bạn chỉ được quyền tạo đề thi <span class="text-bold" >hai lần</span> (còn {{$chance}} lần) và nộp bài thi <strong class="text-bold">một lần duy
                         nhất.</strong></p>
 
                 <p>- BTC được quyền hủy bỏ kết quả thi nếu phát hiện có bất kỳ gian lận nào trong quá trình làm bài.</p>
-                <p>Chúc bạn may mắn!</p>
+                {{--<p>Chúc bạn may mắn!</p>--}}
 
                 <div class="margin-top">
                     <input type="checkbox" class="check-accept"><span
@@ -56,7 +56,7 @@
     <div id="someid"></div>
 @endsection
 <div style="float:right">
-    <span class="count-time">20':00</span>
+    <span class="count-time">20:00</span>
 </div>
 @section('scripts')
     <script type="text/javascript">
@@ -72,6 +72,7 @@
             var now = new Date();
 
             $(this).attr("check","check");
+            $(this).attr('readonly','readonly')
             $("body").css("overflow", "hidden");
             $('#overlay').css('display','block');
 
@@ -99,7 +100,7 @@
 
                         $('.count-time').countdown(new Date(+now + 120e4))
                             .on('update.countdown', function (event) {
-                                var format = "%-M':%-S";
+                                var format = "%-M:%-S";
                                 $(this).html(event.strftime(format));
                             })
 
@@ -142,14 +143,14 @@
                     '                        <div class="answer-left col-md-4">' +
                     '                            <div class="radio">' +
                     '                                <label>' +
-                    '                                    <input type="radio" name="'+i+'" value="0">'+array_question[i].answer[0]+'' +
+                    '                                    <input type="radio" name="'+i+'" value="0"> A. '+array_question[i].answer[0]+'' +
                     '                                </label>' +
                     '                            </div>' +
                     '                        </div>' +
                     '                        <div class="col-md-offset-2 col-md-4">' +
                     '                            <div class="radio">' +
                     '                                <label>' +
-                    '                                    <input type="radio" name="'+i+'" value="1">'+array_question[i].answer[1]+' ' +
+                    '                                    <input type="radio" name="'+i+'" value="1"> B. '+array_question[i].answer[1]+' ' +
                     '                                </label>' +
                     '                            </div>' +
                     '                        </div>' +
@@ -158,14 +159,14 @@
                     '                        <div class="answer-left col-md-4">' +
                     '                            <div class="radio">' +
                     '                                <label>' +
-                    '                                    <input type="radio" name="'+i+'" value="2">'+array_question[i].answer[2]+'' +
+                    '                                    <input type="radio" name="'+i+'" value="2"> C. '+array_question[i].answer[2]+'' +
                     '                                </label>' +
                     '                            </div>' +
                     '                        </div>' +
                     '                        <div class="col-md-offset-2 col-md-4">' +
                     '                            <div class="radio">' +
                     '                                <label>' +
-                    '                                    <input type="radio" name="'+i+'" value="3">'+array_question[i].answer[3]+'' +
+                    '                                    <input type="radio" name="'+i+'" value="3"> D. '+array_question[i].answer[3]+'' +
                     '                                </label>' +
                     '                            </div>' +
                     '                        </div>' +

@@ -30,8 +30,8 @@ class NoticeResult extends Mailable
      */
     public function build()
     {
-        return $this->subject(' Kết quả vòng 1 cuộc thi I-Invest 2018')
-            ->view('user.mailResult')
+        return $this->subject(' I-INVEST! 2019 I Chúc mừng bạn đã hoàn thành Vòng 1: Kiểm tra trực tuyến I-START!')
+            ->view('2019.mails.ketqua')
             ->with([
                 'name'=>$this->data['name'],
             ]);

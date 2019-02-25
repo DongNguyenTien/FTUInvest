@@ -29,11 +29,12 @@ class RegisterMember extends Mailable
      */
     public function build()
     {
-        return $this->subject(' Đăng ký thi cuộc thi I-Invest 2018')
-            ->view('user.sendEmail')
+        return $this->subject('I-INVEST! 2019 I Vòng 1: Kiểm tra trực tuyến I-START!')
+            ->view('2019.mails.dangky')
             ->with([
                 'name'=>$this->data['name'],
                 'temp_password' => $this->data['temp_password'],
+                'email' => $this->data['email']
             ]);
     }
 }

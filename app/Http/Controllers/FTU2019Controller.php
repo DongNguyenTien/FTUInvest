@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Mail;
 use App\MyValueBinder;
 use PHPExcel_Style_NumberFormat;
 use App\Challenge;
+use App\Mail\RegisterMember;
 
 class FTU2019Controller extends Controller
 {
@@ -130,6 +131,42 @@ class FTU2019Controller extends Controller
         }
     }
 
+    public function rawAns()
+    {
+        $files = [
+            'rawAns.txt',
+        ];
+
+        $i = 1;
+        foreach ($files as $file) {
+            $questions = file_get_contents('./2019/dethi/'.$file);
+            preg_match_all('/(?<questions>Câu.*?\n4..*?\n)/s', $questions, $raw);
+
+            $result = [];
+            foreach ($raw["questions"] as $raw_question) {
+                $item = [];
+                preg_match_all('/Câu.*?:\s(?<question>.*?)(:|\?)/s', $raw_question, $question);
+                preg_match_all('/[1-4]\.\s(?<answer>.*?)\n/s', $raw_question, $answer);
+
+                if (empty($question["question"][0])) dd($question, $raw_question);
+                $item["question"] = $question["question"][0];
+                $item["answer"] = \GuzzleHttp\json_encode($answer["answer"]);
+
+                $change = Question::where('question',$item["question"])->first();
+                if (!empty($change)) {
+                    $change->update([
+                        'raw_type' => 1,
+                        'raw_answer' => $item['answer']
+                    ]);
+                }
+
+
+                $result[] = $item;
+            }
+            $i++;
+        }
+        dd($result);
+    }
     /**
      * @param $sheet
      * @param $numberSet
@@ -177,7 +214,7 @@ class FTU2019Controller extends Controller
     {
         if (Auth::check() && Auth::user()->status == 0 && strtotime("now") <= strtotime($this->time_out)) {
             $record_challenge = Challenge::where('candidate_id', Auth::id())->first();
-            $chance = !empty($record_challenge) ? 3 - (int)$record_challenge->chance : 3;
+            $chance = !empty($record_challenge) ? 2 - (int)$record_challenge->chance : 2;
             return view('2019.pages.challenge', compact('chance'));
         } else if (Auth::check() && (Auth::user()->status == 1 || strtotime("now") > strtotime($this->time_out))) {
             $member = Auth::user();
@@ -211,13 +248,13 @@ class FTU2019Controller extends Controller
 
             if (!empty($record_challenge) && $record_challenge->status == 0) {
                 $record_challenge->chance += 1;
-                $record_challenge->chance == 3 ? $record_challenge->status = 1 : $record_challenge->status = 0;
+                $record_challenge->chance == 2 ? $record_challenge->status = 1 : $record_challenge->status = 0;
                 $record_challenge->questions = \GuzzleHttp\json_encode($list_question);
                 $record_challenge->check = $checking;
                 $record_challenge->answer = "";
                 $record_challenge->save();
 
-                if ($record_challenge->chance == 3) {
+                if ($record_challenge->chance == 2) {
                     Auth::user()->status = 1;
                     Auth::user()->save();
                 }
@@ -251,7 +288,7 @@ class FTU2019Controller extends Controller
     {
         $params = $request->all();
 
-        $checking = JWT::decode($params['checking'],$this->key, array('HS256'));
+        $checking = JWT::decode($params['checking'], $this->key, array('HS256'));
         $checking = \GuzzleHttp\json_decode(\GuzzleHttp\json_encode($checking),true);
 
         $check = [];
@@ -325,7 +362,7 @@ class FTU2019Controller extends Controller
     public function showResult()
     {
         //Member
-        if (Auth::check()) {
+        if (Auth::check() && Auth::user()->status == 1) {
             $member =Auth::user();
             return view('2019.pages.score',compact('member'));
         }
@@ -350,11 +387,17 @@ class FTU2019Controller extends Controller
         foreach ($temp_list_question as $key=>$temp_question) {
             $true = $temp_question['true'];
 
-            $array_answer = array_merge([$temp_question['true']],\GuzzleHttp\json_decode($temp_question['false'], true));
 
             //Save list question
             $obj_ques['question'] = $temp_question['question'];
-            shuffle($array_answer);
+
+            if($temp_question["raw_type"] == 1) {
+                $array_answer = \GuzzleHttp\json_decode($temp_question["raw_answer"], true);
+            }
+            else {
+                $array_answer = array_merge([$temp_question['true']],\GuzzleHttp\json_decode($temp_question['false'], true));
+                shuffle($array_answer);
+            }
             $obj_ques['answer'] = $array_answer;
             array_push($final_list_question,$obj_ques);
 
@@ -631,5 +674,14 @@ class FTU2019Controller extends Controller
         }
 
         return '<a href="'.$s.'" target="_blank">Click</a>';
+    }
+
+    public function testMail()
+    {
+        Mail::to("tung91996@gmail.com")->send(new RegisterMember(array(
+            'name'=>124214,
+            'temp_password' => 12323,
+            'email' => 123213
+        )));
     }
 }

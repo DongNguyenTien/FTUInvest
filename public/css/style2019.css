@@ -923,7 +923,7 @@ td.under-countdown {
 
 .text-main-color {
     vertical-align: bottom;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     color: #188440;
 }
 
@@ -1038,7 +1038,7 @@ td.under-countdown {
 }
 
 .price-minus {
-    margin-top: -80px;
+    margin-top: 20px;
 }
 
 .doitac .restric-title {
@@ -1169,7 +1169,7 @@ td.under-countdown {
 
 .homepage .quotes {
     font-family: 'blooming';
-    margin: -10px 0 30px;
+    margin: -10px 0 10px;
     font-size: 170%;
     font-style: italic;
 }

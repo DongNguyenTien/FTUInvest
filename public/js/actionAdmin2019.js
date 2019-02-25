@@ -51,36 +51,38 @@ function getListOrder() {
             $('#listCandicate').waitMe('hide');
             // xu ly data
             data.forEach(function (m) {
-                if (m.facebook !== null) {
-                    m.facebook = '<a href="' + m.facebook + '" target="_blank">Xem trang</a>'
-                }
-                switch (m.location) {
-                    case 0 : {
-                        m.location = ""
-                    }
-                    case 1 : {
-                        m.location = "Đại học Kinh tế Quốc dân"
-                    }
-                    case 2 : {
-                        m.location = "Đại học Ngoại thương"
-                    }
-                }
+                m.dateOfBirth = moment(m.dateOfBirth).format("DD-MM-YYYY");
 
-                switch (m.shift) {
-                    case 0 : {
-                        m.shift = "Ca 1: 8h00 - 9h30"
-                    }
-                    case 1 : {
-                        m.shift = "Ca 2: 10h00 - 11h30"
-                    }
-                    case 2 : {
-                        m.shift = "Ca 3: 14h00 - 15h30"
-                    }
-                    case 3 : {
-                        m.shift = "Ca 4: 16h00 - 17h30"
-                    }
-
-                }
+                // if (m.facebook !== null) {
+                //     m.facebook = '<a href="' + m.facebook + '" target="_blank">Xem trang</a>'
+                // }
+                // switch (m.location) {
+                //     case 0 : {
+                //         m.location = ""
+                //     }
+                //     case 1 : {
+                //         m.location = "Đại học Kinh tế Quốc dân"
+                //     }
+                //     case 2 : {
+                //         m.location = "Đại học Ngoại thương"
+                //     }
+                // }
+                //
+                // switch (m.shift) {
+                //     case 0 : {
+                //         m.shift = "Ca 1: 8h00 - 9h30"
+                //     }
+                //     case 1 : {
+                //         m.shift = "Ca 2: 10h00 - 11h30"
+                //     }
+                //     case 2 : {
+                //         m.shift = "Ca 3: 14h00 - 15h30"
+                //     }
+                //     case 3 : {
+                //         m.shift = "Ca 4: 16h00 - 17h30"
+                //     }
+                //
+                // }
 
 
 

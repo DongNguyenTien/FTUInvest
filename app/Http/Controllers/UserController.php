@@ -34,11 +34,12 @@ class UserController extends Controller
                 'email'=>['required','unique:candidates','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
                 'dateOfBirth' => 'required',
                 'identification' => ['required','unique:candidates'],
-//                'facebook' => 'required',
-//                'university' => 'required',
-//                'course' => 'required',
-//                'MSSV' => 'required,
-//                'status' => 'required',
+                'facebook' => 'required',
+                'university' => 'required',
+                'location' => 'required',
+                'shift' => 'required',
+                'speciality' => 'required',
+                'year' => 'required',
 
 
 
@@ -50,11 +51,12 @@ class UserController extends Controller
                 'email.required'=>'Họ về tên không được để trống',
                 'email.regex' => "Email không đúng định dạng",
                 'email.unique' => 'Email này đã được sử dụng',
-//                'university.required'=>'Trường đại học không được để trống',
-//                'speciality.required'=>'Ngành học không được để trống',
-//                'course.required'=>'Khoá đang theo học không được để trống',
-//                'MSSV.required'=>'Mã số sinh viên không được để trống',
-//                'facebook.required'=>'Địa chỉ Facebook không được để trống',
+                'university.required'=>'Trường đại học không được để trống',
+                'speciality.required'=>'Ngành học không được để trống',
+                'year.required'=>'Khóa không được để trống',
+                'location.required'=>'Địa điểm không được để trống',
+                'shift.required'=>'Ca thi không được để trống',
+                'facebook.required'=>'Địa chỉ Facebook không được để trống',
                 'dateOfBirth.required'=>'Năm sinh không được để trống',
             ]);
 
@@ -65,7 +67,7 @@ class UserController extends Controller
                 ];
             }
             //Register
-//            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
+            $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
 
             //CV
 //            $CV_filename = "";
@@ -81,7 +83,8 @@ class UserController extends Controller
             if ((!empty($member))&&(!empty($params['email']))) {
                 Mail::to($params['email'])->send(new RegisterMember(array(
                     'name'=>$params['name'],
-                    'temp_password' => $member['password']
+                    'temp_password' => $member['password'],
+                    'email' => $params['email']
                 )));
             }
 
