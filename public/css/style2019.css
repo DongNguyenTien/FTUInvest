@@ -1026,7 +1026,7 @@ td.under-countdown {
 }
 
 .rule-right p {
-    margin: 0px;
+    margin: 6px 0;
 }
 
 .half-inside {
@@ -1104,7 +1104,8 @@ td.under-countdown {
     background-size: contain
 }
 .list-logo {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .doitac .margin-bottom {
@@ -1263,6 +1264,10 @@ td.under-countdown {
 
     .answer-left {
         margin-left: 0%;
+    }
+
+    .mobile-padding {
+        padding-left: 0;
     }
 }
 

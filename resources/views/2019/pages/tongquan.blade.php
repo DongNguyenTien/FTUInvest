@@ -73,7 +73,7 @@
                                 <h5 class="home-title" >3.1 Case study:</h5>
                                 <p>Top 40 sẽ được chia thành 8 đội thi và thực hiện giải case study</p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 mobile-padding">
                                 <h5 class="home-title" >3.2 Individual test:</h5>
                                 <p>Sau phần thi nhóm, 40 thí sinh sẽ làm bài kiểm tra kiến thức chuyên sâu.</p>
                                 <p>16 thí sinh xuất sắc nhất bước vào vòng 4</p>

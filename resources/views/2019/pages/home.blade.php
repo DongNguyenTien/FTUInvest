@@ -10,7 +10,7 @@
         </h3>
         <i class="text-bold under-quotes">Sự khác biệt của người thành công và không thành công cũng nằm ở chỗ họ có nhìn ra được cơ hội tốt ngay trước mắt và nắm bắt lấy nó hay không.</i>
         <p></p>
-        <p>Với sự đầu tư kỹ càng về quy mô cũng như chất lượng nội dung chuyên môn, <span class="text-bold">CLB Chứng khoán (SIC) trường Đại học Ngoại Thương</span> hy vọng <span class="text-bold">Cuộc thi I-INVEST! 2019</span> sẽ là nơi tỏa sáng dành cho những sinh viên tài năng và khát khao khẳng định giá trị bản thân mình.</p>
+        <p>Với sự đầu tư kỹ càng về quy mô cũng như chất lượng nội dung chuyên môn, <span class="text-bold">CLB Chứng khoán trường đại học Ngoại Thương (SIC)</span> hy vọng <span class="text-bold">Cuộc thi I-INVEST! 2019</span> sẽ là nơi tỏa sáng dành cho những sinh viên tài năng và khát khao khẳng định giá trị bản thân mình.</p>
         <div class="table-responsive " style="" >
             <table class="table no-border" style="margin-top: -6%;">
                 <tbody>
