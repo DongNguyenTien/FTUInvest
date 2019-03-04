@@ -119,13 +119,14 @@
                 <h3 class="text-main-color text-price-label text-bold">Giải nhất </h3>
                 <div class="price-box">
                     <div class="price" >
-                        <p class="price-money text-bold">138.000.000 VNĐ</p>
+                        <p class="price-money text-bold">165.000.000 VNĐ</p>
                     </div>
                     <div class="price-box-extra">
-                        <p> 30.000.000 VNĐ tiền mặt </p>
-                        <p> 01 năm sử dụng hệ thống FiinPro trị giá 108 triệu đồng</p>
-                        <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
-
+                        <p> 20.000.000 VNĐ tiền mặt </p>
+                        <p>01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS</p>
+                        <p>01 năm sử dụng hệ thống FiinPro trị giá 108.000.000 VNĐ</p>
+                        <p>01 suất học bổng 60% học phí chương trình CFA 3 Levels tại Smart Train trị giá 30.600.000 VNĐ</p>
+                        <p>01 suất học bổng toàn phần khóa học “Nghiệp vụ nguồn vốn - đầu tư trong ngân hàng” tại Future Financiers</p>
                     </div>
 
                 </div>
@@ -136,15 +137,14 @@
                 <h3 class="text-main-color text-price-label text-bold">Giải nhì </h3>
                 <div class="price-box">
                     <div class="price" >
-                        <p class="price-money text-bold">69.000.000 VNĐ</p>
+                        <p class="price-money text-bold">95.000.000 VNĐ</p>
                     </div>
                     <div class="price-box-extra">
-                        <p> 15.000.000 VNĐ tiền mặt </p>
-                        <p> 06 tháng sử dụng hệ thống FiinPro trị giá 54 triệu đồng </p>
-                        <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
-
-
-
+                        <p> 10.000.000 VNĐ tiền mặt </p>
+                        <p>01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS</p>
+                        <p>06 tháng sử dụng hệ thống FiinPro trị giá 54.000.000 VNĐ</p>
+                        <p>01 suất học bổng 50% học phí chương trình CFA 3 Levels tại Smart Train trị giá 25.500.000 VNĐ</p>
+                        <p>01 suất học bổng 50% khóa học “Nghiệp vụ nguồn vốn - đầu tư trong ngân hàng” tại Future Financiers</p>
 
                     </div>
 
@@ -155,13 +155,14 @@
                 <h3 class="text-main-color text-price-label text-bold">Giải ba </h3>
                 <div class="price-box">
                     <div class="price" >
-                        <p class="price-money text-bold">37.000.000 VNĐ</p>
+                        <p class="price-money text-bold">55.000.000 VNĐ</p>
                     </div>
                     <div class="price-box-extra">
-                        <p> 10.000.000 VNĐ tiền mặt</p>
-                        <p> 03 tháng sử dụng hệ thống FiinPro trị giá 27 triệu đồng </p>
-                        <p> 01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS </p>
-
+                        <p>5.000.000 VNĐ tiền mặt</p>
+                        <p>01 suất thực tập tại Công ty TNHH Chứng khoán Ngân hàng TMCP Ngoại thương Việt Nam -  VCBS</p>
+                        <p>03 tháng sử dụng hệ thống FiinPro trị giá 27.000.000 VNĐ</p>
+                        <p>01 suất học bổng 40% học phí chương trình CFA 3 Levels tại Smart Train trị giá 20.400.000 VNĐ</p>
+                        <p>01 suất học bổng 30% khóa học “Nghiệp vụ nguồn vốn - đầu tư trong ngân hàng” tại Future Financiers</p>
                     </div>
 
                 </div>
@@ -171,7 +172,7 @@
 
         <div class="text-center">
 
-            <h3 style="font-family: 'iciel'; margin-top: 50px"> Ngoài ra top 16 thí sinh của cuộc thi sẽ có cơ hội nhận được suất thực tập tại Công ty Cổ phần <span class="text-bold">Stoxplus </span>. </h3>
+            <h3 style="font-family: 'iciel'; margin-top: 50px"> 02 giải khuyến khích bao gồm 02 suất học bổng 30% học phí chương trình CFA 3 Levels tại <span class="text-bold">Smart Train</span> trị giá 15.300.000 VNĐ. Ngoài ra Top 16 thí sinh xuất sắc nhất sẽ có cơ hội nhận được suất thực tập tại Công ty Cổ phần <span class="text-bold">Stoxplus </span> và 01 suất học bổng 15% khóa học “Nghiệp vụ nguồn vốn - đầu tư trong ngân hàng” tại <span class="text-bold">Future Financiers </span> . </h3>
         </div>
     </div>
     @endsection

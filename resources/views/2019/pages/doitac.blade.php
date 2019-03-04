@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="row margin-bottom">
-                <div class="col-md-4 col-md-offset-2">
+                <div class="col-md-4 col-md-offset-4">
                     <h3>Nhà tài trợ kim cương</h3>
                     <div class="list-logo">
                         <div class="logo-donor-container"
@@ -65,7 +65,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h3>Nhà tài trợ vàng</h3>
                     <div class="list-logo">
                         <div class="logo-donor-container"
@@ -74,11 +74,22 @@
                     </div>
 
                 </div>
-                <div class="col-md-3">
+            </div>
+            <div class="row margin-bottom">
+                <div class="col-md-4 col-md-offset-4">
                     <h3>Nhà tài trợ bạc</h3>
                     <div class="list-logo">
                         <div class="logo-donor-container"
                              style="background-image:url('{{asset('/2019/doitac/bac/logo smarttrain.png')}}');">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Nhà tài trợ đồng</h3>
+                    <div class="list-logo">
+                        <div class="logo-donor-container"
+                             style="background-image:url('{{asset('/2019/doitac/donghanh/logo future financiers.png')}}');">
                         </div>
                     </div>
 
@@ -123,7 +134,7 @@
                     <p></p>
                     <div class="list-logo">
                         <div class="logo-communication-container"
-                             style="background-image:url('{{asset('/2019/doitac/truyenthong/logo kinhdoanhnet.jpg')}}');">
+                             style="background-image:url('{{asset('/2019/doitac/truyenthong/logo kdpl.png.jpg')}}');">
                         </div>
                         <div class="logo-communication-container"
                              style="background-image:url('{{asset('/2019/doitac/truyenthong/logo vn finance.png')}}'); width: 100px">
@@ -140,11 +151,12 @@
                     <h3>đơn vị đồng hành</h3>
                     <div class="list-logo">
                         <div class="logo-container"
-                             style="background-image:url('{{asset('/2019/doitac/donghanh/logo future financiers.png')}}');">
+                             style="background-image:url('{{asset('/2019/doitac/donghanh/logo ssi.png')}}'); width: 80px; margin-right: 10px">
                         </div>
                         <div class="logo-container"
-                             style="background-image:url('{{asset('/2019/doitac/donghanh/logo ssi.png')}}'); width: 100px">
+                             style="background-image:url('{{asset('/2019/doitac/donghanh/logo izone.png')}}'); width: 150px">
                         </div>
+
 
 
                     </div>

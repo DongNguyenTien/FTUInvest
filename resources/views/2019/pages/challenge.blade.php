@@ -45,7 +45,7 @@
                 <input hidden id="check" value="" name="checking">
                 <div id="list-question" hidden>
 
-                    <input type="submit" class="btn btn-challenge btn-lg center-block" style="" value="NỘP BÀI">
+
 
                 </div>
             </form>
@@ -77,7 +77,7 @@
             $('#overlay').css('display','block');
 
 
-            $('#ready').countdown(new Date(+now + 1000))
+            $('#ready').countdown(new Date(+now + 10000))
                 .on('update.countdown', function(event) {
                     var format = '%-S';
                     $(this).html(event.strftime(format));
@@ -86,11 +86,13 @@
                 .on('finish.countdown', function(event) {
                     $('#overlay').css('display','none');
                     $("body").css("overflow", "auto");
+                    $('#rule').remove()
 
                     $.post('{{route('getExam')}}', [], function (response) {
                         html = generate(response.exam)
 
                         $('#list-question').closest('.container-info').removeClass('container-info text-center').addClass('container-question')
+                        $('#list-question').html("");
                         $('#list-question').prepend(html);
                         $('#list-question').css('display', 'block');
                         $('input#check').val(response.check)
@@ -174,6 +176,7 @@
                     '                </div>'
             }
 
+            html += '<input type="submit" class="btn btn-challenge btn-lg center-block" style="" value="NỘP BÀI">'
             return html
         }
 

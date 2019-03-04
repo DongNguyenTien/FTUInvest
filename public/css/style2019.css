@@ -1165,7 +1165,7 @@ td.under-countdown {
 }
 
 .homepage p {
-    text-align: left;
+    text-align: justify;
 }
 
 .homepage .quotes {
@@ -1202,14 +1202,20 @@ td.under-countdown {
     background-color: #259e51;
 }
 
+.padding-text-home {
+    padding-right: 5% !important;;
+}
+
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
     }
 
     .countdown .table-responsive {
-        width: 100%;
+        width: 120%;
         margin-left: 0%;
+        right: 10%;
+        position: relative;
     }
 }
 
@@ -1237,6 +1243,23 @@ td.under-countdown {
 
     .btn-challenge {
         margin-left: auto;
+    }
+
+    .table-responsive {
+        border: none;
+    }
+
+    .clock, span.after-clock{
+        font-size: 70px;
+    }
+
+    .padding-text-home {
+        padding-right: 3% !important;
+    }
+
+    td.under-countdown {
+        padding: 0 20px 0 5px !important;
+        font-size: 16px;
     }
 }
 
@@ -1268,6 +1291,10 @@ td.under-countdown {
 
     .mobile-padding {
         padding-left: 0;
+    }
+
+    table.table {
+        font-size: 100%;
     }
 }
 
@@ -1317,12 +1344,12 @@ td.under-countdown {
 
     }
 
-    .home-title {
-        font-size: 150%;
+    .doitac .tongquan-title {
+        font-size: 120%;
     }
 
     .donors {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .homepage {
@@ -1330,12 +1357,16 @@ td.under-countdown {
     }
 
     .clock, span.after-clock{
-        font-size: 60px;
+        font-size: 40px;
+    }
+
+    .padding-text-home {
+        padding-right: 1% !important;
     }
 
     td.under-countdown {
         padding: 0 20px 0 5px !important;
-        font-size: 18px;
+        font-size: 13px;
     }
 
     .container-info {
@@ -1376,7 +1407,7 @@ td.under-countdown {
     }
 
     .donors {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
     .homepage {
@@ -1415,7 +1446,15 @@ td.under-countdown {
         width: 50%;
     }
 
+    table.table {
+        font-size: 70%;
+    }
+
 }
 
 
-
+@media screen and (max-width: 330px) {
+    table.table {
+        font-size: 50%;
+    }
+}

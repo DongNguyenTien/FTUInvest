@@ -8,15 +8,14 @@
         <h3 class="text-main-color quotes">
             “Giá trị bản thân làm nên sự khác biệt”
         </h3>
-        <i class="text-bold under-quotes">Sự khác biệt của người thành công và không thành công cũng nằm ở chỗ họ có nhìn ra được cơ hội tốt ngay trước mắt và nắm bắt lấy nó hay không.</i>
-        <p></p>
-        <p>Với sự đầu tư kỹ càng về quy mô cũng như chất lượng nội dung chuyên môn, <span class="text-bold">CLB Chứng khoán trường đại học Ngoại Thương (SIC)</span> hy vọng <span class="text-bold">Cuộc thi I-INVEST! 2019</span> sẽ là nơi tỏa sáng dành cho những sinh viên tài năng và khát khao khẳng định giá trị bản thân mình.</p>
+        <i class="text-bold under-quotes">Sự khác biệt của người thành công và không thành công cũng nằm ở chỗ họ có nhìn ra được</i><i class="text-bold under-quotes" style="display: block"> cơ hội tốt ngay trước mắt và nắm bắt lấy nó hay không.</i>
+        <p>Với sự đầu tư kỹ càng về quy mô cũng như chất lượng nội dung chuyên môn, <span class="text-bold">CLB Chứng khoán trường Đại học Ngoại Thương (SIC)</span> hy vọng <span class="text-bold">Cuộc thi I-INVEST! 2019</span> sẽ là nơi tỏa sáng dành cho những sinh viên tài năng và khát khao khẳng định giá trị bản thân mình.</p>
         <div class="table-responsive " style="" >
             <table class="table no-border" style="margin-top: -6%;">
                 <tbody>
                 <tr>
-                    <td style="text-align: right; padding-right: 5%;">
-                        <h2 class="text-main-color">Bạn còn</h2>
+                    <td style="text-align: right;" class="padding-text-home">
+                        <h2 class="text-main-color" id="change-1">Chuẩn bị</h2>
                     </td>
                     <td class="time">
                         <span class="clock" id="countdown-day"></span>
@@ -35,7 +34,7 @@
                     </td>
 
                     <td style="text-align: left;">
-                        <h2 class="text-main-color">để</h2>
+                        <h2 class="text-main-color" id="change-2">để</h2>
                     </td>
                 </tr>
 
@@ -167,7 +166,7 @@
             });
 
 
-            $('.clock').countdown('03/10/2019')
+            $('.clock').countdown('03/19/2019')
                 .on('update.countdown', function(event) {
                     var totalDays= event.offset.totalDays;
 
@@ -181,7 +180,26 @@
                 .on('finish.countdown', function(event) {
                     $('.table-responsive ').replaceWith('<h1>Thời gian đăng ký đã kết thúc</h1>')
                     $('#btn-thuthach').remove();
-
+                    // $('h2#change-1').text("Bạn còn")
+                    // $('#btn-dangky').removeClass("disabled")
+                    // $('button#btn-dangky').attr("data-target",".challenge")
+                    //
+                    // $('.clock').countdown('03/10/2019')
+                    //     .on('update.countdown', function(event) {
+                    //         var totalDays= event.offset.totalDays;
+                    //
+                    //         $('span#countdown-day').html(totalDays);
+                    //         $('span#countdown-hour').html(event.strftime('%H'));
+                    //         $('span#countdown-minute').html(event.strftime('%M'));
+                    //         $('span#countdown-second').html(event.strftime('%S'));
+                    //
+                    //
+                    //     })
+                    //     .on('finish.countdown', function(event) {
+                    //         $('.table-responsive ').replaceWith('<h1>Thời gian đăng ký đã kết thúc</h1>')
+                    //         $('#btn-thuthach').remove();
+                    //
+                    //     });
                 });
 
 
