@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/2019/font/BloomingElegantSans.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/public/access.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style2019.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style2019.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="1592" column="23" lean-forward="true" selection-start-line="1592" selection-start-column="23" selection-end-line="1592" selection-end-column="23" />
+            <state relative-caret-position="535">
+              <caret line="1268" column="16" selection-start-line="1268" selection-start-column="16" selection-end-line="1268" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -457,12 +453,12 @@
       <workItem from="1551446188911" duration="1300000" />
       <workItem from="1551669607608" duration="1512000" />
       <workItem from="1557541960877" duration="16197000" />
-      <workItem from="1557562314357" duration="1887000" />
+      <workItem from="1557562314357" duration="2136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299975000" />
+    <option name="totallyTimeSpent" value="300224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -851,8 +847,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="1592" column="23" lean-forward="true" selection-start-line="1592" selection-start-column="23" selection-end-line="1592" selection-end-column="23" />
+        <state relative-caret-position="535">
+          <caret line="1268" column="16" selection-start-line="1268" selection-start-column="16" selection-end-line="1268" selection-end-column="16" />
         </state>
       </provider>
     </entry>
