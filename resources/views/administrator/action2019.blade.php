@@ -19,17 +19,17 @@
                 <tr>
                     <th>ID</th>
                     <th>Tên</th>
-                    <th>Điểm</th>
+                    {{--<th>Điểm</th>--}}
                     <th>Năm sinh</th>
-                    <th>Số CMND</th>
+                    {{--<th>Số CMND</th>--}}
                     <th>Email</th>
                     <th>Số điện thoại</th>
                     <th>Trường học</th>
-                    <th>Chuyên ngành</th>
-                    <th>Khóa</th>
-                    <th>Facebook</th>
-                    <th>Địa điểm v2</th>
-                    <th>Ca v2</th>
+                    {{--<th>Chuyên ngành</th>--}}
+                    <th>Năm</th>
+                    {{--<th>Facebook</th>--}}
+                    {{--<th>Địa điểm v2</th>--}}
+                    {{--<th>Ca v2</th>--}}
                     <th>Ngày đăng ký</th>
                 </tr>
                 </thead>

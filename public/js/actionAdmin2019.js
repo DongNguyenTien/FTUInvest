@@ -8,28 +8,28 @@ $(document).ready(function() {
         data: _data,
         scrollX: true,
         scrollCollapse: true,
-        columnDefs: [
-            {
-                width: 200,
-                targets: 11
-            },
-            {
-                width: 100,
-                targets: 8
-            },
-            {
-                width: 100,
-                targets: 6
-            },
-            {
-                width: 80,
-                targets: 1
-            },
-
-        ],
-        fixedColumns:   {
-            leftColumns: 2
-        }
+        // columnDefs: [
+        //     {
+        //         width: 200,
+        //         targets: 11
+        //     },
+        //     {
+        //         width: 100,
+        //         targets: 8
+        //     },
+        //     {
+        //         width: 100,
+        //         targets: 6
+        //     },
+        //     {
+        //         width: 80,
+        //         targets: 1
+        //     },
+        //
+        // ],
+        // fixedColumns:   {
+        //     leftColumns: 2
+        // }
     });
 });
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\MemberFinal;
 use App\Question;
 use Illuminate\Http\Request;
 use App\Candidate;
@@ -529,10 +530,10 @@ class FTU2019Controller extends Controller
     public function getListCandicate()
     {
         //Update 23/10/2018
-        $allCandidate = Candidate::whereNull('deleted_at')
-            ->select(['id','name', 'score', 'dateOfBirth', 'identification', 'email','phone', 'university', 'speciality', 'year', 'facebook', 'location', 'shift', 'created_at'])->get()->toArray();
+        $allCandidate = MemberFinal::whereNull('deleted_at')
+            ->select(['id','name', 'dateOfBirth','email','phone', 'university', 'year', 'created_at'])->get()->toArray();
 
-        $allCandidate = $this->handleData($allCandidate);
+//        $allCandidate = $this->handleData($allCandidate);
         return response()->json($allCandidate);
     }
 
@@ -543,13 +544,13 @@ class FTU2019Controller extends Controller
     {
         Excel::create('Thông tin thí sinh', function($excel) {
             //Update 23/10/2018
-            $allCandidate = Candidate::whereNull('deleted_at')
-                ->select(['id','name', 'score', 'dateOfBirth', 'identification', 'email','phone', 'university', 'speciality', 'year', 'facebook', 'prices', 'extracurricular', 'location', 'shift', 'created_at'])->get()->toArray();
-            $allCandidate = $this->handleData($allCandidate);
+            $allCandidate = MemberFinal::whereNull('deleted_at')
+                ->select(['id','name',  'dateOfBirth', 'email','phone', 'university', 'year','created_at'])->get()->toArray();
+//            $allCandidate = $this->handleData($allCandidate);
 
 
             $excel->setTitle('Thông tin thí sinh');
-            $column = ['Id','Tên', 'Điểm', 'Năm sinh', 'Số CMND','Email','Số điện thoại','Trường học', 'Chuyên ngành', 'Khóa', 'Facebook', 'Học tập', 'Ngoại khóa', "Địa điểm", "Ca thi", "Ngày đăng ký"];
+            $column = ['Id','Tên', 'Năm sinh','Email','Số điện thoại','Trường học', 'Năm', "Ngày đăng ký"];
 
             array_unshift($allCandidate,$column);
 
