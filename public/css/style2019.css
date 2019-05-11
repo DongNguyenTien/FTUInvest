@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'blooming';
-    src: url(/2019/font/BloomingElegantSans1.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url(/2019/font/BloomingElegantSans.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
 }
 @font-face {
@@ -842,8 +842,8 @@ td.under-countdown {
 }
 .clock, span.after-clock {
     color: #198440;
-    font-family: 'blooming';
-    font-size: 130px;
+    font-family: 'iciel';
+    font-size: 90px;
     text-shadow: 2px 2px #e6e6ac;
 }
 .after-step-2 p {
@@ -891,8 +891,8 @@ td.under-countdown {
 }
 
 .countdown .table-responsive {
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .home-title {
@@ -1243,8 +1243,8 @@ td.under-countdown {
 
 .after-clock-final {
     color: #198440;
-    font-family: 'blooming';
-    font-size: 130px;
+    font-family: 'iciel';
+    font-size: 90px;
     text-shadow: 2px 2px #e6e6ac;
 }
 .final-homepage td.under-countdown {
@@ -1348,6 +1348,10 @@ td.under-countdown {
     text-shadow: none;
 }
 
+.final-margin {
+    margin-top: 450px;
+}
+
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
@@ -1360,6 +1364,9 @@ td.under-countdown {
         position: relative;
     }
 
+    .clock, span.after-clock, span.after-clock-final {
+        font-size: 70px;
+    }
 
 }
 
@@ -1402,17 +1409,34 @@ td.under-countdown {
     }
 
     td.under-countdown {
-        padding: 0 20px 0 5px !important;
+        padding: 0 0px 0 5px !important;
         font-size: 16px;
     }
     .countdown .table-responsive {
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        margin-left: 0;
     }
     .final-homepage tbody {
         width: 100%;
         display: inline-table;
 
+    }
+
+    .button-final {
+        font-size: 30px;
+        padding: 10px 20px 10px;
+        font-weight: 500;
+    }
+
+    .restric-title-final .home-title {
+        font-size: 30px;
+    }
+    .restric-title-final{
+        margin-left: 0px;
+    }
+
+    .top5-title .tongquan-title {
+        font-size: 25px;
     }
 }
 
@@ -1451,6 +1475,19 @@ td.under-countdown {
     }
     .final-homepage tbody {
         width: 100%
+    }
+
+    .clock, span.after-clock, span.after-clock-final{
+        font-size: 30px;
+    }
+
+    .final-homepage {
+        border-radius: 15px;
+    }
+
+
+    .title-countdown h1 {
+        font-size: 30px;
     }
 }
 
@@ -1512,21 +1549,49 @@ td.under-countdown {
         font-size: 15px;
     }
 
-    .clock, span.after-clock{
-        font-size: 40px;
+    .clock, span.after-clock, span.after-clock-final{
+        font-size: 20px;
     }
+
 
     .padding-text-home {
         padding-right: 1% !important;
     }
 
     td.under-countdown {
-        padding: 0 20px 0 5px !important;
+        padding: 0 0px 0 5px !important;
         font-size: 13px;
+    }
+
+    .final-homepage {
+        border-radius: 5px;
     }
 
     .container-info {
         font-size: 14px;
+    }
+
+    .title-countdown h1 {
+        font-size: 30px;
+    }
+
+    .button-final {
+        font-size: 25px;
+        padding: 5px 20px 5px;
+        font-weight: 500;
+    }
+
+    .restric-title-final .home-title {
+        font-size: 30px;
+    }
+
+    .price-box-extra {
+        width: 100%;
+    }
+
+    .round-1 {
+        font-size: 30px;
+        margin-top: -4px;
     }
 }
 
@@ -1633,6 +1698,39 @@ td.under-countdown {
     .container-price {
         padding-top: 0;
     }
+
+    .countdown .table-responsive {
+        width: 120%;
+        margin-left: -10%;
+    }
+
+    .top5-title .tongquan-title {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+     .block-span {
+       display: none;
+    }
+
+    .banner-final {
+        height: 200px;
+    }
+
+    .final-margin {
+        margin-top: 220px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    .price-box-extra p {
+        font-size: 12px;
+    }
+
+    .container {
+        margin-bottom: 15px;
+    }
+
 }
 
 

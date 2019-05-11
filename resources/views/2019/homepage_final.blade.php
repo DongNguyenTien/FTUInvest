@@ -7,7 +7,7 @@
     <div class="banner-final" style="background-image: url('/2019/placeholder-banner.jpg')">
 {{--        <img class="" src="{{asset('/2019/placeholder-banner.jpg')}}">--}}
     </div>
-    <div class="container text-center countdown" style="margin-top: 450px;">
+    <div class="container text-center countdown final-margin" >
         <div class="title-countdown">
             <h1 class="color-text-gradient">Bạn còn</h1>
         </div>
@@ -69,7 +69,7 @@
 
         <div class="contest-rule">
             <div class="row">
-                <div class="col-md-5 col-xs-5">
+                <div class="col-md-5 col-xs-12">
                     <div class="rule-left">
                         <div class="restric-title-final">
                             <h1 class="home-title tongquan-title" style="letter-spacing: 4px;">CHẶNG ĐUA </h1>
@@ -91,7 +91,7 @@
                         <img style="width: 3%;position: absolute;left: 20%;top: 80%; opacity: 0.5;" src="{{asset('/2019/yellow.png')}}">
                     </div>
                 </div>
-                <div class="col-md-7 col-xs-7 rule-right-final" >
+                <div class="col-md-7 col-xs-12 rule-right-final" >
                     <div class="long-text-final">
                         So tài tại Cuộc thi Tài chính - Chứng khoán lớn nhất miền Bắc dành cho sinh viên, mỗi một thí sinh đến với I-INVEST! 2019 đều mang trong mình ý chí vươn lên mạnh mẽ, nhằm hướng tới một trải nghiệm khác biệt thách thức những giới hạn của bản thân mình. Mỗi vòng thi đã qua là một chặng đua với mức độ tăng dần khó khăn, thử thách, đòi hỏi thí sinh không ngừng nâng cao kiến thức, kỹ năng cũng như sự can đảm và quyết tâm để vượt qua nó.
                     </div>
@@ -106,7 +106,7 @@
 
                 <div class="col-md-12 col-lg-12 top5-final col-xs-12">
                     <div class="row">
-                        <div class="col-md-9 col-lg-9">
+                        <div class="col-md-9 col-lg-9 col-xs-12">
                             <div class="slider-top5">
                                 <img src="{{asset('/2019/placeholder.jpg')}}">
                                 <img src="{{asset('/2019/placeholder.jpg')}}">
@@ -116,7 +116,7 @@
                                 <img src="{{asset('/2019/placeholder.jpg')}}">
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-3">
+                        <div class="col-md-3 col-lg-3 col-xs-12">
                             <div class="top5-title">
                                 <h1 class="home-title tongquan-title">Top 5 <span class="block-span"></span></h1>
                                 <h1 class="home-title tongquan-title">i-invest! </h1>
