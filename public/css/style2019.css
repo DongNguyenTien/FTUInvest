@@ -1213,21 +1213,23 @@ td.under-countdown {
 }
 
 .title-countdown h1 {
-    font-size: 110px;
-    font-family: 'blooming';
+    font-size: 60px;
+    font-family: 'MontserratBold';
+    padding-bottom: 4%;
 }
 
 .final-homepage {
     border: black 1px;
     box-shadow: -2px -2px 10px 4px #888888;
     border-radius: 20px;
+    background-color: #f7fbf6;
 }
 .final-homepage td.time {
     width: -1;
 }
 
 .button-final {
-    margin-top: 2em;
+    margin-top: 1.5em;
     font-size: 45px;
     text-transform: uppercase;
     padding: 15px 40px 5px;
@@ -1278,7 +1280,7 @@ td.under-countdown {
     font-family: 'montserratRegular';
     letter-spacing: 1px;
     word-spacing: 2px;
-    line-height: 1.3;
+    line-height: 1.9;
     font-size: 15px;
     font-weight: 600;
 }
@@ -1309,24 +1311,56 @@ td.under-countdown {
 }
 
 .slick-list.draggable {
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: -2px -2px 15px 2px #92c1a4;
 }
 
 .top5-final {
     margin-top: 5%;
 }
+
+.final-homepage tbody {
+    width: 80%;
+    display: inline-table;
+}
+
+.block-span {
+    width: 40px;
+    display: inline-block;
+    content: ' ';
+    font-size: 55px;
+    height: 15px;
+    background-color: #198440;
+    vertical-align: text-top;
+    margin-top: 15px;
+}
+
+.top5-final .block-span {
+    height: 25px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.color-text-gradient, .final-homepage .after-clock-final {
+    background: linear-gradient(to bottom, #54ab61 0%, #198440 50%, #54ab61 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: none;
+}
+
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
     }
 
     .countdown .table-responsive {
-        width: 100%;
-        margin-left: 0%;
+        width: 70%;
+        margin-left: 15%;
         /*right: 10%;*/
         position: relative;
     }
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -1372,10 +1406,13 @@ td.under-countdown {
         font-size: 16px;
     }
     .countdown .table-responsive {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .final-homepage tbody {
         width: 100%;
-        margin-left: 0%;
-        /*right: 10%;*/
-        position: relative;
+        display: inline-table;
+
     }
 }
 
@@ -1411,6 +1448,9 @@ td.under-countdown {
 
     table.table {
         font-size: 100%;
+    }
+    .final-homepage tbody {
+        width: 100%
     }
 }
 

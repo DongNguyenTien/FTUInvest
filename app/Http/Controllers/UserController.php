@@ -96,19 +96,18 @@ class UserController extends Controller
 //            Auth::login($member['member']);
 
             DB::commit();
-            return $result = [
-                "success" => 1
-            ];
+            return redirect(route('register-confirm'));
 
         }
         catch(\Exception $ex){
             DB::rollback();
-            return $result = [
-                "success" => 0,
-                "messages" => $ex->getMessage()
-            ];
+            return redirect()->back();
 
         }
+    }
+
+    public function registerConfirm() {
+        return view('2019.pages.register_confirm');
     }
 
     /**

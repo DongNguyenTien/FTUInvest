@@ -1,5 +1,5 @@
 @extends('2019.layout')
-@section('title','Tổng quan')
+@section('title','Trang chủ')
 @section('banner')
 
     @endsection
@@ -9,11 +9,11 @@
     </div>
     <div class="container text-center countdown" style="margin-top: 450px;">
         <div class="title-countdown">
-            <h1>Bạn còn</h1>
+            <h1 class="color-text-gradient">Bạn còn</h1>
         </div>
         <div class="table-responsive final-homepage" >
             <table class="table no-border" style="display: flex; justify-content: center">
-                <tbody style="width: 90%">
+                <tbody>
                 <tr >
                     <td class="time">
                         <span class="clock" id="countdown-day"></span>
@@ -72,8 +72,8 @@
                 <div class="col-md-5 col-xs-5">
                     <div class="rule-left">
                         <div class="restric-title-final">
-                            <h1 class="home-title tongquan-title">CHẶNG ĐUA </h1>
-                            <h1 class="home-title tongquan-title">CUỐI CÙNG </h1>
+                            <h1 class="home-title tongquan-title" style="letter-spacing: 4px;">CHẶNG ĐUA </h1>
+                            <h1 class="home-title tongquan-title"><span class="block-span"></span>CUỐI CÙNG </h1>
                         </div>
 
                         <img class="light" src="{{asset('/2019/logo-01.png')}}">
@@ -118,7 +118,7 @@
                         </div>
                         <div class="col-md-3 col-lg-3">
                             <div class="top5-title">
-                                <h1 class="home-title tongquan-title">Top 5 </h1>
+                                <h1 class="home-title tongquan-title">Top 5 <span class="block-span"></span></h1>
                                 <h1 class="home-title tongquan-title">i-invest! </h1>
                                 <h1 class="home-title tongquan-title">2019 </h1>
                             </div>

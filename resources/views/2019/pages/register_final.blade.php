@@ -87,26 +87,26 @@
                 format: "DD-MM-YYYY",
             });
 
-            $('#form-input').on('submit',function(e) {
-                e.preventDefault();
+            {{--$('#form-input').on('submit',function(e) {--}}
+                {{--e.preventDefault();--}}
 
-                if ($(this).valid()) {
-                    $('#overlay').css('display','block');
-                    $.post('{{route('register')}}',$(this).serialize(), function(response) {
-                        $('#overlay').css('display','none');
-                        if (response.success === 1) {
-                            alert("BTC xin thông báo bạn đã đăng ký thành công\n" +
-                                "Vui lòng check hòm mail để nhận thông tin đăng nhập và tham gia thi Vòng 1");
-                            window.location.href = '{{route('home')}}'
-                        } else {
-                            alert(response.messages)
-                        }
+                {{--if ($(this).valid()) {--}}
+                    {{--$('#overlay').css('display','block');--}}
+                    {{--$.post('{{route('register')}}',$(this).serialize(), function(response) {--}}
+                        {{--$('#overlay').css('display','none');--}}
+                        {{--if (response.success === 1) {--}}
+                            {{--alert("BTC xin thông báo bạn đã đăng ký thành công\n" +--}}
+                                {{--"Vui lòng check hòm mail để nhận thông tin đăng nhập và tham gia thi Vòng 1");--}}
+                            {{--window.location.href = '{{route('home')}}'--}}
+                        {{--} else {--}}
+                            {{--alert(response.messages)--}}
+                        {{--}--}}
 
-                    });
-                }
+                    {{--});--}}
+                {{--}--}}
 
-                return false;
-            });
+                {{--return false;--}}
+            {{--});--}}
         })
 
     </script>

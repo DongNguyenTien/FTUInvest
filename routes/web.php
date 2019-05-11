@@ -23,7 +23,7 @@ Route::get('/','FTU2019Controller@homepage_final')->name('home');
 Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
 //Route::post('/register','FTU2Controller@register')->name('register');
 Route::get('/doi-tac','FTU2019Controller@doitac')->name('doitac');
-
+Route::get('/xac-nhan-dang-ky', 'UserController@registerConfirm')->name('register-confirm');
 //Challenge
 Route::get('/thu-thach','FTU2019Controller@challenge')->name('challenge');
 Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
