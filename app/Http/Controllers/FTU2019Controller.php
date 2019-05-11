@@ -54,6 +54,9 @@ class FTU2019Controller extends Controller
         return view('2019.pages.home');
     }
 
+    public function homepage_final() {
+        return view('2019.homepage_final');
+    }
 
     /**
      * Du lieu => DB
@@ -105,31 +108,31 @@ class FTU2019Controller extends Controller
 
     }
 
-    public function reshapeData()
-    {
-//        $right = [2,2,1,3,3,2,3,3,2,3,2,3,2,1];
-//        $right = [2,1,0,3,3,0,3,2,0,1,0,3,1];
-//        $right = [2,2,0,3,1,2,0,0,0,0,1];
-//        $right = [2,3,1,2,3,2];
-//        $right = [2,2,0,3,0,2,3,0,1,3,1,0];
-//        $right = [0,1,0,0];
-//        $right = [1,2,0,0,1,1,0,0,0,1];
-
-
-        $questions = Question::where('type',7)->get();
-//        dd($questions[10], \GuzzleHttp\json_decode($questions[10]["answer"]));
-        $i = 0;
-        foreach ($questions as $question) {
-            $answer = \GuzzleHttp\json_decode($question["answer"], true);
-            $t = Question::find($question->id);
-            $index = $right[$i];
-            $t->true = $answer[$index];
-            array_splice($answer, $index,1);
-            $t->false = \GuzzleHttp\json_encode($answer);
-            $t->save();
-            $i++;
-        }
-    }
+//    public function reshapeData()
+//    {
+////        $right = [2,2,1,3,3,2,3,3,2,3,2,3,2,1];
+////        $right = [2,1,0,3,3,0,3,2,0,1,0,3,1];
+////        $right = [2,2,0,3,1,2,0,0,0,0,1];
+////        $right = [2,3,1,2,3,2];
+////        $right = [2,2,0,3,0,2,3,0,1,3,1,0];
+////        $right = [0,1,0,0];
+////        $right = [1,2,0,0,1,1,0,0,0,1];
+//
+//
+//        $questions = Question::where('type',7)->get();
+////        dd($questions[10], \GuzzleHttp\json_decode($questions[10]["answer"]));
+//        $i = 0;
+//        foreach ($questions as $question) {
+//            $answer = \GuzzleHttp\json_decode($question["answer"], true);
+//            $t = Question::find($question->id);
+//            $index = $right[$i];
+//            $t->true = $answer[$index];
+//            array_splice($answer, $index,1);
+//            $t->false = \GuzzleHttp\json_encode($answer);
+//            $t->save();
+//            $i++;
+//        }
+//    }
 
     public function rawAns()
     {

@@ -55,7 +55,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{asset('admin-lte/plugins/pace/pace.min.js')}}"></script>
     <link id="flashPace" href="{{asset('admin-lte/plugins/pace/themes/green/pace-theme-flash.css')}}" rel="stylesheet" />
 
-
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -110,11 +113,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 </style>
 
-
 <div class="container-fluid">
     <header class="header">
         @component('2019.components.header')@endcomponent
     </header>
+    @yield('banner')
 
     <div class="content">
         @yield('content')
@@ -158,10 +161,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{ URL::asset('admin-lte/dist/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script src="{{ asset('admin-lte/dist/js/adminlte.min.js') }}"></script>
 
+<!-- SLICK SLIDER -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
-
-<!--Icheck-->
-<script src="{{ asset('admin-lte/plugins/iCheck/icheck.min.js') }}"></script>
+{{--<!--Icheck-->--}}
+{{--<script src="{{ asset('admin-lte/plugins/iCheck/icheck.min.js') }}"></script>--}}
 
 <!-- Custom -->
 <script src="{{ asset('js/init.js') }}"></script>

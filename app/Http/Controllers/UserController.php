@@ -14,12 +14,18 @@ use Carbon\Carbon;
 use DB;
 use Illuminate\Http\Response;
 use App\APIReturnHelper;
+use App\Mail\RegisterFinal;
 
 class UserController extends Controller
 {
     public function register ()
     {
         return view('2019.pages.register');
+    }
+
+
+    public function register_final() {
+        return view('2019.pages.register_final');
     }
 
     public function requestRegister(Request $request)
@@ -31,14 +37,14 @@ class UserController extends Controller
             $validator = Validator::make($params,[
                 'name'=>'required',
                 'phone'=>'required',
-                'email'=>['required','unique:candidates','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
+                'email'=>['required','unique:member_final','regex:/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'],
                 'dateOfBirth' => 'required',
-                'identification' => ['required','unique:candidates'],
-                'facebook' => 'required',
+//                'identification' => ['required','unique:candidates'],
+//                'facebook' => 'required',
                 'university' => 'required',
-                'location' => 'required',
-                'shift' => 'required',
-                'speciality' => 'required',
+//                'location' => 'required',
+//                'shift' => 'required',
+//                'speciality' => 'required',
                 'year' => 'required',
 
 
@@ -54,9 +60,9 @@ class UserController extends Controller
                 'university.required'=>'Trường đại học không được để trống',
                 'speciality.required'=>'Ngành học không được để trống',
                 'year.required'=>'Khóa không được để trống',
-                'location.required'=>'Địa điểm không được để trống',
-                'shift.required'=>'Ca thi không được để trống',
-                'facebook.required'=>'Địa chỉ Facebook không được để trống',
+//                'location.required'=>'Địa điểm không được để trống',
+//                'shift.required'=>'Ca thi không được để trống',
+//                'facebook.required'=>'Địa chỉ Facebook không được để trống',
                 'dateOfBirth.required'=>'Năm sinh không được để trống',
             ]);
 
@@ -77,20 +83,17 @@ class UserController extends Controller
 //
 //            $params['CV'] = 'iinvest.test/CV/'.$CV_filename;
 
-            $member = Member::registerMember($params);
+            $member = Member::registerMemberFinal($params);
 
             //Send email
             if ((!empty($member))&&(!empty($params['email']))) {
-                Mail::to($params['email'])->send(new RegisterMember(array(
+                Mail::to($params['email'])->send(new RegisterFinal(array(
                     'name'=>$params['name'],
-                    'temp_password' => $member['password'],
                     'email' => $params['email']
                 )));
             }
 
-
-            Auth::login($member['member']);
-
+//            Auth::login($member['member']);
 
             DB::commit();
             return $result = [

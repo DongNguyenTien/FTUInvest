@@ -15,7 +15,7 @@
  * 2019
  */
 
-Route::get('/','FTU2019Controller@homepage')->name('home');
+Route::get('/','FTU2019Controller@homepage_final')->name('home');
 //Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
 //Route::get('/test','FTU2019Controller@rawAns');
 
@@ -36,7 +36,7 @@ Route::post('/verify', 'FTU2019Controller@verifyExam')->name('verify');
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@loginPost')->name('loginPost');
 Route::get('/logout','UserController@logout')->name('logout');
-Route::get('/dang-ky','UserController@register')->name('dangky');
+Route::get('/dang-ky','UserController@register_final')->name('dangky');
 Route::post('/register','UserController@requestRegister')->name('register');
 Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
 Route::get('/password/reset/{token?}', 'UserController@resetPassword');

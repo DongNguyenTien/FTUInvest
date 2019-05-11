@@ -131,7 +131,7 @@
     -webkit-backface-visibility:hidden;
     backface-visibility:hidden;
     position:relative;
-    transition:0.5s color ease;
+    transition:0.3s all ease;
     text-decoration:none;
 
 }
@@ -173,8 +173,8 @@ span.after-clock {
 
 td.time {
     width: 15%;
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    /*padding-right: 0 !important;*/
+    /*padding-left: 0 !important;*/
 }
 
 .table.no-border tr td, .table.no-border tr th {
@@ -790,7 +790,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 td.under-countdown {
     font-size: 22px;
     color: #198440;
-    padding: 0 30px 0 5px !important;
+    padding: 0 30px 0 5px;
     text-transform: uppercase;
 }
 .container-info, #txtBorder {
@@ -1206,15 +1206,125 @@ td.under-countdown {
     padding-right: 5% !important;;
 }
 
+.title-countdown {
+    text-transform: uppercase;
+    color: #198440 !important;
+    font-weight: 700;
+}
+
+.title-countdown h1 {
+    font-size: 110px;
+    font-family: 'blooming';
+}
+
+.final-homepage {
+    border: black 1px;
+    box-shadow: -2px -2px 10px 4px #888888;
+    border-radius: 20px;
+}
+.final-homepage td.time {
+    width: -1;
+}
+
+.button-final {
+    margin-top: 2em;
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 15px 40px 5px;
+    font-weight: 500;
+    box-shadow: -5px -5px 5px 4px #92c1a4;
+    background-color: #188440;
+    color: white;
+    border-radius: 13px;
+    transition: all ease 0.5s;
+}
+
+.after-clock-final {
+    color: #198440;
+    font-family: 'blooming';
+    font-size: 130px;
+    text-shadow: 2px 2px #e6e6ac;
+}
+.final-homepage td.under-countdown {
+    padding: 0;
+}
+
+.final-homepage {
+    width: 70%;
+    margin-left: 15%;
+}
+.button-final:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.restric-title-final {
+    max-width: 100%;
+    margin-left: 15%;
+}
+
+.restric-title-final .home-title {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.rule-right-final {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.long-text-final {
+    margin: 15px 0 15px;
+    font-family: 'montserratRegular';
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.3;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.slider-top5 img {
+    width: 100%;
+}
+
+.slick-dots li button:before {
+    font-size: 14px !important;
+}
+
+.top5-title .tongquan-title {
+    font-size: 50px;
+    text-align: left;
+}
+
+.banner-final {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/2019/placeholder-banner.jpg);
+}
+
+.slick-list.draggable {
+    border-radius: 20px;
+    box-shadow: -2px -2px 15px 2px #92c1a4;
+}
+
+.top5-final {
+    margin-top: 5%;
+}
 @media screen and (max-width: 1366px) {
     .logo img {
         width: 100%;
     }
 
     .countdown .table-responsive {
-        width: 120%;
+        width: 100%;
         margin-left: 0%;
-        right: 10%;
+        /*right: 10%;*/
         position: relative;
     }
 }
@@ -1249,7 +1359,7 @@ td.under-countdown {
         border: none;
     }
 
-    .clock, span.after-clock{
+    .clock, span.after-clock, .after-clock-final{
         font-size: 70px;
     }
 
@@ -1260,6 +1370,12 @@ td.under-countdown {
     td.under-countdown {
         padding: 0 20px 0 5px !important;
         font-size: 16px;
+    }
+    .countdown .table-responsive {
+        width: 100%;
+        margin-left: 0%;
+        /*right: 10%;*/
+        position: relative;
     }
 }
 
@@ -1450,6 +1566,33 @@ td.under-countdown {
         font-size: 70%;
     }
 
+    .restric-title-final .home-title {
+        font-size: 20px;
+    }
+
+    .rule-right-final {
+        margin-top: 5px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .long-text-final {
+        margin: 15px 0 15px;
+        font-size: 10px;
+    }
+    .restric-title-final {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .button-final {
+        margin-top: 2em;
+        font-size: 20px;
+        padding: 5px 20px 5px;
+        font-weight: 500;
+    }
+    .container-price {
+        padding-top: 0;
+    }
 }
 
 
