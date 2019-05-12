@@ -93,13 +93,13 @@
                 </div>
                 <div class="col-md-7 col-xs-12 rule-right-final" >
                     <div class="long-text-final">
-                        So tài tại Cuộc thi Tài chính - Chứng khoán lớn nhất miền Bắc dành cho sinh viên, mỗi một thí sinh đến với I-INVEST! 2019 đều mang trong mình ý chí vươn lên mạnh mẽ, nhằm hướng tới một trải nghiệm khác biệt thách thức những giới hạn của bản thân mình. Mỗi vòng thi đã qua là một chặng đua với mức độ tăng dần khó khăn, thử thách, đòi hỏi thí sinh không ngừng nâng cao kiến thức, kỹ năng cũng như sự can đảm và quyết tâm để vượt qua nó.
+                        So tài tại Cuộc thi Tài chính - Chứng khoán lớn nhất miền Bắc dành cho sinh viên, mỗi một thí sinh đến với <strong>I-INVEST! 2019</strong> đều mang trong mình ý chí vươn lên mạnh mẽ, nhằm hướng tới một Trải nghiệm khác biệt thách thức những giới hạn của bản thân mình. Mỗi vòng thi đã qua là một chặng đua với mức độ tăng dần khó khăn, thử thách, đòi hỏi thí sinh không ngừng nâng cao kiến thức, kỹ năng cũng như sự can đảm và quyết tâm để vượt qua nó.
                     </div>
                     <div class="long-text-final">
-                        Bứt phá ngoạn mục để tiến gần hơn về vạch đích, đường đua tới ngôi vị Quán quân của Cuộc thi I-INVEST! 2019 đã nhường lại cho 5 thí sinh xuất sắc nhất. Chặng đua cuối cùng - Đêm Chung kết I-INVEST! 2019 hứa hẹn sẽ đem tới những màn trình diễn Ấn tượng - Quyết liệt và là một sân khấu bùng nổ, là nơi tỏa sáng của 5 ứng cử viên tài năng nhất Cuộc thi.
+                        Bứt phá ngoạn mục để tiến gần hơn về vạch đích, đường đua tới ngôi vị Quán quân của Cuộc thi <strong>I-INVEST! 2019</strong> đã nhường lại cho 5 thí sinh xuất sắc nhất. Chặng đua cuối cùng - <strong>Đêm Chung kết I-SHINE!</strong> hứa hẹn sẽ đem tới những màn trình diễn Ấn tượng - Quyết liệt và là một sân khấu bùng nổ, là nơi tỏa sáng của 5 ứng cử viên tài năng nhất Cuộc thi.
                     </div>
                     <div class="long-text-final">
-                        5 thí sinh - 5 cá tính riêng biệt, ai sẽ người bước lên đỉnh vinh quang để nâng cao chiếc cúp vô địch và khẳng định giá trị bản thân mình? Tất cả sẽ được làm sáng tỏ tại Vòng thi cuối cùng - Đêm Chung kết Cuộc thi I-INVEST! 2019.
+                        5 thí sinh - 5 cá tính riêng biệt, ai sẽ người bước lên đỉnh vinh quang để nâng cao chiếc cúp vô địch và khẳng định giá trị bản thân mình? Tất cả sẽ được làm sáng tỏ tại <strong>Đêm Chung kết I-SHINE!</strong> - Đêm thi của những nhiệt huyết bùng cháy.
                     </div>
 
                 </div>
@@ -197,11 +197,6 @@
             </div>
         </div>
 
-
-        <div class="text-center">
-
-            <h3 style="font-family: 'iciel'; margin-top: 50px"> 02 giải khuyến khích bao gồm 02 suất học bổng 30% học phí chương trình CFA 3 Levels tại <span class="text-bold">Smart Train</span> trị giá 15.300.000 VNĐ. Ngoài ra Top 16 thí sinh xuất sắc nhất sẽ có cơ hội nhận được suất thực tập tại Công ty Cổ phần <span class="text-bold">Stoxplus </span> và 01 suất học bổng 15% khóa học “Nghiệp vụ nguồn vốn - đầu tư trong ngân hàng” tại <span class="text-bold">Future Financiers </span> . </h3>
-        </div>
     </div>
 
 

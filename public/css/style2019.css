@@ -28,6 +28,23 @@
     src: url(/2019/font/iCielEffra-Regular1.otf)
 }
 
+@font-face {
+    font-family: 'SanFranciscoThin';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Thin.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: bold;
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+@font-face {
+    font-family: 'SanFranciscoBold';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Semibold.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url(/FTU2/Font/SanFranciscoDisplay-Regular.otf); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /*url('myfont.ttf') format('truetype'); !* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 *!*/
+}
+
 /*HEADER*/
 .nav.navbar-nav.navbar-right{
     padding-top: 15px;
@@ -1271,18 +1288,19 @@ td.under-countdown {
 }
 
 .rule-right-final {
-    margin-top: 20px;
-    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .long-text-final {
     margin: 15px 0 15px;
-    font-family: 'montserratRegular';
+    font-family: 'SanFrancisco';
     letter-spacing: 1px;
-    word-spacing: 2px;
     line-height: 1.9;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 17px;
+}
+
+.long-text-final strong {
+    font-family: 'SanFranciscoBold';
 }
 
 .slider-top5 img {
@@ -1312,7 +1330,7 @@ td.under-countdown {
 
 .slick-list.draggable {
     border-radius: 30px;
-    box-shadow: -2px -2px 15px 2px #92c1a4;
+    box-shadow: -2px -2px 30px 2px #92c1a4;
 }
 
 .top5-final {

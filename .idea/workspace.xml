@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style2019.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style2019.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FTU2019Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8823">
+            <state>
               <caret line="536" column="33" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
@@ -51,8 +53,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="1268" column="16" selection-start-line="1268" selection-start-column="16" selection-end-line="1268" selection-end-column="16" />
+            <state relative-caret-position="588">
+              <caret line="1332" column="28" selection-start-line="1332" selection-start-column="28" selection-end-line="1332" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1717">
+              <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="120" />
             </state>
           </provider>
         </entry>
@@ -60,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="108" column="63" selection-start-line="108" selection-start-column="63" selection-end-line="108" selection-end-column="63" />
+            <state relative-caret-position="663">
+              <caret line="101" column="233" selection-start-line="101" selection-start-column="233" selection-end-line="101" selection-end-column="233" />
             </state>
           </provider>
         </entry>
@@ -281,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,6 +322,19 @@
               <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="FTU2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="FTU2" type="462c0819:PsiDirectoryNode" />
+              <item name="Font" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
@@ -350,6 +373,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,16 +383,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/admin-lte/plugins/pace" />
+      <recent name="$PROJECT_DIR$/app/Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nguye\Documents\Projects\FTUInvest\public\2019\font" />
       <recent name="C:\Users\nguye\Documents\Projects\FTUInvest\public\2019" />
       <recent name="$PROJECT_DIR$/public/2019/doitac/truyenthong" />
       <recent name="$PROJECT_DIR$/public/2019/doitac/donghanh" />
       <recent name="$PROJECT_DIR$/public/2019" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/admin-lte/plugins/pace" />
-      <recent name="$PROJECT_DIR$/app/Model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -453,18 +477,19 @@
       <workItem from="1551446188911" duration="1300000" />
       <workItem from="1551669607608" duration="1512000" />
       <workItem from="1557541960877" duration="16197000" />
-      <workItem from="1557562314357" duration="2136000" />
+      <workItem from="1557562314357" duration="2168000" />
+      <workItem from="1557671348874" duration="1666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="300224000" />
+    <option name="totallyTimeSpent" value="301922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" weight="0.22761194" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5061296" side_tool="true" weight="0.17043619" />
@@ -512,9 +537,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/admin-lte/plugins/pace/themes/red/pace-theme-flash.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/APIReturnHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -604,13 +626,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/sendEmail.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styleFTU2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/NoticeResult.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -762,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1532">
-          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/actionAdmin2019.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663">
@@ -816,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FTU2019Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8823">
+        <state>
           <caret line="536" column="33" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
@@ -840,15 +848,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="108" column="63" selection-start-line="108" selection-start-column="63" selection-end-line="108" selection-end-column="63" />
+        <state relative-caret-position="663">
+          <caret line="101" column="233" selection-start-line="101" selection-start-column="233" selection-end-line="101" selection-end-column="233" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="119" column="4" selection-start-line="119" selection-start-column="4" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styleFTU2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="1268" column="16" selection-start-line="1268" selection-start-column="16" selection-end-line="1268" selection-end-column="16" />
+        <state relative-caret-position="588">
+          <caret line="1332" column="28" selection-start-line="1332" selection-start-column="28" selection-end-line="1332" selection-end-column="28" />
         </state>
       </provider>
     </entry>
