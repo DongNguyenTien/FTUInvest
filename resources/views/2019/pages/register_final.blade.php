@@ -52,7 +52,15 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12 form-group">
                     <label>Bạn là sinh viên năm (*):</label>
-                    <input type="text" class="form-control" name="year" required>
+                    {{--<input type="text" class="form-control" name="year" required>--}}
+                    <select name="year" class="form-control" required>
+                        <option value >--Chọn tình trạng--</option>
+                        <option value="1">Sinh viên năm nhất</option>
+                        <option value="2">Sinh viên năm 2</option>
+                        <option value="3">Sinh viên năm 3</option>
+                        <option value="4">Sinh viên năm 4</option>
+                        <option value="5">Khác</option>
+                    </select>
                 </div>
             </div>
 

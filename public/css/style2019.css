@@ -1148,7 +1148,7 @@ td.under-countdown {
     font-family: 'iciel';
 }
 
-.box-register input, .box-register i, .box-register textarea {
+.box-register input, .box-register select, .box-register i, .box-register textarea {
     border-radius: 6px;
     margin: 10px 0 5px 35px;
 }
