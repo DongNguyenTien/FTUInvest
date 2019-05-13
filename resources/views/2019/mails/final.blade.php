@@ -2,7 +2,7 @@
 
 
 <div style="text-align: center">
-    <img src="http://start-up.sic-ftu.org/2019/final_images/Logo.png" style="max-width: 150px">
+    <img src="http://start-up.sic-ftu.org/2019/final_images/Logo.png" style="max-width: 250px">
 </div>
 <p style="font-weight:bold;">{{$name}} thân mến,</p>
 
@@ -15,7 +15,7 @@
 
 <p>Kết thúc thời gian đăng kí, BTC sẽ tiến hành tổng hợp và thông báo kết quả đăng kí trong 2 ngày<span style="font-weight:bold; color:#188440" > 23-24/05</span>. Bạn vui lòng check mail để cập nhật kết quả nhé!</p>
 
-<p>Nếu có bất kì thắc mắc nào về Cuộc thi I-INVEST! 2019, bạn vui lòng inbox<span style="font-weight:bold; color:#188440" ><a href="https://www.facebook.com/GS.I.Invest/" target="_blank"> Fanpage</a></span>hoặc gửi mail về địa chỉ <span style="font-weight:bold; color:#188440" > btciinvest2019@gmail.com</span> để BTC có thể giải đáp.</p>
+<p>Nếu có bất kì thắc mắc nào về Cuộc thi I-INVEST! 2019, bạn vui lòng inbox<span style="font-weight:bold; color:#188440" ><a href="https://www.facebook.com/GS.I.Invest/" target="_blank"> Fanpage</a></span> hoặc gửi mail về địa chỉ <span style="font-weight:bold; color:#188440" > btciinvest2019@gmail.com</span> để BTC có thể giải đáp.</p>
 
 <p>BTC xin chân thành cảm ơn và hẹn gặp lại bạn vào <span style="font-weight:bold; color:#188440" >GALA Chung kết THE FINAL: I-SHINE!</span></p>
 

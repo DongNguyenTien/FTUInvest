@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/views/administrator/action.blade.php" line="8" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/style2019.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style2019.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/2019/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/2019/layout.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -83,6 +80,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="30" column="120" selection-start-line="30" selection-start-column="120" selection-end-line="30" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FTU2019Controller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="536" column="33" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="678">
+              <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -190,7 +205,6 @@
         <option value="$PROJECT_DIR$/app/Model/Member.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/2019/pages/score.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/2019/pages/register_confirm.blade.php" />
         <option value="$PROJECT_DIR$/app/MemberFinal.php" />
@@ -204,6 +218,7 @@
         <option value="$PROJECT_DIR$/resources/views/2019/mails/final.blade.php" />
         <option value="$PROJECT_DIR$/public/css/style2019.css" />
         <option value="$PROJECT_DIR$/resources/views/2019/layout.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -319,31 +334,14 @@
               <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
               <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="final_images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FTUInvest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FTUInvest" type="b2602c69:ProjectViewProjectNode" />
@@ -482,12 +480,12 @@
       <workItem from="1557562314357" duration="2168000" />
       <workItem from="1557671348874" duration="2357000" />
       <workItem from="1557758047715" duration="32000" />
-      <workItem from="1557759070749" duration="1396000" />
+      <workItem from="1557759070749" duration="1687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305853000" />
+    <option name="totallyTimeSpent" value="306144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -723,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/Member.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -748,13 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FTU2019Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="536" column="33" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -803,17 +787,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/RegisterFinal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="120" selection-start-line="30" selection-start-column="120" selection-end-line="30" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="1390" column="5" lean-forward="true" selection-start-line="1390" selection-start-column="5" selection-end-line="1390" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="82" lean-forward="true" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -838,17 +829,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
+    <entry file="file://$PROJECT_DIR$/app/Mail/RegisterFinal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="1390" column="5" lean-forward="true" selection-start-line="1390" selection-start-column="5" selection-end-line="1390" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="30" column="120" selection-start-line="30" selection-start-column="120" selection-end-line="30" selection-end-column="120" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/2019/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FTU2019Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="82" lean-forward="true" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+        <state relative-caret-position="425">
+          <caret line="536" column="33" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
         </state>
       </provider>
     </entry>
