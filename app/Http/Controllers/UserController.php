@@ -67,10 +67,7 @@ class UserController extends Controller
             ]);
 
             if($validator->fails()){
-                return $result = [
-                    'success' => 0,
-                    'messages' => $this->getMessageErros($validator->errors())
-                ];
+                return redirect()->back()->withErrors();
             }
             //Register
             $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();

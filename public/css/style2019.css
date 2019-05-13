@@ -1390,6 +1390,10 @@ td.under-countdown {
         height: 350px;
     }
 
+    .final-margin {
+        margin-top: 360px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
