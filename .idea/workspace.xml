@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/public/access.log" afterPath="$PROJECT_DIR$/public/access.log" />
-      <change beforePath="$PROJECT_DIR$/public/css/style2019.css" afterPath="$PROJECT_DIR$/public/css/style2019.css" />
-      <change beforePath="$PROJECT_DIR$/resources/views/2019/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/2019/layout.blade.php" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/banner.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/banner.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-01.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-01.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-02.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-02.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-03.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-03.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-04.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-04.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-05.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-05.jpg" />
+      <change beforePath="$PROJECT_DIR$/public/2019/final_images/top-5-06.jpg" afterPath="$PROJECT_DIR$/public/2019/final_images/top-5-06.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +30,7 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="330">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
@@ -35,10 +40,9 @@
       <file leaf-file-name="homepage_final.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="1725">
               <caret line="115" column="78" lean-forward="false" selection-start-line="115" selection-start-column="78" selection-end-line="115" selection-end-column="78" />
               <folding>
-                <element signature="e#140#202#0#HTML" expanded="true" />
                 <marker date="1557729852461" expanded="true" signature="9:22" ph="..." />
                 <marker date="1557729852461" expanded="true" signature="33:52" ph="..." />
                 <marker date="1557729852461" expanded="true" signature="63:71" ph="..." />
@@ -71,7 +75,7 @@
       <file leaf-file-name="style2019.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="23085">
               <caret line="1539" column="44" lean-forward="false" selection-start-line="1539" selection-start-column="44" selection-end-line="1539" selection-end-column="44" />
               <folding />
             </state>
@@ -335,10 +339,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1061" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="38" />
+    <option name="y" value="23" />
+    <option name="width" value="1242" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -356,8 +361,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,6 +378,13 @@
               <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="2019" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FTUProject" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="2019" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="final_images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="FTUProject" type="b2602c69:ProjectViewProjectNode" />
@@ -412,6 +422,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,16 +433,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/admin-lte/plugins/pace" />
+      <recent name="$PROJECT_DIR$/app/Model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/2019/final_images" />
       <recent name="C:\Users\nguye\Documents\Projects\FTUInvest\public\2019\font" />
       <recent name="C:\Users\nguye\Documents\Projects\FTUInvest\public\2019" />
       <recent name="$PROJECT_DIR$/public/2019/doitac/truyenthong" />
       <recent name="$PROJECT_DIR$/public/2019/doitac/donghanh" />
-      <recent name="$PROJECT_DIR$/public/2019" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/admin-lte/plugins/pace" />
-      <recent name="$PROJECT_DIR$/app/Model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -520,17 +532,17 @@
       <workItem from="1557541960877" duration="16197000" />
       <workItem from="1557562314357" duration="2168000" />
       <workItem from="1557671348874" duration="2357000" />
+      <workItem from="1557758047715" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303552000" />
+    <option name="totallyTimeSpent" value="304457000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="38" y="23" width="1242" height="777" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25282714" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25666666" sideWeight="0.4938704" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -539,7 +551,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23101777" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.392022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39149562" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17043619" sideWeight="0.5061296" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -566,20 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-          <folding>
-            <marker date="1551670226103" expanded="true" signature="9:22" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="33:52" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="63:72" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="105:136" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="2960:3001" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="3056:3074" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="3587:3605" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="3632:3644" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="6419:6434" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="6685:6694" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="7439:7457" ph="..." />
-            <marker date="1551670226103" expanded="true" signature="7674:7692" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,40 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1540389480835" expanded="true" signature="372:379" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="674:688" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="745:775" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="841:893" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="960:1018" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1084:1130" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1178:1201" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1258:1285" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1341:1366" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1442:1506" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1548:1615" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1662:1708" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="1788:1831" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3084:3103" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3174:3183" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3243:3262" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3434:3475" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3530:3580" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3609:3677" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3743:3807" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3836:3903" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="3958:3990" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4038:4085" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4114:4174" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4227:4292" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4321:4365" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4411:4460" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4506:4527" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4556:4601" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4630:4657" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4686:4722" ph="..." />
-            <marker date="1540389480835" expanded="true" signature="4745:4754" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
@@ -863,9 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="85" column="40" lean-forward="false" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,9 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="536" column="33" lean-forward="false" selection-start-line="536" selection-start-column="33" selection-end-line="536" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -942,7 +900,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style2019.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="23085">
           <caret line="1539" column="44" lean-forward="false" selection-start-line="1539" selection-start-column="44" selection-end-line="1539" selection-end-column="44" />
           <folding />
         </state>
@@ -950,10 +908,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/2019/homepage_final.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="1725">
           <caret line="115" column="78" lean-forward="false" selection-start-line="115" selection-start-column="78" selection-end-line="115" selection-end-column="78" />
           <folding>
-            <element signature="e#140#202#0#HTML" expanded="true" />
             <marker date="1557729852461" expanded="true" signature="9:22" ph="..." />
             <marker date="1557729852461" expanded="true" signature="33:52" ph="..." />
             <marker date="1557729852461" expanded="true" signature="63:71" ph="..." />
