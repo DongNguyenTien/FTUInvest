@@ -4,7 +4,7 @@
 
     @endsection
 @section('content')
-    <div class="banner-final" style="background-image: url('/2019/placeholder-banner.jpg')">
+    <div class="banner-final" style="background-image: url('/2019/final_images/banner.jpg')">
 {{--        <img class="" src="{{asset('/2019/placeholder-banner.jpg')}}">--}}
     </div>
     <div class="container text-center countdown final-margin" >
@@ -108,12 +108,12 @@
                     <div class="row">
                         <div class="col-md-9 col-lg-9 col-xs-12">
                             <div class="slider-top5">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
-                                <img src="{{asset('/2019/placeholder.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-01.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-02.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-04.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-03.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-06.jpg')}}">
+                                <img src="{{asset('/2019/final_images/top-5-05.jpg')}}">
                             </div>
                         </div>
                         <div class="col-md-3 col-lg-3 col-xs-12">

@@ -1321,7 +1321,7 @@ td.under-countdown {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1367,7 +1367,7 @@ td.under-countdown {
 }
 
 .final-margin {
-    margin-top: 450px;
+    margin-top: 380px;
 }
 
 @media screen and (max-width: 1366px) {

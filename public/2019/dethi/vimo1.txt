@@ -1,0 +1,65 @@
+Câu 1:  Doanh nghiệp trong ngành cạnh tranh độc quyền cạnh tranh với nhau bằng việc:
+1. Bán sản phẩm hoàn toàn không có sản phẩm thay thế
+2. Bán các sản phẩm có thể thay thế nhau một cách hoàn toàn
+3. Bán các sản phẩm riêng biệt nhưng có thể thay thế nhau
+4. Cả 3 câu trên đều sai
+Câu 2:  Khi doanh nghiệp tăng sản lượng thì tổng lợi nhuận bị giảm. Điều này cho biết:
+1. Doanh thu biên lớn hơn chi phí biên
+2. Doanh thu biên nhỏ hơn chi phí biên
+3. Doanh thu biên bằng chi phí biên
+4. Cả 3 câu trên đều sai
+Câu 3: Doanh nghiệp có hàm tổng chi phí là TC = Q2 + 40Q + 10.000. Chi phí trung bình ở mức sản lượng 1.000 sản phẩm là:
+1. 1.050
+2. 1.040
+3. 2.040
+4. 2.050
+Câu 4: Điều nào sau dưới đây không được coi là một phần của chi phí cơ hội của việc đi học đại học:
+1. Học phí
+2. Chi phí mua sách
+3. Chi phí ăn uống
+4. Thu nhập lẽ ra phải kiếm được nếu không đi học
+Câu 5: Hệ số MRS luôn có giá trị:
+1. Tăng dần
+2. Giảm dần
+3. Không đổi
+4. Tất cả đều sai
+Câu 6: Nhân tố nào trong nhân tố sau đây không làm thay đổi đường cầu về lao động?
+1. Hạn chế thời gian
+2. Giá cả hàng hóa
+3. Trình độ công nghệ
+4. Trình độ tay nghề người lao động
+Câu 7:  Nền kinh tế mà chính phủ đứng ra giải quyết các vấn đề cơ bản là nền kinh tế:
+1. Thị trường
+2. Phụ thuộc
+3. Truyền thống
+4. Chỉ huy
+Câu 8: Khi giá của Y tăng làm cho lượng cầu của X giảm trong điều kiện các yếu tố khác không đổi. Vậy 2 sản phẩm X và Y có mối quan hệ:
+1. Thay thế cho nhau
+2. Độc lập với nhau
+3. Bổ sung cho nhau
+4. Các câu trên đều sai
+Câu 9: Một doanh nghiệp cạnh tranh hoàn toàn có hàm tổng chi phí: TC = Q2 + 300Q +100.000. Nếu giá thị trường là 1100 thì thặng dư sản xuất của doanh nghiệp:
+1. 160.000
+2. 320.000
+3. 400.000
+4. Các câu trên đều sai
+Câu 10: Hàm số cầu & hàm số cung sản phẩm X lần lượt là : P = 70 - 2Q ; P = 10 + 4Q. Thặng dư của người tiêu thụ (CS) & thặng dư của nhà sản xuất (PS) là:
+1. CS = 150 & Ps = 200
+2. CS = 100 & PS = 200
+3. CS = 200 & PS = 100
+4. CS = 150 & PS = 150
+Câu 11:  Nếu Long sẵn sàng thanh toán 100$ cho một cái máy pha cà phê và 120$ cho hai cái máy đó thì lợi ích cận biên của cái máy thứ hai là:
+1. 20$
+2. 100$
+3. 120$
+4.  220$
+Câu 12:  Khi các nhà kinh tế thúc giục chính phủ cố gắng loại bỏ độc quyền bán, họ làm thế chủ yếu nhằm mục đích:
+1. Ngăn chặn sự tăng trưởng của doanh nghiệp lớn
+2. Ngăn chặn không có giảm số các hãng nhỏ
+3. Hạn chế việc sát nhập
+4. Đảm bảo sự cạnh tranh
+Câu 13:  Đường chi phí trung bình dài hạn là:
+1. Tổng của tất cả các đường chi phí trung bình ngắn hạn
+2. Đường bao phía dưới của các đường chi phí trung bình ngắn hạn
+3. Đường bao phía trên của các đường chi phí trung bình ngắn hạn
+4. Không câu nào đúng
