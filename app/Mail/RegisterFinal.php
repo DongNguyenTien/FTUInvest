@@ -28,7 +28,7 @@ class RegisterFinal extends Mailable
      */
     public function build()
     {
-        return $this->subject('I-INVEST! 2019 Chung kết')
+        return $this->subject('[THE FINAL: I-SHINE!] Xác nhận đơn đăng kí tham dự GALA Chung kết Cuộc thi I-INVEST! 2019')
             ->view('2019.mails.final')
             ->with([
                 'name'=>$this->data['name'],

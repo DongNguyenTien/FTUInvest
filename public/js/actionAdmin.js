@@ -81,10 +81,10 @@ function getListOrder() {
                 //     case 4 : {
                 //         m.status = "Năm 4"
                 //     }
+                //     // case 5 : {
+                //     //     m.status = "Năm 5"
+                //     // }
                 //     case 5 : {
-                //         m.status = "Năm 5"
-                //     }
-                //     case 6 : {
                 //         m.status = "Đã đi làm"
                 //     }
                 // }
