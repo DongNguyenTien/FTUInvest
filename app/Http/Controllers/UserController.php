@@ -67,7 +67,7 @@ class UserController extends Controller
             ]);
 
             if($validator->fails()){
-                return redirect()->back()->withErrors();
+                return redirect()->back()->withInput();
             }
             //Register
             $params['dateOfBirth'] = Carbon::parse($request->dateOfBirth)->toDateTimeString();
