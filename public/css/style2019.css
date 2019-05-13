@@ -1537,7 +1537,7 @@ td.under-countdown {
         font-size: 100%;
     }
 
-    .box-register input, .box-register i, .box-register textarea {
+    .box-register input, .box-register select, .box-register i, .box-register textarea {
         border-radius: 6px;
         margin: 0;
     }
