@@ -8,7 +8,7 @@
 
         <div class="test-content score-screen" >
             <h3 style="font-family: 'iciel';"> Chúc mừng bạn đã đăng ký tham dự đêm
-                <span class="text-bold">Chung kết I-INVEST! 2019 </span> thành công
+                <span class="text-bold"> Gala Chung kết Cuộc thi I-INVEST! 2019  </span> thành công
                 <p>BTC xin chân thành cảm ơn! </p>
             </h3>
 

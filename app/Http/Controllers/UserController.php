@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\RegisterMember;
+use App\MemberFinal;
 use Illuminate\Http\Request;
 use App\Model\Member;
 use Illuminate\Support\Facades\Auth;
@@ -67,6 +68,7 @@ class UserController extends Controller
             ]);
 
             if($validator->fails()){
+                dd($validator->errors());
                 return redirect()->back()->withInput();
             }
             //Register
@@ -80,7 +82,7 @@ class UserController extends Controller
 //
 //            $params['CV'] = 'iinvest.test/CV/'.$CV_filename;
 
-            $member = Member::registerMemberFinal($params);
+            $member = MemberFinal::registerMemberFinal($params);
 
             //Send email
             if ((!empty($member))&&(!empty($params['email']))) {

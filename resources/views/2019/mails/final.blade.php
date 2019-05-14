@@ -6,11 +6,11 @@
 </div>
 <p style="font-weight:bold;">{{$name}} thân mến,</p>
 
-<p>Lời đầu tiên, <span style="font-weight:bold; color:#188440" >Ban tổ chức Cuộc thi I-INVEST! 2019</span> xin gửi lời cảm ơn chân thành nhất đến bạn vì đã quan tâm và đăng ký tham dự <span style="font-weight:bold; color:#188440">GALA Chung kết cuộc thi I-INVEST! 2019.</span> Dưới đây là thông tin đêm GALA Chung kết:</p>
+<p>Lời đầu tiên, <span style="font-weight:bold; color:#188440" >Ban tổ chức Cuộc thi I-INVEST! 2019</span> xin gửi lời cảm ơn chân thành nhất đến bạn vì đã quan tâm và đăng ký tham dự <span style="font-weight:bold; color:#188440">đêm Gala Chung kết Cuộc thi I-INVEST! 2019.</span> Dưới đây là thông tin đêm GALA Chung kết:</p>
 
 <ul>
     <li style="font-weight:bold;">Thời gian: 17h30’ thứ 7 ngày 25/05/2019</li>
-    <li style="font-weight:bold;">Địa điểm: Trung tâm nghệ thuật  u Cơ - Số 08, Huỳnh Thúc Kháng, Q. Đống Đa, Hà Nội</li>
+    <li style="font-weight:bold;">Địa điểm: Trung tâm nghệ thuật Âu Cơ - Số 08, Huỳnh Thúc Kháng, Q. Đống Đa, Hà Nội</li>
 </ul>
 
 <p>Kết thúc thời gian đăng kí, BTC sẽ tiến hành tổng hợp và thông báo kết quả đăng kí trong 2 ngày<span style="font-weight:bold; color:#188440" > 23-24/05</span>. Bạn vui lòng check mail để cập nhật kết quả nhé!</p>

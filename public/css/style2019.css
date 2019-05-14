@@ -994,6 +994,7 @@ td.under-countdown {
     background-color: #188440;
     border-radius: 20px;
     padding: 8px 10px;
+    height: 400px;
 }
 
 .price-box-extra {
@@ -1394,6 +1395,9 @@ td.under-countdown {
         margin-top: 360px;
     }
 
+    .price-box {
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1464,12 +1468,24 @@ td.under-countdown {
     .top5-title .tongquan-title {
         font-size: 25px;
     }
+
+    .price-box {
+        height: 580px;
+    }
+
+    .price-money {
+        line-height: 1;
+    }
 }
 
 
 @media only screen and (max-width: 993px){
     .container {
         width: 80%;
+    }
+
+    .price-box {
+        height: auto;
     }
 
     .logo {
