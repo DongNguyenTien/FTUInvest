@@ -68,7 +68,6 @@ class UserController extends Controller
             ]);
 
             if($validator->fails()){
-                dd($validator->errors());
                 return redirect()->back()->withInput();
             }
             //Register
