@@ -96,10 +96,10 @@
                         So tài tại Cuộc thi Tài chính - Chứng khoán lớn nhất miền Bắc dành cho sinh viên, mỗi một thí sinh đến với <strong>I-INVEST! 2019</strong> đều mang trong mình ý chí vươn lên mạnh mẽ, nhằm hướng tới một Trải nghiệm khác biệt thách thức những giới hạn của bản thân mình. Mỗi vòng thi đã qua là một chặng đua với mức độ tăng dần khó khăn, thử thách, đòi hỏi thí sinh không ngừng nâng cao kiến thức, kỹ năng cũng như sự can đảm và quyết tâm để vượt qua nó.
                     </div>
                     <div class="long-text-final">
-                        Bứt phá ngoạn mục để tiến gần hơn về vạch đích, đường đua tới ngôi vị Quán quân của Cuộc thi <strong>I-INVEST! 2019</strong> đã nhường lại cho 5 thí sinh xuất sắc nhất. Chặng đua cuối cùng - <strong>Đêm Chung kết I-SHINE!</strong> hứa hẹn sẽ đem tới những màn trình diễn Ấn tượng - Quyết liệt và là một sân khấu bùng nổ, là nơi tỏa sáng của 5 ứng cử viên tài năng nhất Cuộc thi.
+                        Bứt phá ngoạn mục để tiến gần hơn về vạch đích, đường đua tới ngôi vị Quán quân của Cuộc thi <strong>I-INVEST! 2019</strong> đã nhường lại cho 05 thí sinh xuất sắc nhất. Chặng đua cuối cùng - <strong>Đêm GALA Chung kết I-SHINE!</strong> hứa hẹn sẽ đem tới những màn trình diễn Ấn tượng - Quyết liệt và là một sân khấu bùng nổ, là nơi tỏa sáng của 05 ứng cử viên tài năng nhất Cuộc thi.
                     </div>
                     <div class="long-text-final">
-                        5 thí sinh - 5 cá tính riêng biệt, ai sẽ người bước lên đỉnh vinh quang để nâng cao chiếc cúp vô địch và khẳng định giá trị bản thân mình? Tất cả sẽ được làm sáng tỏ tại <strong>Đêm Chung kết I-SHINE!</strong> - Đêm thi của những nhiệt huyết bùng cháy.
+                        05 thí sinh - 05 cá tính riêng biệt, ai sẽ người bước lên đỉnh vinh quang để nâng cao chiếc cúp vô địch và khẳng định giá trị bản thân mình? Tất cả sẽ được làm sáng tỏ tại <strong>Đêm GALA Chung kết I-SHINE!</strong> - Đêm thi của những nhiệt huyết bùng cháy.
                     </div>
 
                 </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="col-md-3 col-lg-3 col-xs-12">
                             <div class="top5-title">
-                                <h1 class="home-title tongquan-title">Top 5 <span class="block-span"></span></h1>
+                                <h1 class="home-title tongquan-title">Top 05 <span class="block-span"></span></h1>
                                 <h1 class="home-title tongquan-title">i-invest! </h1>
                                 <h1 class="home-title tongquan-title">2019 </h1>
                             </div>
