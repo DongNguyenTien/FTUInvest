@@ -23,7 +23,7 @@ Route::get('/','FTU2019Controller@homepage_final')->name('home');
 Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
 //Route::post('/register','FTU2Controller@register')->name('register');
 Route::get('/doi-tac','FTU2019Controller@doitac')->name('doitac');
-Route::get('/xac-nhan-dang-ky', 'UserController@registerConfirm')->name('register-confirm');
+//Route::get('/xac-nhan-dang-ky', 'UserController@registerConfirm')->name('register-confirm');
 //Challenge
 Route::get('/thu-thach','FTU2019Controller@challenge')->name('challenge');
 Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
@@ -36,7 +36,7 @@ Route::post('/verify', 'FTU2019Controller@verifyExam')->name('verify');
 Route::get('/login','UserController@login')->name('login');
 Route::post('/login','UserController@loginPost')->name('loginPost');
 Route::get('/logout','UserController@logout')->name('logout');
-Route::get('/dang-ky','UserController@register_final')->name('dangky');
+//Route::get('/dang-ky','UserController@register_final')->name('dangky');
 Route::post('/register','UserController@requestRegister')->name('register');
 Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
 Route::get('/password/reset/{token?}', 'UserController@resetPassword');
