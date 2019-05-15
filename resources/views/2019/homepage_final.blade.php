@@ -256,7 +256,7 @@
 
 
 
-            $('.clock').countdown('12:00 05/23/2019')
+            $('.clock').countdown('05/23/2019 12:00:00')
                 .on('update.countdown', function(event) {
                     var totalDays= event.offset.totalDays;
 
