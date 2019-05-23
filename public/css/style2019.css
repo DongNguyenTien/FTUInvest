@@ -897,7 +897,7 @@ td.under-countdown {
 }
 
 .container-price {
-    padding-top: 2em;
+    padding-top: 1em;
     font-family: 'iciel' !important;
     border-radius: 30px;
     margin: 0px 8% 5%;
@@ -1231,9 +1231,10 @@ td.under-countdown {
 }
 
 .title-countdown h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'MontserratBold';
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+    padding-top: 1%;
 }
 
 .final-homepage {
