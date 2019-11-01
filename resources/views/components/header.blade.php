@@ -2,7 +2,7 @@
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="logo">
-                    <a href="{{route('home')}}"><img src="{{asset('/FTU2/images/logostu.png')}}"/> </a>
+                    <a href="{{route('home')}}"><img src="{{asset('startup2019/logo.png')}}"/> </a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -25,7 +25,7 @@
                                 <li><a class="cool-link menu-border-right" href="https://sic-ftu.org/">VỀ CHÚNG TÔI</a></li>
                                 <li><a class="cool-link menu-border-right" href="{{route('tongquan')}}">TỔNG QUAN</a></li>
                                 <li><a class="cool-link " href="{{route('doitac')}}">ĐỐI TÁC</a></li>
-                                {{--<li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>--}}
+                                <li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                 </nav>

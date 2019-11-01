@@ -13,7 +13,7 @@
 }
 .nav.navbar-right > li > a:hover, .nav.navbar-right > li > a:focus{
 	background-color: transparent;
-	color:  #009844;
+	color:  #035085;
 	font-weight: bold;
 }
 .navbar-nav>li>a {
@@ -23,10 +23,8 @@
 }
 
 .navbar-nav>li>a.menu-border-right {
-	border-right: solid white;
-
+	border-right: solid #035085;
 }
-
 
 .logo{
 	max-width: 80%;
@@ -45,7 +43,7 @@
 }
 
 #timkiem{
-	background-color: #009844;
+	background-color: #035085;
 	color: #fff;
 	padding: 10px 15px 5px 15px;
 	margin-top: 1.7em;
@@ -132,7 +130,7 @@ h4.modal-title {
 
 }
 p {
-	font-size: 17px;
+	font-size: 20px;
 	font-weight: lighter;
 	line-height: 20px;
 }
@@ -163,6 +161,7 @@ span.after-clock {
 
 
 td.time {
+	border-bottom: 0 !important;
 	width: 15%;
 	padding-right: 0 !important;
 	padding-left: 0 !important;

@@ -10,38 +10,54 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+/**
+ * Start up 2019
+ */
+Route::get('/','StartupController@homepage')->name('home');
+Route::get('/dang-ky','StartupController@register_final')->name('dangky');
+Route::post('/register','StartupController@register')->name('register');
+Route::get('/tong-quan','StartupController@tongquan')->name('tongquan');
+Route::get('/doi-tac','StartupController@doitac')->name('doitac');
+Route::get('/xac-nhan-dang-ky', 'StartupController@registerConfirm')->name('register-confirm');
+
+/**
+ * Admin
+ **/
+
+Route::get('/ajax/member','StartupController@getListCandicate');
+Route::get('/download/data','StartupController@exportExcel')->name('download_data');
 
 /**
  * 2019
  */
 
-Route::get('/','FTU2019Controller@homepage_final')->name('home');
-//Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
-//Route::get('/test','FTU2019Controller@rawAns');
-
-//Page lien quan
-Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
-//Route::post('/register','FTU2Controller@register')->name('register');
-Route::get('/doi-tac','FTU2019Controller@doitac')->name('doitac');
-Route::get('/xac-nhan-dang-ky', 'UserController@registerConfirm')->name('register-confirm');
-//Challenge
-Route::get('/thu-thach','FTU2019Controller@challenge')->name('challenge');
-Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
-Route::get('/ket-qua','FTU2019Controller@showResult')->name('show_result');
-Route::post('/getExam','FTU2019Controller@getExam')->name('getExam');
-Route::post('/verify', 'FTU2019Controller@verifyExam')->name('verify');
-
-
-//Member
-Route::get('/login','UserController@login')->name('login');
-Route::post('/login','UserController@loginPost')->name('loginPost');
-Route::get('/logout','UserController@logout')->name('logout');
-Route::get('/dang-ky','UserController@register_final')->name('dangky');
-Route::post('/register','UserController@requestRegister')->name('register');
-Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
-Route::get('/password/reset/{token?}', 'UserController@resetPassword');
-Route::post('/password/email', 'UserController@sendResetLinkEmail')->name('password.email');
-Route::post('/password/reset', 'UserController@saveNewPassword')->name('password.request');
+//Route::get('/','FTU2019Controller@homepage_final')->name('home');
+////Route::get('/updateData','FTU2019Controller@reshapeData')->name('updateData');
+////Route::get('/test','FTU2019Controller@rawAns');
+//
+////Page lien quan
+//Route::get('/tong-quan','FTU2019Controller@tongquan')->name('tongquan');
+////Route::post('/register','FTU2Controller@register')->name('register');
+//Route::get('/doi-tac','FTU2019Controller@doitac')->name('doitac');
+//Route::get('/xac-nhan-dang-ky', 'UserController@registerConfirm')->name('register-confirm');
+////Challenge
+//Route::get('/thu-thach','FTU2019Controller@challenge')->name('challenge');
+//Route::post('/result','FTU2019Controller@checkResult')->name('submit_result');
+//Route::get('/ket-qua','FTU2019Controller@showResult')->name('show_result');
+//Route::post('/getExam','FTU2019Controller@getExam')->name('getExam');
+//Route::post('/verify', 'FTU2019Controller@verifyExam')->name('verify');
+//
+//
+////Member
+//Route::get('/login','UserController@login')->name('login');
+//Route::post('/login','UserController@loginPost')->name('loginPost');
+//Route::get('/logout','UserController@logout')->name('logout');
+//Route::get('/dang-ky','UserController@register_final')->name('dangky');
+//Route::post('/register','UserController@requestRegister')->name('register');
+//Route::get('/forgot_password','UserController@forgotPassword')->name('forgot_password');
+//Route::get('/password/reset/{token?}', 'UserController@resetPassword');
+//Route::post('/password/email', 'UserController@sendResetLinkEmail')->name('password.email');
+//Route::post('/password/reset', 'UserController@saveNewPassword')->name('password.request');
 
 
 
@@ -58,10 +74,10 @@ Route::get('/reset/password','FTU2019Controller@resetPassword')->name('administr
 Route::post('/reset/password','FTU2019Controller@resetPasswordPost')->name('administrator.reset.post');
 
 
-Route::get('/ajax/member','FTU2019Controller@getListCandicate');
+//Route::get('/ajax/member','FTU2019Controller@getListCandicate');
 
 Route::post('/ajax/changePassword','FTU2019Controller@changePassword');
-Route::get('/download/data','FTU2019Controller@exportExcel')->name('download_data');
+//Route::get('/download/data','FTU2019Controller@exportExcel')->name('download_data');
 
 
 //Route::get('/check/administrator','InvestController@testcase')->name('test');

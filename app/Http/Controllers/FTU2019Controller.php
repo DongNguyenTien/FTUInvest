@@ -445,7 +445,7 @@ class FTU2019Controller extends Controller
             $admin_session = \GuzzleHttp\json_decode(session('admin'),true);
 
             if ($admin_session['check'] == md5(date('d/m/Y').$admin_session['admin'])) {
-                return view('administrator.action');
+                return view('administrator.actionstartup2019');
             }
         }
         return view('administrator.login');
@@ -483,7 +483,7 @@ class FTU2019Controller extends Controller
             $admin_session = \GuzzleHttp\json_decode(session('admin'),true);
 
             if ($admin_session['check'] == md5(date('d/m/Y').$admin_session['admin'])) {
-                return view('administrator.action2019');
+                return view('administrator.actionstartup2019');
             }
         }
         return view('administrator.login');

@@ -51,7 +51,7 @@ function getListOrder() {
             $('#listCandicate').waitMe('hide');
             // xu ly data
             data.forEach(function (m) {
-                m.dateOfBirth = moment(m.dateOfBirth).format("DD-MM-YYYY");
+                // m.dateOfBirth = moment(m.dateOfBirth).format("DD-MM-YYYY");
 
                 // if (m.facebook !== null) {
                 //     m.facebook = '<a href="' + m.facebook + '" target="_blank">Xem trang</a>'
