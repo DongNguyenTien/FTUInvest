@@ -9,63 +9,63 @@
     </div>
     <div class="container text-center countdown final-margin" >
         <div class="title-countdown">
-            <h1 class="color-text-gradient">Bạn còn</h1>
+            <h1 class="color-text-gradient">Thời gian đăng ký đã kết thúc</h1>
         </div>
-        <div class="table-responsive final-homepage" >
-            <table class="table no-border" style="display: flex; justify-content: center">
-                <tbody>
-                <tr >
-                    <td class="time">
-                        <span class="clock" id="countdown-day"></span>
-                    </td>
-                    <td class="">
-                        <span class="after-clock-final">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-hour"></span>
-                    </td>
-                    <td class="">
-                        <span class="after-clock-final">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-minute"></span>
-                    </td>
-                    <td class="">
-                        <span class="after-clock-final">:</span>
-                    </td>
-                    <td class="time">
-                        <span class="clock" id="countdown-second"></span>
-                    </td>
+        {{--<div class="table-responsive final-homepage" >--}}
+            {{--<table class="table no-border" style="display: flex; justify-content: center">--}}
+                {{--<tbody>--}}
+                {{--<tr >--}}
+                    {{--<td class="time">--}}
+                        {{--<span class="clock" id="countdown-day"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final">:</span>--}}
+                    {{--</td>--}}
+                    {{--<td class="time">--}}
+                        {{--<span class="clock" id="countdown-hour"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final">:</span>--}}
+                    {{--</td>--}}
+                    {{--<td class="time">--}}
+                        {{--<span class="clock" id="countdown-minute"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final">:</span>--}}
+                    {{--</td>--}}
+                    {{--<td class="time">--}}
+                        {{--<span class="clock" id="countdown-second"></span>--}}
+                    {{--</td>--}}
 
 
-                </tr>
+                {{--</tr>--}}
 
-                <tr>
-                    <td class="under-countdown">DAYS</td>
-                    <td class="">
-                        <span class="after-clock-final"></span>
-                    </td>
-                    <td class="under-countdown">HOURS</td>
-                    <td class="">
-                        <span class="after-clock-final"></span>
-                    </td>
-                    <td class="under-countdown">MINUTES</td>
-                    <td class="">
-                        <span class="after-clock-final"></span>
-                    </td>
-                    <td class="under-countdown">SECONDS</td>
+                {{--<tr>--}}
+                    {{--<td class="under-countdown">DAYS</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="under-countdown">HOURS</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="under-countdown">MINUTES</td>--}}
+                    {{--<td class="">--}}
+                        {{--<span class="after-clock-final"></span>--}}
+                    {{--</td>--}}
+                    {{--<td class="under-countdown">SECONDS</td>--}}
 
-                </tr>
+                {{--</tr>--}}
 
-                </tbody>
-            </table>
+                {{--</tbody>--}}
+            {{--</table>--}}
 
         </div>
 
-        <a type="button" id="btn-thuthach" class="btn button-final" href="{{route('dangky')}}"><span>Đăng ký ngay</span></a>
+        {{--<a type="button" id="btn-thuthach" class="btn button-final" href="{{route('dangky')}}"><span>Đăng ký ngay</span></a>--}}
 
     </div>
-    <div class="container-price" style="margin-top: 5%">
+    <div class="container-price" >
 
         <div class="contest-rule">
             <div class="row">
@@ -256,7 +256,7 @@
 
 
 
-            $('.clock').countdown('05/23/2019 12:00:00')
+            $('.clock').countdown('12:00 05/23/2019')
                 .on('update.countdown', function(event) {
                     var totalDays= event.offset.totalDays;
 
@@ -268,8 +268,9 @@
 
                 })
                 .on('finish.countdown', function(event) {
-                    $('.table-responsive ').replaceWith('<h1>Thời gian đăng ký đã kết thúc</h1>')
                     $('#btn-thuthach').remove();
+                    $('.title-countdown').empty().append('<h1 class="color-text-gradient">Thời gian đăng ký đã kết thúc</h1>')
+                    $('.table-responsive ').replaceWith('')
 
                 });
 
