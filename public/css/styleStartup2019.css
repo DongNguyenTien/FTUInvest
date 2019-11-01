@@ -2090,6 +2090,7 @@ td.under-countdown {
     height: auto;
     font-family: 'iciel';
     font-weight: lighter;
+    text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
@@ -2174,4 +2175,11 @@ p {
 }
 .content-board p {
     margin: 0 !important;
+}
+
+.text-footer-margin {
+    margin-left: 75px;
+}
+.footer p {
+    font-size: 15px;
 }
