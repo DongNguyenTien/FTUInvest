@@ -20,17 +20,17 @@
             {{--</div>--}}
 
         </div>
-        <img src="{{asset('/startup2019/cover.png')}}">
+        <img src="{{asset('/startup2019/cover.png?v=1.1')}}">
     </div>
     <div class="content-startup">
         <div class="text-center container">
             <div class="text-left" style="margin-top: 30px"></div>
-            <p> Bước vào cánh cổng Đại học, ai cũng mang theo mình những khát vọng lớn lao cho tương lai của bản thân. Thế nhưng, chỉ có số ít người là thành công sau cùng với những điều mình mong muốn. Bởi chúng ta hầu hết đều bị vướng mắc bởi một rào cản nào đó, hay nói cách khác là chưa tìm được động lực để cố gắng hết mình tìm kiếm thêm những lĩnh vực mới. Vì vậy, trên con đường đi tìm ước mơ, có những người sắp đi đến thành công thì giữa đường lại “đứt gánh”.</p>
+            <p>Bước vào cánh cổng Đại học, ai cũng mang theo mình những khát vọng lớn lao cho tương lai của bản thân. Thế nhưng, chỉ có số ít người là thành công sau cùng với những điều mình mong muốn. Bởi chúng ta hầu hết đều bị vướng mắc bởi một rào cản nào đó, hay nói cách khác là chưa tìm được động lực để thử trải nghiệm, cố gắng hết mình. Vì vậy, trên con đường khám phá và chinh phục ước mơ, có những người sắp đi đến thành công thì giữa đường lại “quay đầu”.</p>
 
             <div style="margin: 40px 0">
-                <div class="txtBorder "><i class="quote-home">Hãy nghiêm túc tìm ra “động lưc thay đổi” của bản thân và
+                <div class="txtBorder "><i class="quote-home">Hãy nghiêm túc tìm ra “động lực thay đổi” của bản thân
                     </i> </div>
-                <div class="txtBorder"><i class="quote-home"> đầu tư cho tương lai của bạn ngay từ hôm nay.</i></div>
+                <div class="txtBorder"><i class="quote-home"> và đầu tư cho tương lai của bạn ngay từ hôm nay.</i></div>
             </div>
 
             <br>
@@ -41,7 +41,7 @@
 
     <div class="container text-center countdown">
 
-        <div class="table-responsive " style="width: 70%;margin-left: 15%;" >
+        <div class="table-responsive " >
             <h2>Bạn còn</h2>
             <div class="list-cell-countdown">
                 <div class="cell-countdown">

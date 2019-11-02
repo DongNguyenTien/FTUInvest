@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Custom CSS -->
     <link href="{{asset('/css/style.css')}}" rel="stylesheet" type="text/css">
 
-    <link href="{{asset('/css/styleStartup2019.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/styleStartup2019.css?v=1.2')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/loading.css')}}" rel="stylesheet" type="text/css">
 
 

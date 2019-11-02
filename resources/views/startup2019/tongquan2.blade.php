@@ -8,7 +8,7 @@
             background-image: none !important;
         }
     </style>
-    <img src="{{asset('/startup2019/tongquan.jpg')}}" class="tongquan-img">
+    <img src="{{asset('/startup2019/tongquan.png?v=1.1')}}" class="tongquan-img">
 @endsection
 
 @section('scripts')

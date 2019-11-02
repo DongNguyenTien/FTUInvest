@@ -22,9 +22,10 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a class="cool-link menu-border-right" href="{{route('home')}}">TRANG CHỦ<span class="sr-only">(current)</span></a></li>
-                                <li><a class="cool-link menu-border-right" href="https://sic-ftu.org/">VỀ CHÚNG TÔI</a></li>
                                 <li><a class="cool-link menu-border-right" href="{{route('tongquan')}}">TỔNG QUAN</a></li>
-                                <li><a class="cool-link " href="{{route('doitac')}}">ĐỐI TÁC</a></li>
+                                <li><a class="cool-link menu-border-right" href="{{route('doitac')}}">ĐỐI TÁC</a></li>
+                                <li><a class="cool-link " href="https://sic-ftu.org/">VỀ CHÚNG TÔI</a></li>
+
                                 <li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
