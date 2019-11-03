@@ -23,6 +23,14 @@
             </div>
         </div>
         <div class="container-info box-register">
+
+            @if($errors->any())
+                <div class="alert alert-danger">
+                <p>{{$errors->first()}}</p>
+                </div>
+            @endif
+
+
             {{--<h2 class="text-main-color register-title">Thông tin cá nhân</h2>--}}
             <div class="row">
                 <div class="col-md-12 col-lg-12 col-xs-12 form-group">

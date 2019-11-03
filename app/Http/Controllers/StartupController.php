@@ -63,8 +63,8 @@ class StartupController extends Controller
             ]);
 
             if ($validate->fails()) {
-                $result->message = $result->getMessageErros($validate->errors());
-                return response()->json($result);
+                $result->message = $result->getMessageErrors($validate->errors());
+                return redirect()->back()->withErrors(($validate->errors()));
             }
 
             $candidate = Candidate::create([

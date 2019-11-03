@@ -26,7 +26,7 @@
                                 <li><a class="cool-link menu-border-right" href="{{route('doitac')}}">ĐỐI TÁC</a></li>
                                 <li><a class="cool-link " href="https://sic-ftu.org/">VỀ CHÚNG TÔI</a></li>
 
-                                <li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>
+                                {{--<li><a id="timkiem" class="cool-link" href="#">TÌM KIẾM</a></li>--}}
                             </ul>
                         </div><!-- /.navbar-collapse -->
                 </nav>

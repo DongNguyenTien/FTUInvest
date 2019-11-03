@@ -393,6 +393,9 @@ td.time {
     margin-right: 2%;
 }
 
+.header-row .col-md-3 {
+    padding: inherit;
+}
 .container-margin {
     margin-bottom: 40px
 }
@@ -1470,6 +1473,15 @@ td.under-countdown {
 }
 
 @media screen and (max-width: 1366px) {
+    .nav.navbar-nav.navbar-right {
+        padding-top: 0px;
+    }
+    .logo {
+        max-width: 100%;
+        width: auto;
+        height: 100%;
+    }
+
     .logo img {
         width: 100%;
     }
@@ -1498,6 +1510,12 @@ td.under-countdown {
     }
     .content-startup {
         padding: 0px 10% 15px;
+    }
+    .text-center.countdown {
+        padding: 0 10%;
+    }
+    .footer {
+        padding: 20px 5%;
     }
 }
 
