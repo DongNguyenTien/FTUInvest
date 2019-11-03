@@ -16,7 +16,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-    <link rel="icon" type="image/x-icon" href="{{asset('/FTU2/images/icon.png')}}" />
+    <link rel="icon" type="image/x-icon" href="{{asset('/startup2019/logo_small.png')}}" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('admin-lte/bootstrap/css/bootstrap.min.css') }}">
@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Custom CSS -->
     <link href="{{asset('/css/style.css')}}" rel="stylesheet" type="text/css">
 
-    <link href="{{asset('/css/styleStartup2019.css?v=1.3')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('/css/styleStartup2019.css?v=1.4')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('/css/loading.css')}}" rel="stylesheet" type="text/css">
 
 
@@ -99,6 +99,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <div class="content">
         @yield('content')
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <p><strong>LIÊN HỆ: </strong>Mr. Văn Long: 079 901 1640</p>
+                <p class="text-footer-margin">Ms. Minh Anh: 079 620 0896</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <p><strong>WEBSITE: </strong>Start-up.sic-ftu.org</p>
+                <p><strong>EMAIL: </strong>btcstu2019@gmail.com</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <p><strong>FACEBOOK: </strong>fb.com/startup.sic</p>
+            </div>
+        </div>
     </div>
     {{--<footer class="footer">--}}
         {{--@component('components.footer')@endcomponent--}}

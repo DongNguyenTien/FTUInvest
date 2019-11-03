@@ -67,21 +67,7 @@
         <a href={{route('dangky')}} type="button" id="btn-thuthach" class="btn" >Đăng ký ngay</a>
 
     </div>
-    <div class="footer">
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-xs-12">
-                <p><strong>LIÊN HỆ: </strong>Mr. Văn Long: 079 901 1640</p>
-                <p class="text-footer-margin">Ms. Minh Anh: 079 620 0896</p>
-            </div>
-            <div class="col-md-4 col-lg-4 col-xs-12">
-                <p><strong>WEBSITE: </strong>Start-up.sic-ftu.org</p>
-                <p><strong>EMAIL: </strong>btcstu2019@gmail.com</p>
-            </div>
-            <div class="col-md-4 col-lg-4 col-xs-12">
-                <p><strong>FACEBOOK: </strong>fb.com/startup.sic</p>
-            </div>
-        </div>
-    </div>
+
 
 
 @endsection

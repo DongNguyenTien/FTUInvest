@@ -1472,6 +1472,10 @@ td.under-countdown {
     margin-left: 15%;
 }
 
+.footer .row{
+    margin-left: 5%;
+}
+
 @media screen and (max-width: 1366px) {
     .nav.navbar-nav.navbar-right {
         padding-top: 0px;
@@ -1515,7 +1519,10 @@ td.under-countdown {
         padding: 0 10%;
     }
     .footer {
-        padding: 20px 5%;
+        padding: 20px 0 20px 40px;
+    }
+    .footer .row{
+        margin-left: 0;
     }
 }
 
