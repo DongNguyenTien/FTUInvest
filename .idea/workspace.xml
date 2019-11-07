@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0f6021-6095-4686-bfd6-095dcfd7b101" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/startup2019/logo_small.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/public/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StartupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StartupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styleStartup2019.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styleStartup2019.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startup2019/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startup2019/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/startup2019/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startup2019/layout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,21 +31,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StartupController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
-              <folding>
-                <element signature="e#40#64#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/startup2019/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="1173">
               <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
@@ -56,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/startup2019/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+            <state relative-caret-position="238">
+              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -65,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/startup2019/pages/register_final.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="459">
               <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
             </state>
           </provider>
@@ -92,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/styleStartup2019.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="1475" column="19" selection-start-line="1475" selection-start-column="19" selection-end-line="1475" selection-end-column="19" />
+            <state relative-caret-position="491">
+              <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -119,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>custom.js</find>
       <find>#overlay</find>
       <find>icheck</find>
       <find>suplly</find>
@@ -149,6 +134,7 @@
       <find>5</find>
       <find>.text-center.countdown</find>
       <find>media</find>
+      <find>suất học</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -165,6 +151,7 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/public/responsive_filemanager/filemanager</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>C:\Users\nguye\Documents\Projects\FTUInvest</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -219,9 +206,9 @@
         <option value="$PROJECT_DIR$/resources/views/2019/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/startup2019/tongquan2.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/components/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/StartupController.php" />
         <option value="$PROJECT_DIR$/resources/views/startup2019/pages/register_final.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/startup2019/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/StartupController.php" />
         <option value="$PROJECT_DIR$/public/css/styleStartup2019.css" />
         <option value="$PROJECT_DIR$/resources/views/startup2019/layout.blade.php" />
       </list>
@@ -312,8 +299,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-7" />
+    <option name="width" value="1061" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -405,7 +393,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Facebook-dataset" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
@@ -514,18 +502,20 @@
       <workItem from="1558200445284" duration="999000" />
       <workItem from="1558587024268" duration="872000" />
       <workItem from="1572623119497" duration="533000" />
-      <workItem from="1572706514594" duration="4396000" />
+      <workItem from="1572706514594" duration="5945000" />
+      <workItem from="1572964375579" duration="294000" />
+      <workItem from="1573140590198" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314290000" />
+    <option name="totallyTimeSpent" value="316422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4938704" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" weight="0.23101777" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.5061296" side_tool="true" weight="0.17043619" />
@@ -647,13 +637,6 @@
     <entry file="file://$PROJECT_DIR$/config/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1059" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/2019/pages/tongquan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Candidate.php">
@@ -785,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MemberFinal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -826,10 +802,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/APIReturnHelper.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/2019/pages/tongquan.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="2150">
+          <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/startup2019/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/startup2019/pages/register_final.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -847,41 +837,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/startup2019/pages/register_final.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/APIReturnHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+        <state relative-caret-position="374">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styleStartup2019.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StartupController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
+        <state relative-caret-position="306">
+          <caret line="156" column="40" selection-start-line="156" selection-start-column="40" selection-end-line="156" selection-end-column="40" />
           <folding>
             <element signature="e#40#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styleStartup2019.css">
+    <entry file="file://$PROJECT_DIR$/app/MemberFinal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="1475" column="19" selection-start-line="1475" selection-start-column="19" selection-end-line="1475" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/startup2019/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="408">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/startup2019/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        <state relative-caret-position="238">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
         </state>
       </provider>
     </entry>

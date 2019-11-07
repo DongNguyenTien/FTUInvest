@@ -86,7 +86,7 @@
 
 .content-startup {
     background-color: #e6e6e6;
-    padding: 0px 20% 15px;;
+    padding: 0px 15% 15px;
 
 }
 .container-startup img{
@@ -1480,6 +1480,12 @@ td.under-countdown {
     .nav.navbar-nav.navbar-right {
         padding-top: 0px;
     }
+    p {
+        font-size: 18px;
+    }
+    .quote-home {
+        font-size: 20px;
+    }
     .logo {
         max-width: 100%;
         width: auto;
@@ -1513,7 +1519,7 @@ td.under-countdown {
         height: 450px;
     }
     .content-startup {
-        padding: 0px 10% 15px;
+        padding: 0px 5% 15px;
     }
     .text-center.countdown {
         padding: 0 10%;
